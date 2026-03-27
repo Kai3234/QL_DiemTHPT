@@ -85,6 +85,7 @@
             this.gIAOVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gIAOVIENTableAdapter1 = new QL_DiemTHPT.QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter();
             this.gIAOVIENTableAdapter2 = new QL_DiemTHPT.QL_DIEMTHPTDataSet2TableAdapters.GIAOVIENTableAdapter();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -406,6 +407,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.comboBox1);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.button2);
@@ -710,6 +712,21 @@
             // 
             this.gIAOVIENTableAdapter2.ClearBeforeFill = true;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.button5.ForeColor = System.Drawing.Color.GhostWhite;
+            this.button5.Location = new System.Drawing.Point(872, 12);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(155, 41);
+            this.button5.TabIndex = 37;
+            this.button5.Text = "Xuất báo cáo";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // FrmQLGIAOVIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -799,5 +816,6 @@
         private QL_DIEMTHPTDataSet2 qL_DIEMTHPTDataSet2;
         private System.Windows.Forms.BindingSource gIAOVIENBindingSource2;
         private QL_DIEMTHPTDataSet2TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter2;
+        private System.Windows.Forms.Button button5;
     }
 }

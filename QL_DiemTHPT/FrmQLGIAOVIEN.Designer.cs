@@ -55,28 +55,40 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnDatLai = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cboBaoCaoHK = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cboBaoCaoNH = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnBaoCao = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTao = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.data_GIAOVIEN = new System.Windows.Forms.DataGridView();
             this.mAGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nGAYSINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gIOITINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dIACHIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gIAOVIENBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.qL_DIEMTHPTDataSet2 = new QL_DiemTHPT.QL_DIEMTHPTDataSet2();
             this.qL_DIEMTHPTDataSet = new QL_DiemTHPT.QL_DIEMTHPTDataSet();
@@ -86,11 +98,6 @@
             this.gIAOVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gIAOVIENTableAdapter1 = new QL_DiemTHPT.QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter();
             this.gIAOVIENTableAdapter2 = new QL_DiemTHPT.QL_DIEMTHPTDataSet2TableAdapters.GIAOVIENTableAdapter();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -98,7 +105,7 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_GIAOVIEN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet)).BeginInit();
@@ -361,10 +368,16 @@
             // cboTieuChiTim
             // 
             this.cboTieuChiTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboTieuChiTim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTieuChiTim.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.cboTieuChiTim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.cboTieuChiTim.FormattingEnabled = true;
-            this.cboTieuChiTim.Location = new System.Drawing.Point(404, 66);
+            this.cboTieuChiTim.Items.AddRange(new object[] {
+            "Mã giáo viên",
+            "Họ tên",
+            "Giới tính",
+            "Địa chỉ"});
+            this.cboTieuChiTim.Location = new System.Drawing.Point(418, 66);
             this.cboTieuChiTim.Margin = new System.Windows.Forms.Padding(2);
             this.cboTieuChiTim.Name = "cboTieuChiTim";
             this.cboTieuChiTim.Size = new System.Drawing.Size(160, 31);
@@ -384,13 +397,14 @@
             this.btnTimKiem.TabIndex = 26;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimKiem.Font = new System.Drawing.Font("Calibri", 14F);
-            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.txtTimKiem.Location = new System.Drawing.Point(19, 66);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKiem.Name = "txtTimKiem";
@@ -400,12 +414,14 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.btnDatLai);
+            this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.cboBaoCaoHK);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.cboBaoCaoNH);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.btnBaoCao);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.btnTimKiem);
             this.panel3.Controls.Add(this.cboTieuChiTim);
@@ -415,53 +431,193 @@
             this.panel3.Size = new System.Drawing.Size(1049, 240);
             this.panel3.TabIndex = 28;
             // 
+            // btnDatLai
+            // 
+            this.btnDatLai.BackColor = System.Drawing.Color.White;
+            this.btnDatLai.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnDatLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatLai.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnDatLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.btnDatLai.Location = new System.Drawing.Point(805, 59);
+            this.btnDatLai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDatLai.Name = "btnDatLai";
+            this.btnDatLai.Size = new System.Drawing.Size(109, 42);
+            this.btnDatLai.TabIndex = 42;
+            this.btnDatLai.Text = "Đặt lại";
+            this.btnDatLai.UseVisualStyleBackColor = false;
+            this.btnDatLai.Click += new System.EventHandler(this.btnDatLai_Click);
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label15.Location = new System.Drawing.Point(414, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(181, 30);
+            this.label15.TabIndex = 41;
+            this.label15.Text = "Tiêu chí tìm:";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.label12.Location = new System.Drawing.Point(13, 120);
+            this.label12.Name = "label12";
+            this.label12.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label12.Size = new System.Drawing.Size(279, 40);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Báo cáo:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cboBaoCaoHK
+            // 
+            this.cboBaoCaoHK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboBaoCaoHK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBaoCaoHK.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboBaoCaoHK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboBaoCaoHK.FormattingEnabled = true;
+            this.cboBaoCaoHK.Items.AddRange(new object[] {
+            "Học kỳ I",
+            "Học kỳ II",
+            "Cả năm"});
+            this.cboBaoCaoHK.Location = new System.Drawing.Point(777, 183);
+            this.cboBaoCaoHK.Margin = new System.Windows.Forms.Padding(2);
+            this.cboBaoCaoHK.Name = "cboBaoCaoHK";
+            this.cboBaoCaoHK.Size = new System.Drawing.Size(160, 31);
+            this.cboBaoCaoHK.TabIndex = 39;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label10.Location = new System.Drawing.Point(773, 152);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 30);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Học kỳ:";
+            // 
+            // cboBaoCaoNH
+            // 
+            this.cboBaoCaoNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboBaoCaoNH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBaoCaoNH.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboBaoCaoNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboBaoCaoNH.FormattingEnabled = true;
+            this.cboBaoCaoNH.Location = new System.Drawing.Point(493, 183);
+            this.cboBaoCaoNH.Margin = new System.Windows.Forms.Padding(2);
+            this.cboBaoCaoNH.Name = "cboBaoCaoNH";
+            this.cboBaoCaoNH.Size = new System.Drawing.Size(223, 31);
+            this.cboBaoCaoNH.TabIndex = 37;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label9.Location = new System.Drawing.Point(489, 152);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 30);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Năm học:";
+            // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnBaoCao.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnBaoCao.Location = new System.Drawing.Point(19, 177);
+            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(440, 41);
+            this.btnBaoCao.TabIndex = 37;
+            this.btnBaoCao.Text = "Xuất báo cáo theo";
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.comboBox1);
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.txtMatKhau);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.txtDiaChi);
+            this.panel4.Controls.Add(this.cboGioiTinh);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.btnXoa);
+            this.panel4.Controls.Add(this.btnSua);
+            this.panel4.Controls.Add(this.btnLuu);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.dateTimePicker1);
+            this.panel4.Controls.Add(this.txtNgaySinh);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.txtHoTen);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.txtMa);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btnTao);
             this.panel4.Location = new System.Drawing.Point(314, 382);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1049, 250);
             this.panel4.TabIndex = 29;
             // 
-            // button5
+            // label14
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button5.Location = new System.Drawing.Point(19, 177);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(440, 41);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "Xuất báo cáo theo";
-            this.button5.UseVisualStyleBackColor = false;
+            this.label14.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label14.Location = new System.Drawing.Point(757, 67);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(181, 30);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Mật khẩu:";
             // 
-            // comboBox1
+            // txtMatKhau
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 14F);
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(556, 99);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 31);
-            this.comboBox1.TabIndex = 28;
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtMatKhau.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtMatKhau.Location = new System.Drawing.Point(762, 99);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(243, 30);
+            this.txtMatKhau.TabIndex = 39;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label13.Location = new System.Drawing.Point(301, 159);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(181, 30);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Địa chỉ:";
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtDiaChi.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtDiaChi.Location = new System.Drawing.Point(306, 191);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(197, 30);
+            this.txtDiaChi.TabIndex = 37;
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGioiTinh.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cboGioiTinh.Location = new System.Drawing.Point(556, 99);
+            this.cboGioiTinh.Margin = new System.Windows.Forms.Padding(2);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(160, 31);
+            this.cboGioiTinh.TabIndex = 28;
             // 
             // label8
             // 
@@ -473,74 +629,77 @@
             this.label8.TabIndex = 36;
             this.label8.Text = "Giới tính:";
             // 
-            // button2
+            // btnXoa
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button2.Location = new System.Drawing.Point(867, 198);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 41);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnXoa.Location = new System.Drawing.Point(867, 198);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(101, 41);
+            this.btnXoa.TabIndex = 35;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button4
+            // btnSua
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.button4.Location = new System.Drawing.Point(762, 198);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 41);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Sửa";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSua.BackColor = System.Drawing.Color.White;
+            this.btnSua.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.btnSua.Location = new System.Drawing.Point(762, 198);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(101, 41);
+            this.btnSua.TabIndex = 34;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // button3
+            // btnLuu
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button3.Location = new System.Drawing.Point(657, 198);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 41);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Lưu";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnLuu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnLuu.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnLuu.Location = new System.Drawing.Point(657, 198);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(101, 41);
+            this.btnLuu.TabIndex = 33;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Calibri", 14F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label7.Location = new System.Drawing.Point(31, 155);
+            this.label7.Location = new System.Drawing.Point(32, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(181, 30);
             this.label7.TabIndex = 31;
             this.label7.Text = "Ngày sinh:";
             // 
-            // dateTimePicker1
+            // txtNgaySinh
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Calibri", 16F);
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 14F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(36, 188);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker1.TabIndex = 0;
+            this.txtNgaySinh.CalendarFont = new System.Drawing.Font("Calibri", 14F);
+            this.txtNgaySinh.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtNgaySinh.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtNgaySinh.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtNgaySinh.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.txtNgaySinh.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtNgaySinh.Location = new System.Drawing.Point(35, 191);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(200, 30);
+            this.txtNgaySinh.TabIndex = 0;
             // 
             // label6
             // 
@@ -552,16 +711,16 @@
             this.label6.TabIndex = 30;
             this.label6.Text = "Họ tên:";
             // 
-            // textBox1
+            // txtHoTen
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 14F);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.textBox1.Location = new System.Drawing.Point(306, 100);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 30);
-            this.textBox1.TabIndex = 29;
+            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtHoTen.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtHoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtHoTen.Location = new System.Drawing.Point(306, 100);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(197, 30);
+            this.txtHoTen.TabIndex = 29;
             // 
             // label5
             // 
@@ -577,7 +736,7 @@
             // 
             this.txtMa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtMa.Font = new System.Drawing.Font("Calibri", 14F);
-            this.txtMa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.txtMa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.txtMa.Location = new System.Drawing.Point(36, 100);
             this.txtMa.Margin = new System.Windows.Forms.Padding(2);
             this.txtMa.Name = "txtMa";
@@ -596,36 +755,37 @@
             this.label4.Text = "Thông tin chi tiết:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button1
+            // btnTao
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.button1.Location = new System.Drawing.Point(552, 198);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 41);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Tạo mới";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTao.BackColor = System.Drawing.Color.White;
+            this.btnTao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnTao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnTao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.btnTao.Location = new System.Drawing.Point(552, 198);
+            this.btnTao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(101, 41);
+            this.btnTao.TabIndex = 26;
+            this.btnTao.Text = "Tạo mới";
+            this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Controls.Add(this.data_GIAOVIEN);
             this.panel5.Location = new System.Drawing.Point(314, 646);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1049, 257);
             this.panel5.TabIndex = 29;
             // 
-            // dataGridView1
+            // data_GIAOVIEN
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.data_GIAOVIEN.AutoGenerateColumns = false;
+            this.data_GIAOVIEN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_GIAOVIEN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.data_GIAOVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -633,15 +793,16 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data_GIAOVIEN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.data_GIAOVIEN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_GIAOVIEN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mAGVDataGridViewTextBoxColumn,
             this.hOTENDataGridViewTextBoxColumn,
             this.nGAYSINHDataGridViewTextBoxColumn,
             this.gIOITINHDataGridViewTextBoxColumn,
-            this.dIACHIDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.gIAOVIENBindingSource2;
+            this.dIACHIDataGridViewTextBoxColumn,
+            this.MATKHAU});
+            this.data_GIAOVIEN.DataSource = this.gIAOVIENBindingSource2;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 12F);
@@ -649,11 +810,11 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.dataGridView1.Location = new System.Drawing.Point(19, 16);
-            this.dataGridView1.Name = "dataGridView1";
+            this.data_GIAOVIEN.DefaultCellStyle = dataGridViewCellStyle8;
+            this.data_GIAOVIEN.EnableHeadersVisualStyles = false;
+            this.data_GIAOVIEN.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.data_GIAOVIEN.Location = new System.Drawing.Point(19, 16);
+            this.data_GIAOVIEN.Name = "data_GIAOVIEN";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -661,9 +822,9 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView1.Size = new System.Drawing.Size(1008, 227);
-            this.dataGridView1.TabIndex = 0;
+            this.data_GIAOVIEN.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.data_GIAOVIEN.Size = new System.Drawing.Size(1008, 227);
+            this.data_GIAOVIEN.TabIndex = 0;
             // 
             // mAGVDataGridViewTextBoxColumn
             // 
@@ -694,6 +855,13 @@
             this.dIACHIDataGridViewTextBoxColumn.DataPropertyName = "DIACHI";
             this.dIACHIDataGridViewTextBoxColumn.HeaderText = "DIACHI";
             this.dIACHIDataGridViewTextBoxColumn.Name = "dIACHIDataGridViewTextBoxColumn";
+            // 
+            // MATKHAU
+            // 
+            this.MATKHAU.DataPropertyName = "MATKHAU";
+            this.MATKHAU.HeaderText = "MATKHAU";
+            this.MATKHAU.Name = "MATKHAU";
+            this.MATKHAU.Visible = false;
             // 
             // gIAOVIENBindingSource2
             // 
@@ -737,62 +905,6 @@
             // 
             this.gIAOVIENTableAdapter2.ClearBeforeFill = true;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox2.Font = new System.Drawing.Font("Calibri", 14F);
-            this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(493, 183);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 31);
-            this.comboBox2.TabIndex = 37;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label9.Location = new System.Drawing.Point(489, 152);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 30);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "Tiêu chí 1";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 14F);
-            this.comboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(675, 183);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(160, 31);
-            this.comboBox3.TabIndex = 39;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label10.Location = new System.Drawing.Point(671, 152);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 30);
-            this.label10.TabIndex = 40;
-            this.label10.Text = "Tiêu chí 2";
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.label12.Location = new System.Drawing.Point(13, 120);
-            this.label12.Name = "label12";
-            this.label12.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label12.Size = new System.Drawing.Size(279, 40);
-            this.label12.TabIndex = 41;
-            this.label12.Text = "Báo cáo:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // FrmQLGIAOVIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -816,7 +928,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_GIAOVIEN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet)).EndInit();
@@ -854,39 +966,46 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTao;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.DateTimePicker txtNgaySinh;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data_GIAOVIEN;
         private QL_DIEMTHPTDataSet qL_DIEMTHPTDataSet;
         private System.Windows.Forms.BindingSource gIAOVIENBindingSource;
         private QL_DIEMTHPTDataSetTableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
+        private QL_DIEMTHPTDataSet1 qL_DIEMTHPTDataSet1;
+        private System.Windows.Forms.BindingSource gIAOVIENBindingSource1;
+        private QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter1;
+        private System.Windows.Forms.ComboBox cboGioiTinh;
+        private System.Windows.Forms.Label label8;
+        private QL_DIEMTHPTDataSet2 qL_DIEMTHPTDataSet2;
+        private System.Windows.Forms.BindingSource gIAOVIENBindingSource2;
+        private QL_DIEMTHPTDataSet2TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter2;
+        private System.Windows.Forms.Button btnBaoCao;
+        private System.Windows.Forms.ComboBox cboBaoCaoHK;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cboBaoCaoNH;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.DataGridViewTextBoxColumn mAGVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hOTENDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nGAYSINHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn gIOITINHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dIACHIDataGridViewTextBoxColumn;
-        private QL_DIEMTHPTDataSet1 qL_DIEMTHPTDataSet1;
-        private System.Windows.Forms.BindingSource gIAOVIENBindingSource1;
-        private QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label8;
-        private QL_DIEMTHPTDataSet2 qL_DIEMTHPTDataSet2;
-        private System.Windows.Forms.BindingSource gIAOVIENBindingSource2;
-        private QL_DIEMTHPTDataSet2TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MATKHAU;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnDatLai;
     }
 }

@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.mnuTrangChu = new System.Windows.Forms.Label();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mnuTaiKhoan = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.mnuPhanCong = new System.Windows.Forms.Label();
-            this.mnuMon = new System.Windows.Forms.Label();
             this.mnuHSLop = new System.Windows.Forms.Label();
             this.mnuLop = new System.Windows.Forms.Label();
             this.mnuNam = new System.Windows.Forms.Label();
             this.mnuGV = new System.Windows.Forms.Label();
             this.mnuHocSinh = new System.Windows.Forms.Label();
-            this.mnuTrangChu = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -74,18 +74,18 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.mnuTrangChu);
             this.panel1.Controls.Add(this.btnDangXuat);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.mnuTaiKhoan);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.mnuPhanCong);
-            this.panel1.Controls.Add(this.mnuMon);
             this.panel1.Controls.Add(this.mnuHSLop);
             this.panel1.Controls.Add(this.mnuLop);
             this.panel1.Controls.Add(this.mnuNam);
             this.panel1.Controls.Add(this.mnuGV);
             this.panel1.Controls.Add(this.mnuHocSinh);
-            this.panel1.Controls.Add(this.mnuTrangChu);
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, -5);
@@ -93,6 +93,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(423, 1083);
             this.panel1.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.GhostWhite;
+            this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.label3.Location = new System.Drawing.Point(4, 554);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(418, 62);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Quản lý môn học:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // mnuTrangChu
+            // 
+            this.mnuTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.mnuTrangChu.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
+            this.mnuTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            this.mnuTrangChu.Location = new System.Drawing.Point(5, 183);
+            this.mnuTrangChu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.mnuTrangChu.Name = "mnuTrangChu";
+            this.mnuTrangChu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuTrangChu.Size = new System.Drawing.Size(418, 62);
+            this.mnuTrangChu.TabIndex = 24;
+            this.mnuTrangChu.Text = "Trang chủ";
+            this.mnuTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnDangXuat
             // 
@@ -158,20 +186,6 @@
             this.mnuPhanCong.Text = "Phân công giảng dạy";
             this.mnuPhanCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuPhanCong.Click += new System.EventHandler(this.mnuPhanCong_Click);
-            // 
-            // mnuMon
-            // 
-            this.mnuMon.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.mnuMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuMon.Location = new System.Drawing.Point(4, 552);
-            this.mnuMon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.mnuMon.Name = "mnuMon";
-            this.mnuMon.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.mnuMon.Size = new System.Drawing.Size(418, 62);
-            this.mnuMon.TabIndex = 18;
-            this.mnuMon.Text = "Quản lý môn học";
-            this.mnuMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mnuMon.Click += new System.EventHandler(this.mnuMon_Click);
             // 
             // mnuHSLop
             // 
@@ -243,29 +257,14 @@
             this.mnuHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuHocSinh.Click += new System.EventHandler(this.mnuHocSinh_Click);
             // 
-            // mnuTrangChu
-            // 
-            this.mnuTrangChu.BackColor = System.Drawing.Color.GhostWhite;
-            this.mnuTrangChu.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.mnuTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.mnuTrangChu.Location = new System.Drawing.Point(4, 183);
-            this.mnuTrangChu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.mnuTrangChu.Name = "mnuTrangChu";
-            this.mnuTrangChu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.mnuTrangChu.Size = new System.Drawing.Size(418, 62);
-            this.mnuTrangChu.TabIndex = 12;
-            this.mnuTrangChu.Text = "Trang chủ";
-            this.mnuTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mnuTrangChu.Click += new System.EventHandler(this.mnuTrangChu_Click);
-            // 
             // btnThoat
             // 
             this.btnThoat.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnThoat.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.btnThoat.Location = new System.Drawing.Point(0, 998);
+            this.btnThoat.Location = new System.Drawing.Point(0, 944);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(423, 85);
+            this.btnThoat.Size = new System.Drawing.Size(423, 139);
             this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -350,36 +349,36 @@
             this.dataGrid_MONHOC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGrid_MONHOC.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.dataGrid_MONHOC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid_MONHOC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid_MONHOC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGrid_MONHOC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGrid_MONHOC.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGrid_MONHOC.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGrid_MONHOC.EnableHeadersVisualStyles = false;
             this.dataGrid_MONHOC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.dataGrid_MONHOC.Location = new System.Drawing.Point(29, 90);
             this.dataGrid_MONHOC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGrid_MONHOC.Name = "dataGrid_MONHOC";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid_MONHOC.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid_MONHOC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGrid_MONHOC.RowHeadersWidth = 62;
             this.dataGrid_MONHOC.Size = new System.Drawing.Size(1390, 342);
             this.dataGrid_MONHOC.TabIndex = 0;
@@ -552,9 +551,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label mnuTrangChu;
         private System.Windows.Forms.Label mnuPhanCong;
-        private System.Windows.Forms.Label mnuMon;
         private System.Windows.Forms.Label mnuHSLop;
         private System.Windows.Forms.Label mnuLop;
         private System.Windows.Forms.Label mnuNam;
@@ -577,5 +574,7 @@
         private System.Windows.Forms.Label lbMaNH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnTaoMoi;
+        private System.Windows.Forms.Label mnuTrangChu;
+        private System.Windows.Forms.Label label3;
     }
 }

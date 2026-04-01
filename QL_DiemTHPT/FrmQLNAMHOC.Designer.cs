@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -50,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnXuat = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGrid_NamHoc = new System.Windows.Forms.DataGridView();
@@ -65,6 +63,11 @@
             this.txtMaNH = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnTaoMoi = new System.Windows.Forms.Button();
+            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.cboBaoCaoHK = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cboBaoCaoNH = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -329,40 +332,16 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.btnXuat);
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.cboBaoCaoHK);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.cboBaoCaoNH);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.btnBaoCao);
             this.panel3.Location = new System.Drawing.Point(449, 891);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1443, 124);
             this.panel3.TabIndex = 46;
-            // 
-            // btnXuat
-            // 
-            this.btnXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXuat.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.btnXuat.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnXuat.Location = new System.Drawing.Point(1263, 34);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(152, 63);
-            this.btnXuat.TabIndex = 36;
-            this.btnXuat.Text = "Xuất";
-            this.btnXuat.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.label5.Location = new System.Drawing.Point(20, 18);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(418, 62);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Xuất báo cáo năm học";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel5
             // 
@@ -394,36 +373,36 @@
             this.dataGrid_NamHoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGrid_NamHoc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.dataGrid_NamHoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid_NamHoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid_NamHoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGrid_NamHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGrid_NamHoc.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGrid_NamHoc.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGrid_NamHoc.EnableHeadersVisualStyles = false;
             this.dataGrid_NamHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.dataGrid_NamHoc.Location = new System.Drawing.Point(29, 97);
             this.dataGrid_NamHoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGrid_NamHoc.Name = "dataGrid_NamHoc";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid_NamHoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid_NamHoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGrid_NamHoc.RowHeadersWidth = 62;
             this.dataGrid_NamHoc.Size = new System.Drawing.Size(1390, 249);
             this.dataGrid_NamHoc.TabIndex = 0;
@@ -562,6 +541,70 @@
             this.btnTaoMoi.UseVisualStyleBackColor = false;
             this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnBaoCao.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnBaoCao.Location = new System.Drawing.Point(18, 34);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(660, 63);
+            this.btnBaoCao.TabIndex = 38;
+            this.btnBaoCao.Text = "Xuất báo cáo theo";
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            // 
+            // cboBaoCaoHK
+            // 
+            this.cboBaoCaoHK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboBaoCaoHK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBaoCaoHK.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboBaoCaoHK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboBaoCaoHK.FormattingEnabled = true;
+            this.cboBaoCaoHK.Items.AddRange(new object[] {
+            "Học kỳ I",
+            "Học kỳ II",
+            "Cả năm"});
+            this.cboBaoCaoHK.Location = new System.Drawing.Point(1159, 67);
+            this.cboBaoCaoHK.Name = "cboBaoCaoHK";
+            this.cboBaoCaoHK.Size = new System.Drawing.Size(238, 43);
+            this.cboBaoCaoHK.TabIndex = 43;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label10.Location = new System.Drawing.Point(1153, 19);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(272, 46);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Học kỳ:";
+            // 
+            // cboBaoCaoNH
+            // 
+            this.cboBaoCaoNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboBaoCaoNH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBaoCaoNH.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboBaoCaoNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboBaoCaoNH.FormattingEnabled = true;
+            this.cboBaoCaoNH.Location = new System.Drawing.Point(733, 67);
+            this.cboBaoCaoNH.Name = "cboBaoCaoNH";
+            this.cboBaoCaoNH.Size = new System.Drawing.Size(332, 43);
+            this.cboBaoCaoNH.TabIndex = 41;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label9.Location = new System.Drawing.Point(727, 19);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(272, 46);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "Năm học:";
+            // 
             // FrmQLNAMHOC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -611,8 +654,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnXuat;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGrid_NamHoc;
@@ -626,5 +667,10 @@
         private System.Windows.Forms.TextBox txtMaNH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnTaoMoi;
+        private System.Windows.Forms.Button btnBaoCao;
+        private System.Windows.Forms.ComboBox cboBaoCaoHK;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cboBaoCaoNH;
+        private System.Windows.Forms.Label label9;
     }
 }

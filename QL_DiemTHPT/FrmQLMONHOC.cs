@@ -189,5 +189,7 @@ namespace QL_DiemTHPT
 
             MessageBox.Show("Xóa thành công!");
         }
+
+        
     }
 }

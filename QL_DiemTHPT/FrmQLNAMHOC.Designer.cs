@@ -88,9 +88,10 @@
             this.panel1.Controls.Add(this.mnuTrangChu);
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-2, -3);
+            this.panel1.Location = new System.Drawing.Point(-3, -5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(282, 704);
+            this.panel1.Size = new System.Drawing.Size(423, 1083);
             this.panel1.TabIndex = 1;
             // 
             // btnDangXuat
@@ -98,10 +99,9 @@
             this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
             this.btnDangXuat.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
             this.btnDangXuat.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 593);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 912);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(282, 42);
+            this.btnDangXuat.Size = new System.Drawing.Size(423, 65);
             this.btnDangXuat.TabIndex = 23;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
@@ -121,10 +121,11 @@
             // 
             this.mnuTaiKhoan.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.mnuTaiKhoan.Location = new System.Drawing.Point(67, 539);
+            this.mnuTaiKhoan.Location = new System.Drawing.Point(100, 829);
+            this.mnuTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuTaiKhoan.Name = "mnuTaiKhoan";
-            this.mnuTaiKhoan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuTaiKhoan.Size = new System.Drawing.Size(215, 40);
+            this.mnuTaiKhoan.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuTaiKhoan.Size = new System.Drawing.Size(322, 62);
             this.mnuTaiKhoan.TabIndex = 21;
             this.mnuTaiKhoan.Text = "Admin";
             this.mnuTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,10 +135,11 @@
             // 
             this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(171)))), ((int)(((byte)(172)))));
-            this.label11.Location = new System.Drawing.Point(16, 62);
+            this.label11.Location = new System.Drawing.Point(24, 95);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label11.Size = new System.Drawing.Size(165, 24);
+            this.label11.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.label11.Size = new System.Drawing.Size(248, 37);
             this.label11.TabIndex = 20;
             this.label11.Text = "Dành cho Admin";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,10 +148,11 @@
             // 
             this.mnuPhanCong.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuPhanCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuPhanCong.Location = new System.Drawing.Point(3, 399);
+            this.mnuPhanCong.Location = new System.Drawing.Point(4, 614);
+            this.mnuPhanCong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuPhanCong.Name = "mnuPhanCong";
-            this.mnuPhanCong.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuPhanCong.Size = new System.Drawing.Size(279, 40);
+            this.mnuPhanCong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuPhanCong.Size = new System.Drawing.Size(418, 62);
             this.mnuPhanCong.TabIndex = 19;
             this.mnuPhanCong.Text = "Phân công giảng dạy";
             this.mnuPhanCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,10 +162,11 @@
             // 
             this.mnuMon.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuMon.Location = new System.Drawing.Point(3, 359);
+            this.mnuMon.Location = new System.Drawing.Point(4, 552);
+            this.mnuMon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuMon.Name = "mnuMon";
-            this.mnuMon.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuMon.Size = new System.Drawing.Size(279, 40);
+            this.mnuMon.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuMon.Size = new System.Drawing.Size(418, 62);
             this.mnuMon.TabIndex = 18;
             this.mnuMon.Text = "Quản lý môn học";
             this.mnuMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,10 +176,11 @@
             // 
             this.mnuHSLop.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuHSLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuHSLop.Location = new System.Drawing.Point(3, 319);
+            this.mnuHSLop.Location = new System.Drawing.Point(4, 491);
+            this.mnuHSLop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuHSLop.Name = "mnuHSLop";
-            this.mnuHSLop.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuHSLop.Size = new System.Drawing.Size(279, 40);
+            this.mnuHSLop.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuHSLop.Size = new System.Drawing.Size(418, 62);
             this.mnuHSLop.TabIndex = 17;
             this.mnuHSLop.Text = "Xếp học sinh vào lớp";
             this.mnuHSLop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,10 +190,11 @@
             // 
             this.mnuLop.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuLop.Location = new System.Drawing.Point(3, 279);
+            this.mnuLop.Location = new System.Drawing.Point(4, 429);
+            this.mnuLop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuLop.Name = "mnuLop";
-            this.mnuLop.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuLop.Size = new System.Drawing.Size(279, 40);
+            this.mnuLop.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuLop.Size = new System.Drawing.Size(418, 62);
             this.mnuLop.TabIndex = 16;
             this.mnuLop.Text = "Quản lý lớp";
             this.mnuLop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,10 +205,11 @@
             this.mnuNam.BackColor = System.Drawing.Color.GhostWhite;
             this.mnuNam.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuNam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.mnuNam.Location = new System.Drawing.Point(3, 239);
+            this.mnuNam.Location = new System.Drawing.Point(4, 368);
+            this.mnuNam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuNam.Name = "mnuNam";
-            this.mnuNam.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuNam.Size = new System.Drawing.Size(279, 40);
+            this.mnuNam.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuNam.Size = new System.Drawing.Size(418, 62);
             this.mnuNam.TabIndex = 15;
             this.mnuNam.Text = "Quản lý năm học";
             this.mnuNam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,10 +219,11 @@
             // 
             this.mnuGV.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuGV.Location = new System.Drawing.Point(3, 199);
+            this.mnuGV.Location = new System.Drawing.Point(4, 306);
+            this.mnuGV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuGV.Name = "mnuGV";
-            this.mnuGV.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuGV.Size = new System.Drawing.Size(279, 40);
+            this.mnuGV.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuGV.Size = new System.Drawing.Size(418, 62);
             this.mnuGV.TabIndex = 14;
             this.mnuGV.Text = "Quản lý giáo viên";
             this.mnuGV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -225,10 +233,11 @@
             // 
             this.mnuHocSinh.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuHocSinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuHocSinh.Location = new System.Drawing.Point(3, 159);
+            this.mnuHocSinh.Location = new System.Drawing.Point(4, 245);
+            this.mnuHocSinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuHocSinh.Name = "mnuHocSinh";
-            this.mnuHocSinh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuHocSinh.Size = new System.Drawing.Size(279, 40);
+            this.mnuHocSinh.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuHocSinh.Size = new System.Drawing.Size(418, 62);
             this.mnuHocSinh.TabIndex = 13;
             this.mnuHocSinh.Text = "Quản lý học sinh";
             this.mnuHocSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,10 +248,11 @@
             this.mnuTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.mnuTrangChu.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuTrangChu.Location = new System.Drawing.Point(3, 119);
+            this.mnuTrangChu.Location = new System.Drawing.Point(4, 183);
+            this.mnuTrangChu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuTrangChu.Name = "mnuTrangChu";
-            this.mnuTrangChu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.mnuTrangChu.Size = new System.Drawing.Size(279, 40);
+            this.mnuTrangChu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.mnuTrangChu.Size = new System.Drawing.Size(418, 62);
             this.mnuTrangChu.TabIndex = 12;
             this.mnuTrangChu.Text = "Trang chủ";
             this.mnuTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -253,10 +263,9 @@
             this.btnThoat.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnThoat.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.btnThoat.Location = new System.Drawing.Point(0, 649);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Location = new System.Drawing.Point(0, 998);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(282, 55);
+            this.btnThoat.Size = new System.Drawing.Size(423, 85);
             this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -266,9 +275,10 @@
             // 
             this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(14, 27);
+            this.label1.Location = new System.Drawing.Point(21, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 35);
+            this.label1.Size = new System.Drawing.Size(372, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ ĐIỂM THPT";
             // 
@@ -277,9 +287,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(278, -3);
+            this.panel2.Location = new System.Drawing.Point(417, -5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1141, 93);
+            this.panel2.Size = new System.Drawing.Size(1712, 143);
             this.panel2.TabIndex = 11;
             // 
             // label2
@@ -288,9 +299,10 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.GhostWhite;
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(741, 93);
+            this.label2.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(1112, 143);
             this.label2.TabIndex = 0;
             this.label2.Text = "QUẢN LÝ NĂM HỌC";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -301,9 +313,10 @@
             this.pictureBox1.BackgroundImage = global::QL_DiemTHPT.Properties.Resources.logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(1061, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1592, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(120, 143);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
@@ -506,7 +519,7 @@
             // 
             // FrmQLNAMHOC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1283, 682);
@@ -514,6 +527,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmQLNAMHOC";
             this.Text = "FrmQLNAMHOC";
             this.Load += new System.EventHandler(this.FrmQLNAMHOC_Load);

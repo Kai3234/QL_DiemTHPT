@@ -105,7 +105,7 @@
             this.label3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.label3.Size = new System.Drawing.Size(418, 62);
             this.label3.TabIndex = 25;
-            this.label3.Text = "Quản lý môn học:";
+            this.label3.Text = "Quản lý môn học";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mnuTrangChu
@@ -113,7 +113,7 @@
             this.mnuTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.mnuTrangChu.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.mnuTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            this.mnuTrangChu.Location = new System.Drawing.Point(5, 183);
+            this.mnuTrangChu.Location = new System.Drawing.Point(4, 183);
             this.mnuTrangChu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mnuTrangChu.Name = "mnuTrangChu";
             this.mnuTrangChu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);

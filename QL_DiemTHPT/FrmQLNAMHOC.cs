@@ -117,7 +117,6 @@ namespace QL_DiemTHPT
         private void FrmQLNAMHOC_Load(object sender, EventArgs e)
         {
             LayBang_NamHoc();
-            HienThiDuLieu();
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -129,28 +128,32 @@ namespace QL_DiemTHPT
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
+
             string strKtra = "SELECT MANH FROM NAMHOC WHERE MANH = '" + txtMaNH.Text + "'";
             SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
             SqlDataReader doc_DL = cmd.ExecuteReader();
 
-            if (doc_DL.Read() == true)
+            if (doc_DL.Read())
             {
-                MessageBox.Show("Mã năm học này đã tồn tại. Vui lòng nhập mã khác!", "Thông báo");
+                MessageBox.Show("Mã năm học đã tồn tại!", "Thông báo");
                 txtMaNH.Focus();
                 doc_DL.Close();
-                doc_DL.Dispose();
+                return;
             }
-            else
-            {
-                string a = txtMaNH.Text;
-                string b = txtNamHoc.Text;
-                string Sql_Luu;
-                Sql_Luu = "INSERT INTO NAMHOC VALUES ('" + a + "', N'" + b + "')";
 
-                MessageBox.Show(Sql_Luu);
-                kn.ThucThi(Sql_Luu);
-                HienThiDuLieu();
-            }
+            doc_DL.Close();
+
+            string Sql_Luu = "INSERT INTO NAMHOC VALUES ('" + txtMaNH.Text + "', N'" + txtNamHoc.Text + "')";
+
+            MessageBox.Show(Sql_Luu);
+            kn.ThucThi(Sql_Luu);
+
+            LayBang_NamHoc();
+            HienThiDuLieu();
+
+            MessageBox.Show("Thêm thành công!");
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -161,24 +164,65 @@ namespace QL_DiemTHPT
                 return;
             }
 
-            string Sql_sua = "UPDATE NAMHOC SET TENNAM = N'" + txtNamHoc.Text + "'";
-            Sql_sua += " WHERE MANH = '" + txtMaNH.Text + "'";
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
 
-            MessageBox.Show(Sql_sua);
-            kn.ThucThi(Sql_sua);
-            LayBang_NamHoc();
-            HienThiDuLieu();
+            string strKtra = "SELECT MANH FROM NAMHOC WHERE MANH = '" + txtMaNH.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
 
-            MessageBox.Show("Sửa thành công!");
+            if (doc_DL.Read())
+            {
+                doc_DL.Close();
+
+                string Sql_sua = "UPDATE NAMHOC SET TENNAM = N'" + txtNamHoc.Text + "'";
+                Sql_sua += " WHERE MANH = '" + txtMaNH.Text + "'";
+
+                MessageBox.Show(Sql_sua);
+                kn.ThucThi(Sql_sua);
+
+                LayBang_NamHoc();
+                HienThiDuLieu();
+
+                MessageBox.Show("Sửa thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại mã năm học!", "Thông báo");
+                txtMaNH.Focus();
+                doc_DL.Close();
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string Sql_xoa = " DELETE FROM NAMHOC WHERE MANH = '" + txtMaNH.Text + "'";
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
+
+            string strKtra = "SELECT MANH FROM LOP WHERE MANH = '" + txtMaNH.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
+
+            if (doc_DL.Read())
+            {
+                MessageBox.Show("Mã năm học này đã tồn tại ở bảng Lớp nên không thể xóa được!", "Thông báo");
+                txtMaNH.Focus();
+
+                doc_DL.Close();
+                doc_DL.Dispose();
+                return;
+            }
+
+            doc_DL.Close();
+            doc_DL.Dispose();
+
+            string Sql_xoa = "DELETE FROM NAMHOC WHERE MANH = '" + txtMaNH.Text + "'";
             MessageBox.Show(Sql_xoa);
+
             kn.ThucThi(Sql_xoa);
             LayBang_NamHoc();
             HienThiDuLieu();
+
             MessageBox.Show("Xóa năm học thành công!");
         }
     }

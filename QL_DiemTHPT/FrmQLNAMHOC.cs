@@ -149,7 +149,6 @@ namespace QL_DiemTHPT
 
                 MessageBox.Show(Sql_Luu);
                 kn.ThucThi(Sql_Luu);
-                LayBang_NamHoc();
                 HienThiDuLieu();
             }
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -91,6 +92,217 @@ namespace QL_DiemTHPT
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        //khoi tao class
+        KETNOI_CSDL kn = new KETNOI_CSDL();
+
+        //lay bang Lop len grid
+        public void LayBang_LopHoc()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.LayBang("SELECT * FROM LOP");
+            dataGrid_LOP.DataSource = dta;
+
+            cboTK_TenLop.DataSource = dta;
+            cboTK_TenLop.DisplayMember = "TENLOP";
+            cboTK_TenLop.ValueMember = "TENLOP";
+
+        }
+
+        public void LayBang_NamHoc()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.LayBang("SELECT * FROM NAMHOC");
+
+            cboMaNH.DataSource = dta;
+            cboMaNH.DisplayMember = "MANH";
+            cboMaNH.ValueMember = "MANH";
+
+            cboTK_NamHoc.DataSource = dta;
+            cboTK_NamHoc.DisplayMember = "TENNAM";
+            cboTK_NamHoc.ValueMember = "TENNAM";
+        }
+
+        public void LayBang_GV()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.LayBang("SELECT * FROM GIAOVIEN");
+            cboMaGV.DataSource = dta;
+
+            cboMaGV.DisplayMember = "MAGV";
+            cboMaGV.ValueMember = "MAGV";
+        }
+
+        private void HienThiDuLieu()
+        {
+            // TextBox
+            txtMaLop.DataBindings.Clear();
+            txtMaLop.DataBindings.Add("Text", dataGrid_LOP.DataSource, "MALOP");
+
+            txtTenLop.DataBindings.Clear();
+            txtTenLop.DataBindings.Add("Text", dataGrid_LOP.DataSource, "TENLOP");
+
+            // ComboBox
+            cboKhoi.DataBindings.Clear();
+            cboKhoi.DataBindings.Add("Text", dataGrid_LOP.DataSource, "KHOI");
+
+            cboMaNH.DataBindings.Clear();
+            cboMaNH.DataBindings.Add("Text", dataGrid_LOP.DataSource, "MANH");
+
+            cboMaGV.DataBindings.Clear();
+            cboMaGV.DataBindings.Add("Text", dataGrid_LOP.DataSource, "MAGVCHUNHIEM");
+        }
+
+        private void FrmQLLOP_Load(object sender, EventArgs e)
+        {
+            LayBang_LopHoc();
+            LayBang_NamHoc();
+            LayBang_GV();
+            HienThiDuLieu();
+        }
+
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            txtMaLop.Text = "";
+            txtTenLop.Text = "";
+            cboKhoi.Text = "";
+            cboMaNH.Text = "";
+            cboMaGV.Text = "";
+
+            txtMaLop.Focus();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            //Kiểm tra trùng mã lớp
+            string strKtra = "SELECT MALOP FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
+
+            if (doc_DL.Read())
+            {
+                MessageBox.Show("Mã lớp đã tồn tại!", "Thông báo");
+                txtMaLop.Focus();
+                doc_DL.Close();
+                return;
+            }
+            doc_DL.Close();
+
+            //Kiểm tra giáo viên đã chủ nhiệm lớp trong năm này chưa
+            string checkGV = "SELECT * FROM LOP WHERE MAGVCHUNHIEM = '" + cboMaGV.Text +
+                             "' AND MANH = '" + cboMaNH.Text + "'";
+            SqlCommand cmdGV = new SqlCommand(checkGV, kn.cnn);
+            SqlDataReader rd = cmdGV.ExecuteReader();
+
+            if (rd.Read())
+            {
+                MessageBox.Show("Giáo viên này đã chủ nhiệm lớp khác trong năm học này!", "Thông báo");
+                rd.Close();
+                return;
+            }
+            rd.Close();
+
+            //Thêm dữ liệu
+            string Sql_Luu = "INSERT INTO LOP VALUES (";
+            Sql_Luu += "'" + txtMaLop.Text + "', ";
+            Sql_Luu += "N'" + txtTenLop.Text + "', ";
+            Sql_Luu += "'" + cboKhoi.Text + "', ";
+            Sql_Luu += "'" + cboMaNH.Text + "', ";
+            Sql_Luu += "'" + cboMaGV.Text + "')";
+
+            MessageBox.Show(Sql_Luu);
+
+            kn.ThucThi(Sql_Luu);
+            LayBang_LopHoc();
+            HienThiDuLieu();
+
+            MessageBox.Show("Thêm lớp thành công!");
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMaLop.Text.Trim() == "")
+            {
+                MessageBox.Show("Chưa chọn lớp!");
+                return;
+            }
+
+            string Sql_sua = "UPDATE LOP SET ";
+            Sql_sua += "TENLOP = N'" + txtTenLop.Text + "', ";
+            Sql_sua += "KHOI = '" + cboKhoi.Text + "', ";
+            Sql_sua += "MANH = '" + cboMaNH.Text + "', ";
+            Sql_sua += "MAGVCHUNHIEM = '" + cboMaGV.Text + "'";
+            Sql_sua += " WHERE MALOP = '" + txtMaLop.Text + "'";
+
+            MessageBox.Show(Sql_sua);
+
+            kn.ThucThi(Sql_sua);
+            LayBang_LopHoc();
+            HienThiDuLieu();
+
+            MessageBox.Show("Sửa thành công!");
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaLop.Text.Trim() == "")
+            {
+                MessageBox.Show("Chưa chọn lớp!");
+                return;
+            }
+
+            string Sql_xoa = "DELETE FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
+            MessageBox.Show(Sql_xoa);
+
+            kn.ThucThi(Sql_xoa);
+            LayBang_LopHoc();
+            HienThiDuLieu();
+
+            MessageBox.Show("Xóa thành công!");
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            string sql = "";
+
+            //Chọn cả 2
+            if (opt_TenLop.Checked == true && opt_TenNam.Checked == true)
+            {
+                sql = string.Format(
+                    "EXEC SP_TIMKIEM_LOP N'{0}', N'{1}'",
+                    cboTK_TenLop.Text,
+                    cboTK_NamHoc.Text
+                );
+            }
+            //Chỉ tên lớp
+            else if (opt_TenLop.Checked == true)
+            {
+                sql = string.Format(
+                    "EXEC SP_TIMKIEM_LOP N'{0}', NULL",
+                    cboTK_TenLop.Text
+                );
+            }
+            //Chỉ năm học
+            else if (opt_TenNam.Checked == true)
+            {
+                sql = string.Format(
+                    "EXEC SP_TIMKIEM_LOP NULL, N'{0}'",
+                    cboTK_NamHoc.Text
+                );
+            }
+            //Không chọn gì
+            else
+            {
+                sql = "EXEC SP_TIMKIEM_LOP NULL, NULL";
+            }
+
+            //Thực thi
+            dta = kn.LayBang(sql);
+
+            //Hiển thị
+            dataGrid_LOP.DataSource = dta;
         }
     }
 }

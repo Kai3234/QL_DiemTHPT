@@ -149,6 +149,7 @@ namespace QL_DiemTHPT
 
                 MessageBox.Show(Sql_Luu);
                 kn.ThucThi(Sql_Luu);
+                LayBang_NamHoc();
                 HienThiDuLieu();
             }
         }
@@ -180,6 +181,11 @@ namespace QL_DiemTHPT
             LayBang_NamHoc();
             HienThiDuLieu();
             MessageBox.Show("Xóa năm học thành công!");
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

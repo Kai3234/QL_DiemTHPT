@@ -1,6 +1,6 @@
 ﻿namespace QL_DiemTHPT
 {
-    partial class FrmBCGIAOVIEN
+    partial class FrmBAOCAOGIAOVIEN
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.rptBAOCAO_GIAOVIEN1 = new QL_DiemTHPT.RptBAOCAO_GIAOVIEN();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,16 +42,17 @@
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // FrmBCGIAOVIEN
+            // FrmBAOCAOGIAOVIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FrmBCGIAOVIEN";
-            this.Text = "FrmBCGIAOVIEN";
-            this.Load += new System.EventHandler(this.FrmBCGIAOVIEN_Load);
+            this.Name = "FrmBAOCAOGIAOVIEN";
+            this.Text = "FrmBAOCAOGIAOVIEN";
+            this.Load += new System.EventHandler(this.FrmBAOCAOGIAOVIEN_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,5 +60,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private RptBAOCAO_GIAOVIEN rptBAOCAO_GIAOVIEN1;
     }
 }

@@ -136,7 +136,7 @@ namespace QL_DiemTHPT
             "SELECT MANH, TENNAM, MANH + ': ' + TENNAM AS HIENTHI FROM NAMHOC");
 
             cboBaoCaoNH.DataSource = dt;
-            cboBaoCaoNH.DisplayMember = "HIENTHI"; // show combined text
+            cboBaoCaoNH.DisplayMember = "HIENTHI"; 
             cboBaoCaoNH.ValueMember = "MANH";
             LayBang_GIAOVIEN();
 
@@ -310,11 +310,25 @@ namespace QL_DiemTHPT
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            FrmBCGIAOVIEN f = new FrmBCGIAOVIEN();
+            if (cboBaoCaoNH.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn năm học để tạo báo cáo!");
+                return;
+            }
+            string maNamHoc = cboBaoCaoNH.SelectedValue.ToString();
+            DataRowView row = (DataRowView)cboBaoCaoNH.SelectedItem;
+            string tenNam = row["TENNAM"].ToString();
+            string hocKy = cboBaoCaoHK.Text;
 
-            f.MaNamHoc = cboBaoCaoNH.Text; // truyền dữ liệu
+            if (hocKy == "")
+            {
+                hocKy = "Cả năm";
+            }    
 
-            f.ShowDialog();
+            FrmBAOCAOGIAOVIEN frm =
+                new FrmBAOCAOGIAOVIEN(maNamHoc, tenNam, hocKy);
+
+            frm.ShowDialog();
         }
     }
 }

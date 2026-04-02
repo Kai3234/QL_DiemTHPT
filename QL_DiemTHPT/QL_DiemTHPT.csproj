@@ -52,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmBCGIAOVIEN.cs">
+    <Compile Include="FrmBAOCAOGIAOVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBCGIAOVIEN.Designer.cs">
-      <DependentUpon>FrmBCGIAOVIEN.cs</DependentUpon>
+    <Compile Include="FrmBAOCAOGIAOVIEN.Designer.cs">
+      <DependentUpon>FrmBAOCAOGIAOVIEN.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLOGIN.cs">
       <SubType>Form</SubType>
@@ -172,9 +172,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DIEMTHPTDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RptBAOCAO_GIAOVIEN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBAOCAO_GIAOVIEN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TaiKhoanDangNhap.cs" />
-    <EmbeddedResource Include="FrmBCGIAOVIEN.resx">
-      <DependentUpon>FrmBCGIAOVIEN.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBAOCAOGIAOVIEN.resx">
+      <DependentUpon>FrmBAOCAOGIAOVIEN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLOGIN.resx">
       <DependentUpon>FrmLOGIN.cs</DependentUpon>
@@ -228,6 +234,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptBAOCAO_GIAOVIEN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBAOCAO_GIAOVIEN.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -285,6 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

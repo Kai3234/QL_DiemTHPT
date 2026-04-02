@@ -125,8 +125,9 @@
             // 
             // mnuPhanCong
             // 
+            this.mnuPhanCong.BackColor = System.Drawing.Color.GhostWhite;
             this.mnuPhanCong.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.mnuPhanCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            this.mnuPhanCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
             this.mnuPhanCong.Location = new System.Drawing.Point(3, 399);
             this.mnuPhanCong.Name = "mnuPhanCong";
             this.mnuPhanCong.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -216,9 +217,9 @@
             // 
             // mnuTrangChu
             // 
-            this.mnuTrangChu.BackColor = System.Drawing.Color.GhostWhite;
+            this.mnuTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.mnuTrangChu.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
-            this.mnuTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.mnuTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
             this.mnuTrangChu.Location = new System.Drawing.Point(3, 119);
             this.mnuTrangChu.Name = "mnuTrangChu";
             this.mnuTrangChu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);

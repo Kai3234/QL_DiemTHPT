@@ -182,10 +182,5 @@ namespace QL_DiemTHPT
             HienThiDuLieu();
             MessageBox.Show("Xóa năm học thành công!");
         }
-
-        private void btnBaoCao_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

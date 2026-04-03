@@ -53,6 +53,9 @@ namespace QL_DiemTHPT
             Application.Exit();
         }
 
-        
+        private void FrmMAINHS_Load(object sender, EventArgs e)
+        {
+            mnuTaiKhoan.Text = TaiKhoanDangNhap.MaNguoiDung;
+        }
     }
 }

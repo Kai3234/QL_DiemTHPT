@@ -133,7 +133,7 @@ namespace QL_DiemTHPT
             // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet.GIAOVIEN' table. You can move, or remove it, as needed.
             this.gIAOVIENTableAdapter.Fill(this.qL_DIEMTHPTDataSet.GIAOVIEN);
             DataTable dt = knn.LayBang(
-            "SELECT MANH, TENNAM, MANH + ': ' + TENNAM AS HIENTHI FROM NAMHOC");
+            "SELECT MANH, TENNAM, MANH + ' - ' + TENNAM AS HIENTHI FROM NAMHOC");
 
             cboBaoCaoNH.DataSource = dt;
             cboBaoCaoNH.DisplayMember = "HIENTHI"; 

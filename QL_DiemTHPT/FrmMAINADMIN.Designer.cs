@@ -47,9 +47,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -304,9 +304,31 @@
             this.panel3.Size = new System.Drawing.Size(1049, 345);
             this.panel3.TabIndex = 30;
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label5.Location = new System.Drawing.Point(58, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(915, 100);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "- Đồng thời xác định lớp của mỗi năm học có những học sinh nào và phân công giáo " +
+    "viên để giảng dạy môn cho các lớp";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label4.Location = new System.Drawing.Point(58, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(797, 100);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "- Bạn có thể quản lí bằng cách thêm, sửa xóa năm học, lớp, môn học, giáo viên, họ" +
+    "c sinh";
+            // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.label3.Location = new System.Drawing.Point(13, 9);
             this.label3.Name = "label3";
@@ -315,28 +337,6 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Chào mừng đến với trang quản trị";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label4.Location = new System.Drawing.Point(58, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(797, 100);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Bạn có thể quản lí bằng cách thêm, sửa xóa năm học, lớp, môn học, giáo viên, học " +
-    "sinh";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label5.Location = new System.Drawing.Point(58, 219);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(797, 100);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Đồng thời xác định lớp của mỗi năm học có những học sinh nào và phân công giáo vi" +
-    "ên để giảng dạy môn cho các lớp";
             // 
             // label15
             // 

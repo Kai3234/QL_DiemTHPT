@@ -531,7 +531,7 @@
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Size = new System.Drawing.Size(440, 41);
             this.btnBaoCao.TabIndex = 37;
-            this.btnBaoCao.Text = "Xuất báo cáo theo";
+            this.btnBaoCao.Text = "Xuất báo cáo thống kê giáo viên";
             this.btnBaoCao.UseVisualStyleBackColor = false;
             this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 

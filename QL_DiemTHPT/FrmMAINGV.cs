@@ -63,12 +63,9 @@ namespace QL_DiemTHPT
 
         private void FrmMAINGV_Load(object sender, EventArgs e)
         {
-
+            mnuTaiKhoan.Text = TaiKhoanDangNhap.MaNguoiDung;
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

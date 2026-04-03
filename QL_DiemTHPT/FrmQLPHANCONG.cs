@@ -92,5 +92,39 @@ namespace QL_DiemTHPT
         {
             Application.Exit();
         }
+
+        KETNOI_CSDL knn = new KETNOI_CSDL();
+
+        public void LayBang_PHANCONG()
+        {
+            DataTable dta = new DataTable();
+            dta = knn.LayBang("SELECT * FROM PHANCONG");
+            data_GIAOVIEN.DataSource = dta;
+            HienThiDuLieu();
+        }
+
+        public void HienThiDuLieu()
+        {
+            txtMa.DataBindings.Clear();
+            txtMa.DataBindings.Add("Text", data_GIAOVIEN.DataSource, "MAPC");
+
+
+
+        }
+
+        private void FrmQLPHANCONG_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet4.PHANCONG' table. You can move, or remove it, as needed.
+            this.pHANCONGTableAdapter.Fill(this.qL_DIEMTHPTDataSet4.PHANCONG);
+            // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet3.GIAOVIEN' table. You can move, or remove it, as needed.
+            this.gIAOVIENTableAdapter.Fill(this.qL_DIEMTHPTDataSet3.GIAOVIEN);
+            LayBang_PHANCONG();
+
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

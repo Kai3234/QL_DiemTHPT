@@ -58,6 +58,18 @@
     <Compile Include="FrmBCGIAOVIEN.Designer.cs">
       <DependentUpon>FrmBCGIAOVIEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmChuyenLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChuyenLop.Designer.cs">
+      <DependentUpon>FrmChuyenLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDOIMATKHAU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDOIMATKHAU.Designer.cs">
+      <DependentUpon>FrmDOIMATKHAU.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,9 +184,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DIEMTHPTDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TaiKhoanDangNhap.cs" />
     <EmbeddedResource Include="FrmBCGIAOVIEN.resx">
       <DependentUpon>FrmBCGIAOVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChuyenLop.resx">
+      <DependentUpon>FrmChuyenLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDOIMATKHAU.resx">
+      <DependentUpon>FrmDOIMATKHAU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLOGIN.resx">
       <DependentUpon>FrmLOGIN.cs</DependentUpon>
@@ -281,10 +324,68 @@
     <None Include="QL_DIEMTHPTDataSet2.xss">
       <DependentUpon>QL_DIEMTHPTDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="QL_DIEMTHPTDataSet3.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet3.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet4.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet4.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet5.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet5.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet6.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet6.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet7.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet7.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet7.xsd</DependentUpon>
+    </None>
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

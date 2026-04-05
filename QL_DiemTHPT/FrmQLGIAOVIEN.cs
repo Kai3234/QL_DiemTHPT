@@ -316,5 +316,15 @@ namespace QL_DiemTHPT
 
             f.ShowDialog();
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

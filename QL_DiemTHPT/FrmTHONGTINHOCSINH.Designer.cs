@@ -40,10 +40,26 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnDoiMatKhau = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtMaHS = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -185,6 +201,7 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "THÔNG TIN HỌC SINH";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -198,20 +215,211 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.txtMatKhau);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.txtDiaChi);
+            this.panel4.Controls.Add(this.cboGioiTinh);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.btnDoiMatKhau);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.dtpNgaySinh);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.txtHoTen);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.txtMaHS);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Location = new System.Drawing.Point(286, 116);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1121, 383);
+            this.panel4.TabIndex = 31;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label14.Location = new System.Drawing.Point(715, 165);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(254, 30);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Mật khẩu:";
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtMatKhau.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtMatKhau.Location = new System.Drawing.Point(719, 194);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(341, 30);
+            this.txtMatKhau.TabIndex = 39;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label13.Location = new System.Drawing.Point(714, 68);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(325, 30);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Địa chỉ:";
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtDiaChi.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtDiaChi.Location = new System.Drawing.Point(719, 100);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(341, 30);
+            this.txtDiaChi.TabIndex = 37;
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGioiTinh.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cboGioiTinh.Location = new System.Drawing.Point(334, 190);
+            this.cboGioiTinh.Margin = new System.Windows.Forms.Padding(2);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(304, 31);
+            this.cboGioiTinh.TabIndex = 28;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label9.Location = new System.Drawing.Point(330, 159);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 30);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Giới tính:";
+            // 
+            // btnDoiMatKhau
+            // 
+            this.btnDoiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnDoiMatKhau.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnDoiMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiMatKhau.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnDoiMatKhau.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(793, 314);
+            this.btnDoiMatKhau.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.Size = new System.Drawing.Size(267, 41);
+            this.btnDoiMatKhau.TabIndex = 33;
+            this.btnDoiMatKhau.Text = "Đổi Mật Khẩu";
+            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label10.Location = new System.Drawing.Point(32, 159);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 30);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Ngày sinh:";
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.CalendarFont = new System.Drawing.Font("Calibri", 14F);
+            this.dtpNgaySinh.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.dtpNgaySinh.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.dtpNgaySinh.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.dtpNgaySinh.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Calibri", 14F);
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(35, 191);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(237, 30);
+            this.dtpNgaySinh.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label12.Location = new System.Drawing.Point(330, 68);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(325, 30);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Họ tên:";
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtHoTen.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtHoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtHoTen.Location = new System.Drawing.Point(335, 100);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(303, 30);
+            this.txtHoTen.TabIndex = 29;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label15.Location = new System.Drawing.Point(31, 68);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(181, 30);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "Mã học sinh:";
+            // 
+            // txtMaHS
+            // 
+            this.txtMaHS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtMaHS.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtMaHS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtMaHS.Location = new System.Drawing.Point(36, 100);
+            this.txtMaHS.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaHS.Name = "txtMaHS";
+            this.txtMaHS.Size = new System.Drawing.Size(236, 30);
+            this.txtMaHS.TabIndex = 27;
+            this.txtMaHS.TextChanged += new System.EventHandler(this.txtMaGV_TextChanged);
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.label16.Location = new System.Drawing.Point(13, 9);
+            this.label16.Name = "label16";
+            this.label16.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label16.Size = new System.Drawing.Size(279, 40);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "Thông tin chi tiết:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FrmTHONGTINHOCSINH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1419, 713);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmTHONGTINHOCSINH";
             this.Text = "FrmTHONGTINHOCSINH";
+            this.Load += new System.EventHandler(this.FrmTHONGTINHOCSINH_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +438,20 @@
         private System.Windows.Forms.Label mnuTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.ComboBox cboGioiTinh;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnDoiMatKhau;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtMaHS;
+        private System.Windows.Forms.Label label16;
     }
 }

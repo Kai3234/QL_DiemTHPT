@@ -18,7 +18,7 @@ namespace QL_DiemTHPT
         public void KetNoi_Dulieu()
         {
             // Thay đổi chuỗi kết nối phù hợp với cơ sở dữ liệu của bạn
-            string strKetNoi = @"Data Source=DESKTOP-BOO9P8F\SQLEXPRESS;Initial Catalog=QL_DIEMTHPT;Integrated Security=True";
+            string strKetNoi = @"Data Source=DUNNE;Initial Catalog=QL_DIEMTHPT;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }
@@ -50,4 +50,3 @@ namespace QL_DiemTHPT
     }
 }
 
-// Data Source=DESKTOP-BOO9P8F\SQLEXPRESS;Initial Catalog=QL_DIEMTHPT;Integrated Security=True;Encrypt=True;Trust Server Certificate=True

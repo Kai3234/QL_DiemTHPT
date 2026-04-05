@@ -33,5 +33,16 @@ namespace QL_DiemTHPT.Properties {
                 return ((string)(this["QL_DIEMTHPTConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DUNNE;Initial Catalog=QL_DIEMTHPT;Integrated Security=True;TrustServe" +
+            "rCertificate=True")]
+        public string QL_DIEMTHPT {
+            get {
+                return ((string)(this["QL_DIEMTHPT"]));
+            }
+        }
     }
 }

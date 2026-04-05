@@ -324,7 +324,7 @@
             this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.txtMaGV);
             this.panel4.Controls.Add(this.label16);
-            this.panel4.Location = new System.Drawing.Point(286, 196);
+            this.panel4.Location = new System.Drawing.Point(286, 116);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1121, 383);
             this.panel4.TabIndex = 30;

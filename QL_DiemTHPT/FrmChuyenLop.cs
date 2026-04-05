@@ -15,14 +15,12 @@ namespace QL_DiemTHPT
         KETNOI_CSDL knn = new KETNOI_CSDL();
         public void LoadDuLieuDauVao()
         {
-            // Load DataGridView (Danh sách học sinh - lớp)
             string sqlGrid = "SELECT HOCSINH_LOP.MAHS, HOCSINH_LOP.MALOP, LOP.TENLOP " +
                              "FROM HOCSINH_LOP, LOP " +
                              "WHERE LOP.MALOP = HOCSINH_LOP.MALOP";
             DataTable dtGrid = knn.LayBang(sqlGrid);
             data_HOCSINH_LOP.DataSource = dtGrid;
 
-            // Load ComboBox Lớp Cũ (Chỉ lấy những lớp đang có trong bảng HOCSINH_LOP)
             string sqlLopCu = "SELECT DISTINCT HOCSINH_LOP.MALOP, LOP.TENLOP " +
                               "FROM HOCSINH_LOP, LOP WHERE LOP.MALOP = HOCSINH_LOP.MALOP";
             DataTable dtLopCu = knn.LayBang(sqlLopCu);
@@ -30,7 +28,6 @@ namespace QL_DiemTHPT
             cobLopCu.DisplayMember = "MALOP";
             cobLopCu.ValueMember = "TENLOP";
 
-            // Load ComboBox Lớp Mới (Tất cả các lớp trong bảng LOP)
             string sqlLopMoi = "SELECT MALOP, TENLOP FROM LOP";
             DataTable dtLopMoi = knn.LayBang(sqlLopMoi);
             cobLopMoi.DataSource = dtLopMoi;
@@ -64,7 +61,6 @@ namespace QL_DiemTHPT
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            // Lấy Mã lớp trực tiếp từ thuộc tính Text của ComboBox
             string oldCode = cobLopCu.Text.Trim();
             string newCode = cobLopMoi.Text.Trim();
 
@@ -80,7 +76,6 @@ namespace QL_DiemTHPT
                 return;
             }
 
-            // Xác nhận trước khi thực hiện cập nhật hàng loạt
             DialogResult dr = MessageBox.Show($"Bạn có chắc chắn muốn chuyển toàn bộ học sinh lớp {oldCode} sang lớp {newCode}?",
                                              "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -90,10 +85,7 @@ namespace QL_DiemTHPT
                 {
                     string qChangeLop = "UPDATE HOCSINH_LOP SET MALOP = '" + newCode + "' WHERE MALOP = '" + oldCode + "'";
                     knn.ThucThi(qChangeLop);
-
                     MessageBox.Show("Chuyển lớp thành công!", "Thông báo");
-
-                    // Load lại dữ liệu để cập nhật danh sách và ComboBox
                     LoadDuLieuDauVao();
                 }
                 catch (Exception ex)
@@ -144,6 +136,11 @@ namespace QL_DiemTHPT
             {
                 txtTenLopMoi.Text = cobLopMoi.SelectedValue.ToString();
             }
+        }
+
+        private void txtTenLopCu_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -106,9 +106,7 @@ namespace QL_DiemTHPT
             this.gIAOVIENTableAdapter1.Fill(this.qL_DIEMTHPTDataSet3.GIAOVIEN);
             cboGioiTinh.Items.Add("Nam");
             cboGioiTinh.Items.Add("Nữ");
-            // Nếu muốn ngăn người dùng tự gõ chữ khác vào:
             cboGioiTinh.DropDownStyle = ComboBoxStyle.DropDownList;
-            //HienThiDuLieu();
                 LayBangGiaoVien();
         }
 

@@ -58,6 +58,12 @@
     <Compile Include="FrmBAOCAOGIAOVIEN.Designer.cs">
       <DependentUpon>FrmBAOCAOGIAOVIEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBAOCAOPHANCONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBAOCAOPHANCONG.Designer.cs">
+      <DependentUpon>FrmBAOCAOPHANCONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,15 +188,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DIEMTHPTDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RptBAOCAO_GIAOVIEN.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RptBAOCAO_GIAOVIEN.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RptBAOCAO_PHANCONG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBAOCAO_PHANCONG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TaiKhoanDangNhap.cs" />
     <EmbeddedResource Include="FrmBAOCAOGIAOVIEN.resx">
       <DependentUpon>FrmBAOCAOGIAOVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBAOCAOPHANCONG.resx">
+      <DependentUpon>FrmBAOCAOPHANCONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLOGIN.resx">
       <DependentUpon>FrmLOGIN.cs</DependentUpon>
@@ -248,6 +268,10 @@
     <EmbeddedResource Include="RptBAOCAO_GIAOVIEN.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptBAOCAO_GIAOVIEN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptBAOCAO_PHANCONG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBAOCAO_PHANCONG.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -322,6 +346,17 @@
     </None>
     <None Include="QL_DIEMTHPTDataSet4.xss">
       <DependentUpon>QL_DIEMTHPTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet5.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet5.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Resources\logo.png" />
   </ItemGroup>

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -54,6 +54,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtTenMon = new System.Windows.Forms.TextBox();
+            this.cboMaGV = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.optLocLopNH = new System.Windows.Forms.CheckBox();
+            this.cboLocLopNH = new System.Windows.Forms.ComboBox();
+            this.cboHocKy = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtNamHoc = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtTenLop = new System.Windows.Forms.TextBox();
+            this.cboMaLop = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cboMaMon = new System.Windows.Forms.ComboBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -62,78 +77,69 @@
             this.txtMa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnTao = new System.Windows.Forms.Button();
-            this.cboMaMon = new System.Windows.Forms.ComboBox();
-            this.cboMaLop = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtTenLop = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtNamHoc = new System.Windows.Forms.TextBox();
-            this.cboHocKy = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.opt_TenLop = new System.Windows.Forms.CheckBox();
-            this.cboLocNamHoc = new System.Windows.Forms.ComboBox();
-            this.cboMaGV = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.data_GIAOVIEN = new System.Windows.Forms.DataGridView();
-            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qL_DIEMTHPTDataSet3 = new QL_DiemTHPT.QL_DIEMTHPTDataSet3();
-            this.gIAOVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gIAOVIENTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSet3TableAdapters.GIAOVIENTableAdapter();
-            this.qL_DIEMTHPTDataSet4 = new QL_DiemTHPT.QL_DIEMTHPTDataSet4();
-            this.pHANCONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pHANCONGTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSet4TableAdapters.PHANCONGTableAdapter();
+            this.data_PHANCONG = new System.Windows.Forms.DataGridView();
             this.mAPCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mAMHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mAGVDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hOCKYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mAMHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mALOPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.btnDatLai = new System.Windows.Forms.Button();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.tENLOPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tENNAMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOCKYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vIEWCHITIETPHANCONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_DIEMTHPTDataSet5 = new QL_DiemTHPT.QL_DIEMTHPTDataSet5();
+            this.pHANCONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_DIEMTHPTDataSet4 = new QL_DiemTHPT.QL_DIEMTHPTDataSet4();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.data_GIAOVIEN = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mAGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nGAYSINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gIOITINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dIACHIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.gIAOVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_DIEMTHPTDataSet3 = new QL_DiemTHPT.QL_DIEMTHPTDataSet3();
+            this.label10 = new System.Windows.Forms.Label();
+            this.gIAOVIENTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSet3TableAdapters.GIAOVIENTableAdapter();
+            this.pHANCONGTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSet4TableAdapters.PHANCONGTableAdapter();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.optMaGV = new System.Windows.Forms.CheckBox();
+            this.btnDatLai = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.optTenLop = new System.Windows.Forms.CheckBox();
+            this.optHocKy = new System.Windows.Forms.CheckBox();
+            this.cboTimHocKy = new System.Windows.Forms.ComboBox();
+            this.optTenMonHoc = new System.Windows.Forms.CheckBox();
+            this.optTenNamHoc = new System.Windows.Forms.CheckBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.cboBaoCaoNH = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtTenMon = new System.Windows.Forms.TextBox();
+            this.cboBaoCaoGV = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.vIEW_CHITIET_PHANCONGTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSet5TableAdapters.VIEW_CHITIET_PHANCONGTableAdapter();
+            this.txtTimTenNam = new System.Windows.Forms.TextBox();
+            this.txtTimTenLop = new System.Windows.Forms.TextBox();
+            this.txtTimTenMon = new System.Windows.Forms.TextBox();
+            this.txtTimMaGV = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_GIAOVIEN)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_PHANCONG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIEWCHITIETPHANCONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANCONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet4)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_GIAOVIEN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet3)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
@@ -381,8 +387,8 @@
             this.panel4.Controls.Add(this.txtTenMon);
             this.panel4.Controls.Add(this.cboMaGV);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.opt_TenLop);
-            this.panel4.Controls.Add(this.cboLocNamHoc);
+            this.panel4.Controls.Add(this.optLocLopNH);
+            this.panel4.Controls.Add(this.cboLocLopNH);
             this.panel4.Controls.Add(this.cboHocKy);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label17);
@@ -405,6 +411,184 @@
             this.panel4.Size = new System.Drawing.Size(1049, 307);
             this.panel4.TabIndex = 31;
             // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label15.Location = new System.Drawing.Point(491, 57);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 30);
+            this.label15.TabIndex = 163;
+            this.label15.Text = "Môn học:";
+            // 
+            // txtTenMon
+            // 
+            this.txtTenMon.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtTenMon.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtTenMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtTenMon.Location = new System.Drawing.Point(496, 89);
+            this.txtTenMon.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenMon.Name = "txtTenMon";
+            this.txtTenMon.ReadOnly = true;
+            this.txtTenMon.Size = new System.Drawing.Size(219, 30);
+            this.txtTenMon.TabIndex = 162;
+            // 
+            // cboMaGV
+            // 
+            this.cboMaGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboMaGV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMaGV.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboMaGV.FormattingEnabled = true;
+            this.cboMaGV.Location = new System.Drawing.Point(752, 87);
+            this.cboMaGV.Margin = new System.Windows.Forms.Padding(2);
+            this.cboMaGV.Name = "cboMaGV";
+            this.cboMaGV.Size = new System.Drawing.Size(160, 31);
+            this.cboMaGV.TabIndex = 161;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label14.Location = new System.Drawing.Point(748, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(181, 30);
+            this.label14.TabIndex = 160;
+            this.label14.Text = "Mã giáo viên:";
+            // 
+            // optLocLopNH
+            // 
+            this.optLocLopNH.AutoSize = true;
+            this.optLocLopNH.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optLocLopNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optLocLopNH.Location = new System.Drawing.Point(29, 139);
+            this.optLocLopNH.Margin = new System.Windows.Forms.Padding(2);
+            this.optLocLopNH.Name = "optLocLopNH";
+            this.optLocLopNH.Size = new System.Drawing.Size(226, 27);
+            this.optLocLopNH.TabIndex = 159;
+            this.optLocLopNH.Text = "Lọc mã lớp theo năm học:";
+            this.optLocLopNH.UseVisualStyleBackColor = true;
+            this.optLocLopNH.CheckedChanged += new System.EventHandler(this.optLocLopNH_CheckedChanged);
+            // 
+            // cboLocLopNH
+            // 
+            this.cboLocLopNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboLocLopNH.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.cboLocLopNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboLocLopNH.FormattingEnabled = true;
+            this.cboLocLopNH.Location = new System.Drawing.Point(29, 171);
+            this.cboLocLopNH.Margin = new System.Windows.Forms.Padding(2);
+            this.cboLocLopNH.Name = "cboLocLopNH";
+            this.cboLocLopNH.Size = new System.Drawing.Size(250, 31);
+            this.cboLocLopNH.TabIndex = 158;
+            this.cboLocLopNH.SelectedIndexChanged += new System.EventHandler(this.cboLocLopNH_SelectedIndexChanged);
+            // 
+            // cboHocKy
+            // 
+            this.cboHocKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboHocKy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHocKy.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboHocKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboHocKy.FormattingEnabled = true;
+            this.cboHocKy.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cboHocKy.Location = new System.Drawing.Point(936, 171);
+            this.cboHocKy.Margin = new System.Windows.Forms.Padding(2);
+            this.cboHocKy.Name = "cboHocKy";
+            this.cboHocKy.Size = new System.Drawing.Size(66, 31);
+            this.cboHocKy.TabIndex = 53;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label7.Location = new System.Drawing.Point(932, 139);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 30);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Học kỳ:";
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label17.Location = new System.Drawing.Point(770, 139);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 30);
+            this.label17.TabIndex = 51;
+            this.label17.Text = "Năm học:";
+            // 
+            // txtNamHoc
+            // 
+            this.txtNamHoc.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtNamHoc.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtNamHoc.Location = new System.Drawing.Point(775, 171);
+            this.txtNamHoc.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNamHoc.Name = "txtNamHoc";
+            this.txtNamHoc.ReadOnly = true;
+            this.txtNamHoc.Size = new System.Drawing.Size(122, 30);
+            this.txtNamHoc.TabIndex = 50;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label13.Location = new System.Drawing.Point(615, 139);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(100, 30);
+            this.label13.TabIndex = 47;
+            this.label13.Text = "Tên lớp:";
+            // 
+            // txtTenLop
+            // 
+            this.txtTenLop.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtTenLop.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtTenLop.Location = new System.Drawing.Point(620, 171);
+            this.txtTenLop.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenLop.Name = "txtTenLop";
+            this.txtTenLop.ReadOnly = true;
+            this.txtTenLop.Size = new System.Drawing.Size(122, 30);
+            this.txtTenLop.TabIndex = 46;
+            // 
+            // cboMaLop
+            // 
+            this.cboMaLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboMaLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMaLop.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboMaLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboMaLop.FormattingEnabled = true;
+            this.cboMaLop.Location = new System.Drawing.Point(433, 171);
+            this.cboMaLop.Margin = new System.Windows.Forms.Padding(2);
+            this.cboMaLop.Name = "cboMaLop";
+            this.cboMaLop.Size = new System.Drawing.Size(160, 31);
+            this.cboMaLop.TabIndex = 45;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label8.Location = new System.Drawing.Point(429, 139);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(181, 30);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Mã lớp:";
+            // 
+            // cboMaMon
+            // 
+            this.cboMaMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboMaMon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMaMon.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboMaMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboMaMon.FormattingEnabled = true;
+            this.cboMaMon.Location = new System.Drawing.Point(299, 88);
+            this.cboMaMon.Margin = new System.Windows.Forms.Padding(2);
+            this.cboMaMon.Name = "cboMaMon";
+            this.cboMaMon.Size = new System.Drawing.Size(160, 31);
+            this.cboMaMon.TabIndex = 41;
+            // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
@@ -419,6 +603,7 @@
             this.btnXoa.TabIndex = 35;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -434,6 +619,7 @@
             this.btnSua.TabIndex = 34;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -449,6 +635,7 @@
             this.btnLuu.TabIndex = 33;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label6
             // 
@@ -507,319 +694,63 @@
             this.btnTao.TabIndex = 26;
             this.btnTao.Text = "Tạo mới";
             this.btnTao.UseVisualStyleBackColor = false;
-            // 
-            // cboMaMon
-            // 
-            this.cboMaMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboMaMon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMaMon.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cboMaMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboMaMon.FormattingEnabled = true;
-            this.cboMaMon.Location = new System.Drawing.Point(299, 88);
-            this.cboMaMon.Margin = new System.Windows.Forms.Padding(2);
-            this.cboMaMon.Name = "cboMaMon";
-            this.cboMaMon.Size = new System.Drawing.Size(160, 31);
-            this.cboMaMon.TabIndex = 41;
-            // 
-            // cboMaLop
-            // 
-            this.cboMaLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboMaLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMaLop.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cboMaLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboMaLop.FormattingEnabled = true;
-            this.cboMaLop.Location = new System.Drawing.Point(336, 172);
-            this.cboMaLop.Margin = new System.Windows.Forms.Padding(2);
-            this.cboMaLop.Name = "cboMaLop";
-            this.cboMaLop.Size = new System.Drawing.Size(160, 31);
-            this.cboMaLop.TabIndex = 45;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label8.Location = new System.Drawing.Point(332, 140);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(181, 30);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "Mã lớp:";
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label13.Location = new System.Drawing.Point(518, 140);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 30);
-            this.label13.TabIndex = 47;
-            this.label13.Text = "Tên lớp:";
-            // 
-            // txtTenLop
-            // 
-            this.txtTenLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.txtTenLop.Font = new System.Drawing.Font("Calibri", 14F);
-            this.txtTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtTenLop.Location = new System.Drawing.Point(523, 172);
-            this.txtTenLop.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTenLop.Name = "txtTenLop";
-            this.txtTenLop.ReadOnly = true;
-            this.txtTenLop.Size = new System.Drawing.Size(122, 30);
-            this.txtTenLop.TabIndex = 46;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label17.Location = new System.Drawing.Point(673, 141);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 30);
-            this.label17.TabIndex = 51;
-            this.label17.Text = "Năm học:";
-            // 
-            // txtNamHoc
-            // 
-            this.txtNamHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.txtNamHoc.Font = new System.Drawing.Font("Calibri", 14F);
-            this.txtNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtNamHoc.Location = new System.Drawing.Point(678, 173);
-            this.txtNamHoc.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNamHoc.Name = "txtNamHoc";
-            this.txtNamHoc.ReadOnly = true;
-            this.txtNamHoc.Size = new System.Drawing.Size(122, 30);
-            this.txtNamHoc.TabIndex = 50;
-            // 
-            // cboHocKy
-            // 
-            this.cboHocKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboHocKy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboHocKy.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cboHocKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboHocKy.FormattingEnabled = true;
-            this.cboHocKy.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cboHocKy.Location = new System.Drawing.Point(849, 173);
-            this.cboHocKy.Margin = new System.Windows.Forms.Padding(2);
-            this.cboHocKy.Name = "cboHocKy";
-            this.cboHocKy.Size = new System.Drawing.Size(66, 31);
-            this.cboHocKy.TabIndex = 53;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label7.Location = new System.Drawing.Point(845, 141);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 30);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "Học kỳ:";
-            // 
-            // opt_TenLop
-            // 
-            this.opt_TenLop.AutoSize = true;
-            this.opt_TenLop.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.opt_TenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.opt_TenLop.Location = new System.Drawing.Point(29, 139);
-            this.opt_TenLop.Margin = new System.Windows.Forms.Padding(2);
-            this.opt_TenLop.Name = "opt_TenLop";
-            this.opt_TenLop.Size = new System.Drawing.Size(268, 27);
-            this.opt_TenLop.TabIndex = 159;
-            this.opt_TenLop.Text = "Lọc chọn mã lớp theo năm học:";
-            this.opt_TenLop.UseVisualStyleBackColor = true;
-            // 
-            // cboLocNamHoc
-            // 
-            this.cboLocNamHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboLocNamHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.cboLocNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboLocNamHoc.FormattingEnabled = true;
-            this.cboLocNamHoc.Location = new System.Drawing.Point(29, 171);
-            this.cboLocNamHoc.Margin = new System.Windows.Forms.Padding(2);
-            this.cboLocNamHoc.Name = "cboLocNamHoc";
-            this.cboLocNamHoc.Size = new System.Drawing.Size(173, 31);
-            this.cboLocNamHoc.TabIndex = 158;
-            // 
-            // cboMaGV
-            // 
-            this.cboMaGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboMaGV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMaGV.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cboMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboMaGV.FormattingEnabled = true;
-            this.cboMaGV.Location = new System.Drawing.Point(655, 87);
-            this.cboMaGV.Margin = new System.Windows.Forms.Padding(2);
-            this.cboMaGV.Name = "cboMaGV";
-            this.cboMaGV.Size = new System.Drawing.Size(160, 31);
-            this.cboMaGV.TabIndex = 161;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label14.Location = new System.Drawing.Point(651, 55);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(181, 30);
-            this.label14.TabIndex = 160;
-            this.label14.Text = "Mã giáo viên:";
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.data_GIAOVIEN);
+            this.panel5.Controls.Add(this.data_PHANCONG);
             this.panel5.Location = new System.Drawing.Point(304, 649);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1049, 302);
             this.panel5.TabIndex = 43;
             // 
-            // data_GIAOVIEN
+            // data_PHANCONG
             // 
-            this.data_GIAOVIEN.AutoGenerateColumns = false;
-            this.data_GIAOVIEN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.data_GIAOVIEN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.data_GIAOVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_GIAOVIEN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.data_GIAOVIEN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_GIAOVIEN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MATKHAU,
+            this.data_PHANCONG.AutoGenerateColumns = false;
+            this.data_PHANCONG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_PHANCONG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.data_PHANCONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle61.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_PHANCONG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle61;
+            this.data_PHANCONG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_PHANCONG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mAPCDataGridViewTextBoxColumn,
-            this.mAMHDataGridViewTextBoxColumn,
             this.mAGVDataGridViewTextBoxColumn1,
-            this.hOCKYDataGridViewTextBoxColumn,
-            this.mALOPDataGridViewTextBoxColumn});
-            this.data_GIAOVIEN.DataSource = this.pHANCONGBindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_GIAOVIEN.DefaultCellStyle = dataGridViewCellStyle8;
-            this.data_GIAOVIEN.EnableHeadersVisualStyles = false;
-            this.data_GIAOVIEN.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.data_GIAOVIEN.Location = new System.Drawing.Point(19, 16);
-            this.data_GIAOVIEN.Name = "data_GIAOVIEN";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_GIAOVIEN.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.data_GIAOVIEN.Size = new System.Drawing.Size(1008, 269);
-            this.data_GIAOVIEN.TabIndex = 0;
-            // 
-            // MATKHAU
-            // 
-            this.MATKHAU.DataPropertyName = "MATKHAU";
-            this.MATKHAU.HeaderText = "MATKHAU";
-            this.MATKHAU.Name = "MATKHAU";
-            this.MATKHAU.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(304, 112);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1049, 200);
-            this.panel3.TabIndex = 42;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.label10.Location = new System.Drawing.Point(13, 6);
-            this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(279, 40);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Thông tin giáo viên:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.mAGVDataGridViewTextBoxColumn,
-            this.hOTENDataGridViewTextBoxColumn,
-            this.nGAYSINHDataGridViewTextBoxColumn,
-            this.gIOITINHDataGridViewTextBoxColumn,
-            this.dIACHIDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.gIAOVIENBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.dataGridView1.Location = new System.Drawing.Point(22, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView1.Size = new System.Drawing.Size(1004, 134);
-            this.dataGridView1.TabIndex = 37;
-            // 
-            // qL_DIEMTHPTDataSet3
-            // 
-            this.qL_DIEMTHPTDataSet3.DataSetName = "QL_DIEMTHPTDataSet3";
-            this.qL_DIEMTHPTDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gIAOVIENBindingSource
-            // 
-            this.gIAOVIENBindingSource.DataMember = "GIAOVIEN";
-            this.gIAOVIENBindingSource.DataSource = this.qL_DIEMTHPTDataSet3;
-            // 
-            // gIAOVIENTableAdapter
-            // 
-            this.gIAOVIENTableAdapter.ClearBeforeFill = true;
-            // 
-            // qL_DIEMTHPTDataSet4
-            // 
-            this.qL_DIEMTHPTDataSet4.DataSetName = "QL_DIEMTHPTDataSet4";
-            this.qL_DIEMTHPTDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pHANCONGBindingSource
-            // 
-            this.pHANCONGBindingSource.DataMember = "PHANCONG";
-            this.pHANCONGBindingSource.DataSource = this.qL_DIEMTHPTDataSet4;
-            // 
-            // pHANCONGTableAdapter
-            // 
-            this.pHANCONGTableAdapter.ClearBeforeFill = true;
+            this.mAMHDataGridViewTextBoxColumn,
+            this.mALOPDataGridViewTextBoxColumn,
+            this.tENLOPDataGridViewTextBoxColumn,
+            this.tENNAMDataGridViewTextBoxColumn,
+            this.hOCKYDataGridViewTextBoxColumn});
+            this.data_PHANCONG.DataSource = this.vIEWCHITIETPHANCONGBindingSource;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_PHANCONG.DefaultCellStyle = dataGridViewCellStyle62;
+            this.data_PHANCONG.EnableHeadersVisualStyles = false;
+            this.data_PHANCONG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.data_PHANCONG.Location = new System.Drawing.Point(19, 16);
+            this.data_PHANCONG.Name = "data_PHANCONG";
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle63.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle63.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_PHANCONG.RowHeadersDefaultCellStyle = dataGridViewCellStyle63;
+            this.data_PHANCONG.Size = new System.Drawing.Size(1008, 269);
+            this.data_PHANCONG.TabIndex = 0;
             // 
             // mAPCDataGridViewTextBoxColumn
             // 
@@ -827,23 +758,17 @@
             this.mAPCDataGridViewTextBoxColumn.HeaderText = "MAPC";
             this.mAPCDataGridViewTextBoxColumn.Name = "mAPCDataGridViewTextBoxColumn";
             // 
-            // mAMHDataGridViewTextBoxColumn
-            // 
-            this.mAMHDataGridViewTextBoxColumn.DataPropertyName = "MAMH";
-            this.mAMHDataGridViewTextBoxColumn.HeaderText = "MAMH";
-            this.mAMHDataGridViewTextBoxColumn.Name = "mAMHDataGridViewTextBoxColumn";
-            // 
             // mAGVDataGridViewTextBoxColumn1
             // 
             this.mAGVDataGridViewTextBoxColumn1.DataPropertyName = "MAGV";
             this.mAGVDataGridViewTextBoxColumn1.HeaderText = "MAGV";
             this.mAGVDataGridViewTextBoxColumn1.Name = "mAGVDataGridViewTextBoxColumn1";
             // 
-            // hOCKYDataGridViewTextBoxColumn
+            // mAMHDataGridViewTextBoxColumn
             // 
-            this.hOCKYDataGridViewTextBoxColumn.DataPropertyName = "HOCKY";
-            this.hOCKYDataGridViewTextBoxColumn.HeaderText = "HOCKY";
-            this.hOCKYDataGridViewTextBoxColumn.Name = "hOCKYDataGridViewTextBoxColumn";
+            this.mAMHDataGridViewTextBoxColumn.DataPropertyName = "MAMH";
+            this.mAMHDataGridViewTextBoxColumn.HeaderText = "MAMH";
+            this.mAMHDataGridViewTextBoxColumn.Name = "mAMHDataGridViewTextBoxColumn";
             // 
             // mALOPDataGridViewTextBoxColumn
             // 
@@ -851,235 +776,100 @@
             this.mALOPDataGridViewTextBoxColumn.HeaderText = "MALOP";
             this.mALOPDataGridViewTextBoxColumn.Name = "mALOPDataGridViewTextBoxColumn";
             // 
-            // panel6
+            // tENLOPDataGridViewTextBoxColumn
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.checkBox5);
-            this.panel6.Controls.Add(this.comboBox9);
-            this.panel6.Controls.Add(this.btnDatLai);
-            this.panel6.Controls.Add(this.btnTimKiem);
-            this.panel6.Controls.Add(this.checkBox4);
-            this.panel6.Controls.Add(this.comboBox5);
-            this.panel6.Controls.Add(this.checkBox3);
-            this.panel6.Controls.Add(this.comboBox7);
-            this.panel6.Controls.Add(this.checkBox2);
-            this.panel6.Controls.Add(this.comboBox8);
-            this.panel6.Controls.Add(this.checkBox1);
-            this.panel6.Controls.Add(this.comboBox6);
-            this.panel6.Controls.Add(this.label20);
-            this.panel6.Location = new System.Drawing.Point(1369, 461);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(415, 490);
-            this.panel6.TabIndex = 163;
+            this.tENLOPDataGridViewTextBoxColumn.DataPropertyName = "TENLOP";
+            this.tENLOPDataGridViewTextBoxColumn.HeaderText = "TENLOP";
+            this.tENLOPDataGridViewTextBoxColumn.Name = "tENLOPDataGridViewTextBoxColumn";
             // 
-            // checkBox3
+            // tENNAMDataGridViewTextBoxColumn
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.checkBox3.Location = new System.Drawing.Point(39, 210);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(86, 27);
-            this.checkBox3.TabIndex = 167;
-            this.checkBox3.Text = "Học kỳ:";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.tENNAMDataGridViewTextBoxColumn.DataPropertyName = "TENNAM";
+            this.tENNAMDataGridViewTextBoxColumn.HeaderText = "TENNAM";
+            this.tENNAMDataGridViewTextBoxColumn.Name = "tENNAMDataGridViewTextBoxColumn";
             // 
-            // comboBox7
+            // hOCKYDataGridViewTextBoxColumn
             // 
-            this.comboBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.comboBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(39, 242);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(173, 31);
-            this.comboBox7.TabIndex = 166;
+            this.hOCKYDataGridViewTextBoxColumn.DataPropertyName = "HOCKY";
+            this.hOCKYDataGridViewTextBoxColumn.HeaderText = "HOCKY";
+            this.hOCKYDataGridViewTextBoxColumn.Name = "hOCKYDataGridViewTextBoxColumn";
             // 
-            // checkBox2
+            // vIEWCHITIETPHANCONGBindingSource
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.checkBox2.Location = new System.Drawing.Point(39, 290);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 27);
-            this.checkBox2.TabIndex = 165;
-            this.checkBox2.Text = "Môn học:";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.vIEWCHITIETPHANCONGBindingSource.DataMember = "VIEW_CHITIET_PHANCONG";
+            this.vIEWCHITIETPHANCONGBindingSource.DataSource = this.qL_DIEMTHPTDataSet5;
             // 
-            // comboBox8
+            // qL_DIEMTHPTDataSet5
             // 
-            this.comboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.comboBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(39, 322);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(173, 31);
-            this.comboBox8.TabIndex = 164;
+            this.qL_DIEMTHPTDataSet5.DataSetName = "QL_DIEMTHPTDataSet5";
+            this.qL_DIEMTHPTDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // checkBox1
+            // pHANCONGBindingSource
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.checkBox1.Location = new System.Drawing.Point(39, 61);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 27);
-            this.checkBox1.TabIndex = 163;
-            this.checkBox1.Text = "Năm học:";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.pHANCONGBindingSource.DataMember = "PHANCONG";
+            this.pHANCONGBindingSource.DataSource = this.qL_DIEMTHPTDataSet4;
             // 
-            // comboBox6
+            // qL_DIEMTHPTDataSet4
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.comboBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(39, 93);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(173, 31);
-            this.comboBox6.TabIndex = 162;
+            this.qL_DIEMTHPTDataSet4.DataSetName = "QL_DIEMTHPTDataSet4";
+            this.qL_DIEMTHPTDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label20
+            // panel3
             // 
-            this.label20.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.label20.Location = new System.Drawing.Point(13, 9);
-            this.label20.Name = "label20";
-            this.label20.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label20.Size = new System.Drawing.Size(279, 40);
-            this.label20.TabIndex = 24;
-            this.label20.Text = "Tìm kiếm:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.data_GIAOVIEN);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Location = new System.Drawing.Point(304, 112);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1049, 200);
+            this.panel3.TabIndex = 42;
             // 
-            // checkBox4
+            // data_GIAOVIEN
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.checkBox4.Location = new System.Drawing.Point(39, 130);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(89, 27);
-            this.checkBox4.TabIndex = 169;
-            this.checkBox4.Text = "Tên lớp:";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.comboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(39, 162);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(173, 31);
-            this.comboBox5.TabIndex = 168;
-            // 
-            // btnDatLai
-            // 
-            this.btnDatLai.BackColor = System.Drawing.Color.White;
-            this.btnDatLai.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnDatLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatLai.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.btnDatLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.btnDatLai.Location = new System.Drawing.Point(174, 11);
-            this.btnDatLai.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDatLai.Name = "btnDatLai";
-            this.btnDatLai.Size = new System.Drawing.Size(109, 42);
-            this.btnDatLai.TabIndex = 171;
-            this.btnDatLai.Text = "Đặt lại";
-            this.btnDatLai.UseVisualStyleBackColor = false;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnTimKiem.FlatAppearance.BorderSize = 0;
-            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiem.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnTimKiem.Location = new System.Drawing.Point(287, 11);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(109, 42);
-            this.btnTimKiem.TabIndex = 170;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.checkBox5.Location = new System.Drawing.Point(39, 374);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(105, 27);
-            this.checkBox5.TabIndex = 173;
-            this.checkBox5.Text = "Giáo viên:";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox9.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.comboBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(39, 406);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(334, 31);
-            this.comboBox9.TabIndex = 172;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.comboBox11);
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.comboBox10);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.btnBaoCao);
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(1369, 112);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(415, 332);
-            this.panel7.TabIndex = 174;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.label3.Location = new System.Drawing.Point(13, 9);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(383, 88);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Báo cáo phân công dạy của giáo viên:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnBaoCao
-            // 
-            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.btnBaoCao.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnBaoCao.Location = new System.Drawing.Point(242, 268);
-            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(154, 41);
-            this.btnBaoCao.TabIndex = 38;
-            this.btnBaoCao.Text = "Xuất báo cáo";
-            this.btnBaoCao.UseVisualStyleBackColor = false;
-            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            this.data_GIAOVIEN.AutoGenerateColumns = false;
+            this.data_GIAOVIEN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.data_GIAOVIEN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.data_GIAOVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle64.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_GIAOVIEN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle64;
+            this.data_GIAOVIEN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_GIAOVIEN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.mAGVDataGridViewTextBoxColumn,
+            this.hOTENDataGridViewTextBoxColumn,
+            this.nGAYSINHDataGridViewTextBoxColumn,
+            this.gIOITINHDataGridViewTextBoxColumn,
+            this.dIACHIDataGridViewTextBoxColumn});
+            this.data_GIAOVIEN.DataSource = this.gIAOVIENBindingSource;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle65.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_GIAOVIEN.DefaultCellStyle = dataGridViewCellStyle65;
+            this.data_GIAOVIEN.EnableHeadersVisualStyles = false;
+            this.data_GIAOVIEN.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.data_GIAOVIEN.Location = new System.Drawing.Point(22, 49);
+            this.data_GIAOVIEN.Name = "data_GIAOVIEN";
+            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle66.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_GIAOVIEN.RowHeadersDefaultCellStyle = dataGridViewCellStyle66;
+            this.data_GIAOVIEN.Size = new System.Drawing.Size(1004, 134);
+            this.data_GIAOVIEN.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -1118,41 +908,208 @@
             this.dIACHIDataGridViewTextBoxColumn.HeaderText = "DIACHI";
             this.dIACHIDataGridViewTextBoxColumn.Name = "dIACHIDataGridViewTextBoxColumn";
             // 
-            // comboBox10
+            // gIAOVIENBindingSource
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.Font = new System.Drawing.Font("Calibri", 14F);
-            this.comboBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(19, 132);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(377, 31);
-            this.comboBox10.TabIndex = 163;
+            this.gIAOVIENBindingSource.DataMember = "GIAOVIEN";
+            this.gIAOVIENBindingSource.DataSource = this.qL_DIEMTHPTDataSet3;
             // 
-            // label9
+            // qL_DIEMTHPTDataSet3
             // 
-            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label9.Location = new System.Drawing.Point(15, 100);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 30);
-            this.label9.TabIndex = 162;
-            this.label9.Text = "Giáo viên:";
+            this.qL_DIEMTHPTDataSet3.DataSetName = "QL_DIEMTHPTDataSet3";
+            this.qL_DIEMTHPTDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // comboBox11
+            // label10
             // 
-            this.comboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.Font = new System.Drawing.Font("Calibri", 14F);
-            this.comboBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(19, 213);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(377, 31);
-            this.comboBox11.TabIndex = 163;
+            this.label10.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.label10.Location = new System.Drawing.Point(13, 6);
+            this.label10.Name = "label10";
+            this.label10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label10.Size = new System.Drawing.Size(279, 40);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Thông tin giáo viên:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // gIAOVIENTableAdapter
+            // 
+            this.gIAOVIENTableAdapter.ClearBeforeFill = true;
+            // 
+            // pHANCONGTableAdapter
+            // 
+            this.pHANCONGTableAdapter.ClearBeforeFill = true;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.txtTimMaGV);
+            this.panel6.Controls.Add(this.txtTimTenMon);
+            this.panel6.Controls.Add(this.txtTimTenLop);
+            this.panel6.Controls.Add(this.txtTimTenNam);
+            this.panel6.Controls.Add(this.optMaGV);
+            this.panel6.Controls.Add(this.btnDatLai);
+            this.panel6.Controls.Add(this.btnTimKiem);
+            this.panel6.Controls.Add(this.optTenLop);
+            this.panel6.Controls.Add(this.optHocKy);
+            this.panel6.Controls.Add(this.cboTimHocKy);
+            this.panel6.Controls.Add(this.optTenMonHoc);
+            this.panel6.Controls.Add(this.optTenNamHoc);
+            this.panel6.Controls.Add(this.label20);
+            this.panel6.Location = new System.Drawing.Point(1369, 461);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(415, 490);
+            this.panel6.TabIndex = 163;
+            // 
+            // optMaGV
+            // 
+            this.optMaGV.AutoSize = true;
+            this.optMaGV.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optMaGV.Location = new System.Drawing.Point(39, 390);
+            this.optMaGV.Margin = new System.Windows.Forms.Padding(2);
+            this.optMaGV.Name = "optMaGV";
+            this.optMaGV.Size = new System.Drawing.Size(131, 27);
+            this.optMaGV.TabIndex = 173;
+            this.optMaGV.Text = "Mã giáo viên:";
+            this.optMaGV.UseVisualStyleBackColor = true;
+            // 
+            // btnDatLai
+            // 
+            this.btnDatLai.BackColor = System.Drawing.Color.White;
+            this.btnDatLai.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnDatLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatLai.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnDatLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.btnDatLai.Location = new System.Drawing.Point(174, 11);
+            this.btnDatLai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDatLai.Name = "btnDatLai";
+            this.btnDatLai.Size = new System.Drawing.Size(109, 42);
+            this.btnDatLai.TabIndex = 171;
+            this.btnDatLai.Text = "Đặt lại";
+            this.btnDatLai.UseVisualStyleBackColor = false;
+            this.btnDatLai.Click += new System.EventHandler(this.btnDatLai_Click);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiem.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnTimKiem.Location = new System.Drawing.Point(287, 11);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(109, 42);
+            this.btnTimKiem.TabIndex = 170;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // optTenLop
+            // 
+            this.optTenLop.AutoSize = true;
+            this.optTenLop.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optTenLop.Location = new System.Drawing.Point(39, 142);
+            this.optTenLop.Margin = new System.Windows.Forms.Padding(2);
+            this.optTenLop.Name = "optTenLop";
+            this.optTenLop.Size = new System.Drawing.Size(89, 27);
+            this.optTenLop.TabIndex = 169;
+            this.optTenLop.Text = "Tên lớp:";
+            this.optTenLop.UseVisualStyleBackColor = true;
+            // 
+            // optHocKy
+            // 
+            this.optHocKy.AutoSize = true;
+            this.optHocKy.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optHocKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optHocKy.Location = new System.Drawing.Point(39, 226);
+            this.optHocKy.Margin = new System.Windows.Forms.Padding(2);
+            this.optHocKy.Name = "optHocKy";
+            this.optHocKy.Size = new System.Drawing.Size(86, 27);
+            this.optHocKy.TabIndex = 167;
+            this.optHocKy.Text = "Học kỳ:";
+            this.optHocKy.UseVisualStyleBackColor = true;
+            // 
+            // cboTimHocKy
+            // 
+            this.cboTimHocKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboTimHocKy.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboTimHocKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboTimHocKy.FormattingEnabled = true;
+            this.cboTimHocKy.IntegralHeight = false;
+            this.cboTimHocKy.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cboTimHocKy.Location = new System.Drawing.Point(39, 258);
+            this.cboTimHocKy.Margin = new System.Windows.Forms.Padding(2);
+            this.cboTimHocKy.Name = "cboTimHocKy";
+            this.cboTimHocKy.Size = new System.Drawing.Size(173, 31);
+            this.cboTimHocKy.TabIndex = 166;
+            // 
+            // optTenMonHoc
+            // 
+            this.optTenMonHoc.AutoSize = true;
+            this.optTenMonHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optTenMonHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optTenMonHoc.Location = new System.Drawing.Point(39, 306);
+            this.optTenMonHoc.Margin = new System.Windows.Forms.Padding(2);
+            this.optTenMonHoc.Name = "optTenMonHoc";
+            this.optTenMonHoc.Size = new System.Drawing.Size(131, 27);
+            this.optTenMonHoc.TabIndex = 165;
+            this.optTenMonHoc.Text = "Tên môn học:";
+            this.optTenMonHoc.UseVisualStyleBackColor = true;
+            // 
+            // optTenNamHoc
+            // 
+            this.optTenNamHoc.AutoSize = true;
+            this.optTenNamHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optTenNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optTenNamHoc.Location = new System.Drawing.Point(39, 61);
+            this.optTenNamHoc.Margin = new System.Windows.Forms.Padding(2);
+            this.optTenNamHoc.Name = "optTenNamHoc";
+            this.optTenNamHoc.Size = new System.Drawing.Size(130, 27);
+            this.optTenNamHoc.TabIndex = 163;
+            this.optTenNamHoc.Text = "Tên năm học:";
+            this.optTenNamHoc.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.label20.Location = new System.Drawing.Point(13, 9);
+            this.label20.Name = "label20";
+            this.label20.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label20.Size = new System.Drawing.Size(279, 40);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "Tìm kiếm:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.cboBaoCaoNH);
+            this.panel7.Controls.Add(this.label12);
+            this.panel7.Controls.Add(this.cboBaoCaoGV);
+            this.panel7.Controls.Add(this.label9);
+            this.panel7.Controls.Add(this.btnBaoCao);
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Location = new System.Drawing.Point(1369, 112);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(415, 332);
+            this.panel7.TabIndex = 174;
+            // 
+            // cboBaoCaoNH
+            // 
+            this.cboBaoCaoNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboBaoCaoNH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBaoCaoNH.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboBaoCaoNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboBaoCaoNH.FormattingEnabled = true;
+            this.cboBaoCaoNH.Location = new System.Drawing.Point(19, 213);
+            this.cboBaoCaoNH.Margin = new System.Windows.Forms.Padding(2);
+            this.cboBaoCaoNH.Name = "cboBaoCaoNH";
+            this.cboBaoCaoNH.Size = new System.Drawing.Size(377, 31);
+            this.cboBaoCaoNH.TabIndex = 163;
             // 
             // label12
             // 
@@ -1164,27 +1121,104 @@
             this.label12.TabIndex = 162;
             this.label12.Text = "Năm học:";
             // 
-            // label15
+            // cboBaoCaoGV
             // 
-            this.label15.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label15.Location = new System.Drawing.Point(491, 57);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 30);
-            this.label15.TabIndex = 163;
-            this.label15.Text = "Môn học:";
+            this.cboBaoCaoGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboBaoCaoGV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBaoCaoGV.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboBaoCaoGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboBaoCaoGV.FormattingEnabled = true;
+            this.cboBaoCaoGV.Location = new System.Drawing.Point(19, 132);
+            this.cboBaoCaoGV.Margin = new System.Windows.Forms.Padding(2);
+            this.cboBaoCaoGV.Name = "cboBaoCaoGV";
+            this.cboBaoCaoGV.Size = new System.Drawing.Size(377, 31);
+            this.cboBaoCaoGV.TabIndex = 163;
             // 
-            // txtTenMon
+            // label9
             // 
-            this.txtTenMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.txtTenMon.Font = new System.Drawing.Font("Calibri", 14F);
-            this.txtTenMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtTenMon.Location = new System.Drawing.Point(496, 89);
-            this.txtTenMon.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTenMon.Name = "txtTenMon";
-            this.txtTenMon.ReadOnly = true;
-            this.txtTenMon.Size = new System.Drawing.Size(122, 30);
-            this.txtTenMon.TabIndex = 162;
+            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label9.Location = new System.Drawing.Point(15, 100);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 30);
+            this.label9.TabIndex = 162;
+            this.label9.Text = "Giáo viên:";
+            // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnBaoCao.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnBaoCao.Location = new System.Drawing.Point(242, 268);
+            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(154, 41);
+            this.btnBaoCao.TabIndex = 38;
+            this.btnBaoCao.Text = "Xuất báo cáo";
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.label3.Location = new System.Drawing.Point(13, 9);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(383, 88);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Báo cáo phân công dạy của giáo viên:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // vIEW_CHITIET_PHANCONGTableAdapter
+            // 
+            this.vIEW_CHITIET_PHANCONGTableAdapter.ClearBeforeFill = true;
+            // 
+            // txtTimTenNam
+            // 
+            this.txtTimTenNam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtTimTenNam.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtTimTenNam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtTimTenNam.Location = new System.Drawing.Point(39, 92);
+            this.txtTimTenNam.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimTenNam.Name = "txtTimTenNam";
+            this.txtTimTenNam.Size = new System.Drawing.Size(215, 30);
+            this.txtTimTenNam.TabIndex = 174;
+            // 
+            // txtTimTenLop
+            // 
+            this.txtTimTenLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtTimTenLop.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtTimTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtTimTenLop.Location = new System.Drawing.Point(39, 173);
+            this.txtTimTenLop.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimTenLop.Name = "txtTimTenLop";
+            this.txtTimTenLop.Size = new System.Drawing.Size(215, 30);
+            this.txtTimTenLop.TabIndex = 175;
+            // 
+            // txtTimTenMon
+            // 
+            this.txtTimTenMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtTimTenMon.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtTimTenMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtTimTenMon.Location = new System.Drawing.Point(39, 337);
+            this.txtTimTenMon.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimTenMon.Name = "txtTimTenMon";
+            this.txtTimTenMon.Size = new System.Drawing.Size(215, 30);
+            this.txtTimTenMon.TabIndex = 176;
+            // 
+            // txtTimMaGV
+            // 
+            this.txtTimMaGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtTimMaGV.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtTimMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtTimMaGV.Location = new System.Drawing.Point(39, 421);
+            this.txtTimMaGV.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimMaGV.Name = "txtTimMaGV";
+            this.txtTimMaGV.Size = new System.Drawing.Size(215, 30);
+            this.txtTimMaGV.TabIndex = 177;
             // 
             // FrmQLPHANCONG
             // 
@@ -1209,13 +1243,15 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_GIAOVIEN)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_PHANCONG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIEWCHITIETPHANCONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANCONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet4)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.data_GIAOVIEN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet3)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1261,41 +1297,31 @@
         private System.Windows.Forms.TextBox txtNamHoc;
         private System.Windows.Forms.ComboBox cboHocKy;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox opt_TenLop;
-        private System.Windows.Forms.ComboBox cboLocNamHoc;
+        private System.Windows.Forms.CheckBox optLocLopNH;
+        private System.Windows.Forms.ComboBox cboLocLopNH;
         private System.Windows.Forms.ComboBox cboMaGV;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView data_GIAOVIEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MATKHAU;
+        private System.Windows.Forms.DataGridView data_PHANCONG;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data_GIAOVIEN;
         private QL_DIEMTHPTDataSet3 qL_DIEMTHPTDataSet3;
         private System.Windows.Forms.BindingSource gIAOVIENBindingSource;
         private QL_DIEMTHPTDataSet3TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
         private QL_DIEMTHPTDataSet4 qL_DIEMTHPTDataSet4;
         private System.Windows.Forms.BindingSource pHANCONGBindingSource;
         private QL_DIEMTHPTDataSet4TableAdapters.PHANCONGTableAdapter pHANCONGTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mAPCDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mAMHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mAGVDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hOCKYDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mALOPDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.CheckBox optTenLop;
+        private System.Windows.Forms.CheckBox optHocKy;
+        private System.Windows.Forms.ComboBox cboTimHocKy;
+        private System.Windows.Forms.CheckBox optTenMonHoc;
+        private System.Windows.Forms.CheckBox optTenNamHoc;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnDatLai;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.CheckBox optMaGV;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBaoCao;
@@ -1305,11 +1331,25 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nGAYSINHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn gIOITINHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dIACHIDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox cboBaoCaoGV;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox cboBaoCaoNH;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtTenMon;
+        private QL_DIEMTHPTDataSet5 qL_DIEMTHPTDataSet5;
+        private System.Windows.Forms.BindingSource vIEWCHITIETPHANCONGBindingSource;
+        private QL_DIEMTHPTDataSet5TableAdapters.VIEW_CHITIET_PHANCONGTableAdapter vIEW_CHITIET_PHANCONGTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mAPCDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mAGVDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mAMHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mALOPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tENLOPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tENNAMDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hOCKYDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtTimTenNam;
+        private System.Windows.Forms.TextBox txtTimTenLop;
+        private System.Windows.Forms.TextBox txtTimTenMon;
+        private System.Windows.Forms.TextBox txtTimMaGV;
     }
 }

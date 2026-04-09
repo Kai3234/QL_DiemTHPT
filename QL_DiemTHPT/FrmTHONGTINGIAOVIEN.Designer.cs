@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.mAGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nGAYSINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gIOITINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIACHIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gIAOVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDIEMTHPTDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_DIEMTHPTDataSet = new QL_DiemTHPT.QL_DIEMTHPTDataSet();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mnuTaiKhoan = new System.Windows.Forms.Label();
@@ -41,15 +51,42 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gIAOVIENTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSetTableAdapters.GIAOVIENTableAdapter();
+            this.gIAOVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_DIEMTHPTDataSet3 = new QL_DiemTHPT.QL_DIEMTHPTDataSet3();
+            this.gIAOVIENTableAdapter1 = new QL_DiemTHPT.QL_DIEMTHPTDataSet3TableAdapters.GIAOVIENTableAdapter();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnDoiMatKhau = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtHoTenGV = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtMaGV = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDIEMTHPTDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet3)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.panel1.Controls.Add(this.dataGridView2);
             this.panel1.Controls.Add(this.btnDangXuat);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.mnuTaiKhoan);
@@ -63,6 +100,67 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(282, 704);
             this.panel1.TabIndex = 1;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mAGVDataGridViewTextBoxColumn,
+            this.hOTENDataGridViewTextBoxColumn,
+            this.nGAYSINHDataGridViewTextBoxColumn,
+            this.gIOITINHDataGridViewTextBoxColumn,
+            this.dIACHIDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.gIAOVIENBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(280, 92);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(962, 427);
+            this.dataGridView2.TabIndex = 24;
+            // 
+            // mAGVDataGridViewTextBoxColumn
+            // 
+            this.mAGVDataGridViewTextBoxColumn.DataPropertyName = "MAGV";
+            this.mAGVDataGridViewTextBoxColumn.HeaderText = "MAGV";
+            this.mAGVDataGridViewTextBoxColumn.Name = "mAGVDataGridViewTextBoxColumn";
+            // 
+            // hOTENDataGridViewTextBoxColumn
+            // 
+            this.hOTENDataGridViewTextBoxColumn.DataPropertyName = "HOTEN";
+            this.hOTENDataGridViewTextBoxColumn.HeaderText = "HOTEN";
+            this.hOTENDataGridViewTextBoxColumn.Name = "hOTENDataGridViewTextBoxColumn";
+            // 
+            // nGAYSINHDataGridViewTextBoxColumn
+            // 
+            this.nGAYSINHDataGridViewTextBoxColumn.DataPropertyName = "NGAYSINH";
+            this.nGAYSINHDataGridViewTextBoxColumn.HeaderText = "NGAYSINH";
+            this.nGAYSINHDataGridViewTextBoxColumn.Name = "nGAYSINHDataGridViewTextBoxColumn";
+            // 
+            // gIOITINHDataGridViewTextBoxColumn
+            // 
+            this.gIOITINHDataGridViewTextBoxColumn.DataPropertyName = "GIOITINH";
+            this.gIOITINHDataGridViewTextBoxColumn.HeaderText = "GIOITINH";
+            this.gIOITINHDataGridViewTextBoxColumn.Name = "gIOITINHDataGridViewTextBoxColumn";
+            // 
+            // dIACHIDataGridViewTextBoxColumn
+            // 
+            this.dIACHIDataGridViewTextBoxColumn.DataPropertyName = "DIACHI";
+            this.dIACHIDataGridViewTextBoxColumn.HeaderText = "DIACHI";
+            this.dIACHIDataGridViewTextBoxColumn.Name = "dIACHIDataGridViewTextBoxColumn";
+            // 
+            // gIAOVIENBindingSource
+            // 
+            this.gIAOVIENBindingSource.DataMember = "GIAOVIEN";
+            this.gIAOVIENBindingSource.DataSource = this.qLDIEMTHPTDataSetBindingSource;
+            // 
+            // qLDIEMTHPTDataSetBindingSource
+            // 
+            this.qLDIEMTHPTDataSetBindingSource.DataSource = this.qL_DIEMTHPTDataSet;
+            this.qLDIEMTHPTDataSetBindingSource.Position = 0;
+            // 
+            // qL_DIEMTHPTDataSet
+            // 
+            this.qL_DIEMTHPTDataSet.DataSetName = "QL_DIEMTHPTDataSet";
+            this.qL_DIEMTHPTDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnDangXuat
             // 
@@ -213,21 +311,232 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
+            // gIAOVIENTableAdapter
+            // 
+            this.gIAOVIENTableAdapter.ClearBeforeFill = true;
+            // 
+            // gIAOVIENBindingSource1
+            // 
+            this.gIAOVIENBindingSource1.DataMember = "GIAOVIEN";
+            this.gIAOVIENBindingSource1.DataSource = this.qL_DIEMTHPTDataSet3;
+            // 
+            // qL_DIEMTHPTDataSet3
+            // 
+            this.qL_DIEMTHPTDataSet3.DataSetName = "QL_DIEMTHPTDataSet3";
+            this.qL_DIEMTHPTDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gIAOVIENTableAdapter1
+            // 
+            this.gIAOVIENTableAdapter1.ClearBeforeFill = true;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.txtMatKhau);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.txtDiaChi);
+            this.panel4.Controls.Add(this.cboGioiTinh);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.btnDoiMatKhau);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.dtpNgaySinh);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.txtHoTenGV);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.txtMaGV);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Location = new System.Drawing.Point(286, 116);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1121, 383);
+            this.panel4.TabIndex = 30;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label14.Location = new System.Drawing.Point(715, 165);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(254, 30);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Mật khẩu:";
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtMatKhau.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtMatKhau.Location = new System.Drawing.Point(719, 194);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(341, 30);
+            this.txtMatKhau.TabIndex = 39;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label13.Location = new System.Drawing.Point(714, 68);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(325, 30);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Địa chỉ:";
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtDiaChi.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtDiaChi.Location = new System.Drawing.Point(719, 100);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(341, 30);
+            this.txtDiaChi.TabIndex = 37;
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGioiTinh.Font = new System.Drawing.Font("Calibri", 14F);
+            this.cboGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Location = new System.Drawing.Point(334, 190);
+            this.cboGioiTinh.Margin = new System.Windows.Forms.Padding(2);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(304, 31);
+            this.cboGioiTinh.TabIndex = 28;
+            this.cboGioiTinh.SelectedIndexChanged += new System.EventHandler(this.cboGioiTinh_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label9.Location = new System.Drawing.Point(330, 159);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 30);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Giới tính:";
+            // 
+            // btnDoiMatKhau
+            // 
+            this.btnDoiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnDoiMatKhau.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
+            this.btnDoiMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiMatKhau.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.btnDoiMatKhau.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(793, 314);
+            this.btnDoiMatKhau.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.Size = new System.Drawing.Size(267, 41);
+            this.btnDoiMatKhau.TabIndex = 33;
+            this.btnDoiMatKhau.Text = "Đổi Mật Khẩu";
+            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label10.Location = new System.Drawing.Point(32, 159);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 30);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Ngày sinh:";
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.CalendarFont = new System.Drawing.Font("Calibri", 14F);
+            this.dtpNgaySinh.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.dtpNgaySinh.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.dtpNgaySinh.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.dtpNgaySinh.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Calibri", 14F);
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(35, 191);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(237, 30);
+            this.dtpNgaySinh.TabIndex = 0;
+            this.dtpNgaySinh.ValueChanged += new System.EventHandler(this.txtNgaySinh_ValueChanged);
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label12.Location = new System.Drawing.Point(330, 68);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(325, 30);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Họ tên:";
+            // 
+            // txtHoTenGV
+            // 
+            this.txtHoTenGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtHoTenGV.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtHoTenGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtHoTenGV.Location = new System.Drawing.Point(335, 100);
+            this.txtHoTenGV.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHoTenGV.Name = "txtHoTenGV";
+            this.txtHoTenGV.Size = new System.Drawing.Size(303, 30);
+            this.txtHoTenGV.TabIndex = 29;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Calibri", 14F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label15.Location = new System.Drawing.Point(31, 68);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(181, 30);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "Mã giáo viên:";
+            // 
+            // txtMaGV
+            // 
+            this.txtMaGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.txtMaGV.Font = new System.Drawing.Font("Calibri", 14F);
+            this.txtMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.txtMaGV.Location = new System.Drawing.Point(36, 100);
+            this.txtMaGV.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaGV.Name = "txtMaGV";
+            this.txtMaGV.Size = new System.Drawing.Size(236, 30);
+            this.txtMaGV.TabIndex = 27;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            this.label16.Location = new System.Drawing.Point(13, 9);
+            this.label16.Name = "label16";
+            this.label16.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label16.Size = new System.Drawing.Size(279, 40);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "Thông tin chi tiết:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FrmTHONGTINGIAOVIEN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1419, 713);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmTHONGTINGIAOVIEN";
             this.Text = "FrmTHONGTINGIAOVIEN";
             this.Load += new System.EventHandler(this.FrmTHONGTINGIAOVIEN_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDIEMTHPTDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +556,33 @@
         private System.Windows.Forms.Label mnuTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource qLDIEMTHPTDataSetBindingSource;
+        private QL_DIEMTHPTDataSet qL_DIEMTHPTDataSet;
+        private System.Windows.Forms.BindingSource gIAOVIENBindingSource;
+        private QL_DIEMTHPTDataSetTableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mAGVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hOTENDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nGAYSINHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gIOITINHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dIACHIDataGridViewTextBoxColumn;
+        private QL_DIEMTHPTDataSet3 qL_DIEMTHPTDataSet3;
+        private System.Windows.Forms.BindingSource gIAOVIENBindingSource1;
+        private QL_DIEMTHPTDataSet3TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.ComboBox cboGioiTinh;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnDoiMatKhau;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtHoTenGV;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtMaGV;
+        private System.Windows.Forms.Label label16;
     }
 }

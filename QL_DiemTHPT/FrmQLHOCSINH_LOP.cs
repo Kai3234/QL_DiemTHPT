@@ -12,6 +12,48 @@ namespace QL_DiemTHPT
 {
     public partial class FrmQLHOCSINH_LOP : Form
     {
+        KETNOI_CSDL knn = new KETNOI_CSDL();
+
+        public void LayBangHocSinh_Lop()
+        {
+            // Sử dụng WHERE thuần, không Alias theo yêu cầu trước đó của bạn
+            string sql = "SELECT HOCSINH_LOP.MAHS, HOCSINH.HOTEN, " +
+                         "HOCSINH_LOP.MALOP, LOP.TENLOP, " +
+                         "LOP.MAGVCHUNHIEM, GIAOVIEN.HOTEN, " +
+                         "NAMHOC.TENNAM " +
+                         "FROM HOCSINH_LOP, HOCSINH, LOP, GIAOVIEN, NAMHOC " +
+                         "WHERE HOCSINH_LOP.MAHS = HOCSINH.MAHS " +
+                         "AND HOCSINH_LOP.MALOP = LOP.MALOP " +
+                         "AND LOP.MAGVCHUNHIEM = GIAOVIEN.MAGV " +
+                         "AND LOP.MANH = NAMHOC.MANH";
+
+            DataTable dt = knn.LayBang(sql);
+            dataHocSinh_Lop.DataSource = dt;
+            HienThiDuLieu();
+        }
+
+        public void HienThiDuLieu()
+        {
+            txtMaHS.DataBindings.Clear();
+            txtTenHS.DataBindings.Clear();
+            txtMaLOP.DataBindings.Clear();
+            txtTenLop.DataBindings.Clear();
+            txtMaGV.DataBindings.Clear();
+            txtTenGV.DataBindings.Clear();
+            txtNamHoc.DataBindings.Clear();
+
+            if (dataHocSinh_Lop.DataSource != null)
+            {
+                txtMaHS.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "MAHS");
+                txtTenHS.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "HOTEN");
+                txtMaLOP.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "MALOP");
+                txtTenLop.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "TENLOP");
+                txtMaGV.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "MAGVCHUNHIEM");
+                txtTenGV.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "HOTEN1");
+                txtNamHoc.DataBindings.Add("Text", dataHocSinh_Lop.DataSource, "TENNAM");
+            }
+        }
+
         public FrmQLHOCSINH_LOP()
         {
             InitializeComponent();
@@ -91,6 +133,146 @@ namespace QL_DiemTHPT
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void LayBang_LopHoc()
+        {
+            DataTable dtTenLop = knn.LayBang("SELECT DISTINCT TENLOP FROM LOP");
+            cboTK_TenLop.DataSource = dtTenLop;
+            cboTK_TenLop.DisplayMember = "TENLOP";
+            cboTK_TenLop.ValueMember = "TENLOP";
+        }
+
+        public void LayBang_NamHoc()
+        {
+            DataTable dta = new DataTable();
+            dta = knn.LayBang("SELECT * FROM NAMHOC");
+
+            cboTK_NamHoc.DataSource = dta;
+            cboTK_NamHoc.DisplayMember = "TENNAM";
+            cboTK_NamHoc.ValueMember = "TENNAM";
+        }
+
+        private void FrmQLHOCSINH_LOP_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet9.HOCSINH_LOP' table. You can move, or remove it, as needed.
+            this.hOCSINH_LOPTableAdapter1.Fill(this.qL_DIEMTHPTDataSet9.HOCSINH_LOP);
+            LayBang_LopHoc();
+            LayBang_NamHoc();
+            LayBangHocSinh_Lop();
+        }
+
+        private void btnTao_Click(object sender, EventArgs e)
+        {
+            txtMaHS.DataBindings.Clear();
+            txtMaLOP.DataBindings.Clear();
+            txtMaHS.Text = "";
+            txtMaLOP.Text = "";
+            txtTenHS.Text = "";
+            txtTenLop.Text = "";
+            txtMaGV.Text = "";
+            txtTenGV.Text = "";
+            txtNamHoc.Text = "";
+            txtMaHS.Focus();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            string mahs = txtMaHS.Text.Trim();
+            string malop = txtMaLOP.Text.Trim();
+
+            if (string.IsNullOrEmpty(mahs) || string.IsNullOrEmpty(malop))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ Mã HS và Mã Lớp!");
+                return;
+            }
+
+            string checkExist = "SELECT * FROM HOCSINH_LOP WHERE MAHS = '" + mahs + "' and MALOP='"+malop+"'";
+            if (knn.LayBang(checkExist).Rows.Count > 0)
+            {
+                MessageBox.Show("Học sinh này đã được xếp lớp rồi! Dùng nút 'Sửa' nếu muốn đổi lớp.");
+                return;
+            }
+
+            try
+            {
+                string sql = "INSERT INTO HOCSINH_LOP (MAHS, MALOP) VALUES ('" + mahs + "', '" + malop + "')";
+                knn.ThucThi(sql);
+                MessageBox.Show("Xếp lớp thành công!");
+                LayBangHocSinh_Lop();
+            }
+            catch (Exception ex) { MessageBox.Show("Lỗi: " + ex.Message); }
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            string mahs = txtMaHS.Text.Trim();
+            string malop = txtMaLOP.Text.Trim();
+            string checkExist = "SELECT * FROM HOCSINH_LOP WHERE MAHS = '" + mahs + "' and MALOP='" + malop + "'";
+            if(knn.LayBang(checkExist).Rows.Count == 0)
+            {
+                MessageBox.Show("Học sinh này chưa được xếp lớp nào! Không thể xóa.");
+                return;
+            }
+            if (MessageBox.Show("Bạn có muốn xóa học sinh này khỏi lớp?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    string sql = "DELETE FROM HOCSINH_LOP WHERE MAHS = '" + mahs + "' AND MALOP = '" + malop + "'";
+                    knn.ThucThi(sql);
+                    LayBangHocSinh_Lop();
+                }
+                catch (Exception ex) { MessageBox.Show("Lỗi: " + ex.Message); }
+            }
+        }
+
+
+        private void btnChuyenLop_Click(object sender, EventArgs e)
+        {
+            FrmChuyenLop fnew = new FrmChuyenLop();
+            fnew.ShowDialog();
+            
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            string sql =
+                "SELECT HOCSINH_LOP.MAHS, HOCSINH.HOTEN, " +
+                "HOCSINH_LOP.MALOP, LOP.TENLOP, " +
+                "LOP.MAGVCHUNHIEM, GIAOVIEN.HOTEN, " +
+                "NAMHOC.TENNAM " +
+                "FROM HOCSINH_LOP, HOCSINH, LOP, GIAOVIEN, NAMHOC " +
+                "WHERE HOCSINH_LOP.MAHS = HOCSINH.MAHS " +
+                "AND HOCSINH_LOP.MALOP = LOP.MALOP " +
+                "AND LOP.MAGVCHUNHIEM = GIAOVIEN.MAGV " +
+                "AND LOP.MANH = NAMHOC.MANH ";
+
+            //Tên lớp
+            if (opt_TenLop.Checked)
+            {
+                sql += " AND LOP.TENLOP = N'" + cboTK_TenLop.Text + "'";
+            }
+
+            //Năm học
+            if (opt_TenNam.Checked)
+            {
+                sql += " AND NAMHOC.TENNAM = N'" + cboTK_NamHoc.Text + "'";
+            }
+
+            //Thực thi
+            dta = knn.LayBang(sql);
+
+            //Hiển thị
+            dataHocSinh_Lop.DataSource = dta;
+            HienThiDuLieu();
         }
     }
 }

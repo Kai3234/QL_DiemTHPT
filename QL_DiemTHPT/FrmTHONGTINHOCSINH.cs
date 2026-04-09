@@ -12,9 +12,48 @@ namespace QL_DiemTHPT
 {
     public partial class FrmTHONGTINHOCSINH : Form
     {
+        KETNOI_CSDL knn = new KETNOI_CSDL();
+        BindingSource bd = new BindingSource();
+
+        public void LayBangHocSinh()
+        {
+            string sql = "SELECT * FROM HOCSINH WHERE MAHS = '" + TaiKhoanDangNhap.MaNguoiDung + "'";
+            DataTable dt = knn.LayBang(sql);
+            if(dt.Rows.Count > 0)
+            {
+                bd.DataSource = dt;
+                HienThiDuLieu();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin học sinh!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void HienThiDuLieu()
+        {
+            txtHoTen.DataBindings.Clear();
+            txtHoTen.DataBindings.Add("Text", bd, "HOTEN");
+            
+            txtMaHS.DataBindings.Clear();
+            txtMaHS.DataBindings.Add("Text", bd, "MAHS");
+
+            txtDiaChi.DataBindings.Clear();
+            txtDiaChi.DataBindings.Add("Text", bd, "DIACHI");   
+
+            txtMatKhau.DataBindings.Clear();
+            txtMatKhau.DataBindings.Add("Text", bd, "MATKHAU");
+
+            dtpNgaySinh.DataBindings.Clear();
+            dtpNgaySinh.DataBindings.Add("Value", bd, "NGAYSINH", true);
+
+            cboGioiTinh.DataBindings.Clear();
+            cboGioiTinh.DataBindings.Add("SelectedItem", bd, "GIOITINH");
+
+        }
         public FrmTHONGTINHOCSINH()
         {
             InitializeComponent();
+                //LayBangHocSinh();
         }
 
         private void mnuTrangChu_Click(object sender, EventArgs e)
@@ -53,6 +92,30 @@ namespace QL_DiemTHPT
             Application.Exit();
         }
 
+        private void txtMaGV_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            FrmDOIMATKHAU fnew = new FrmDOIMATKHAU("student");
+            fnew.ShowDialog();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmTHONGTINHOCSINH_Load(object sender, EventArgs e)
+        {
+            LayBangHocSinh();
+        }
     }
 }

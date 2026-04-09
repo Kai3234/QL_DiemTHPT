@@ -210,7 +210,6 @@ namespace QL_DiemTHPT
         private void FrmQLPHANCONG_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet5.VIEW_CHITIET_PHANCONG' table. You can move, or remove it, as needed.
-            this.vIEW_CHITIET_PHANCONGTableAdapter.Fill(this.qL_DIEMTHPTDataSet5.VIEW_CHITIET_PHANCONG);
             LayBang_MONHOC();
             LayBang_LOP();
             LayBang_NAMHOC();

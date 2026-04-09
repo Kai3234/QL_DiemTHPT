@@ -140,8 +140,6 @@ namespace QL_DiemTHPT
 
         private void FrmQLGIAOVIEN_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet.GIAOVIEN' table. You can move, or remove it, as needed.
-            this.gIAOVIENTableAdapter.Fill(this.qL_DIEMTHPTDataSet.GIAOVIEN);
             LayBang_NAMHOC();
             LayBang_GIAOVIEN();
 

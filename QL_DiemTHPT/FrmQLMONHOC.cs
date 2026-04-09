@@ -117,7 +117,6 @@ namespace QL_DiemTHPT
         private void FrmQLMONHOC_Load(object sender, EventArgs e)
         {
             LayBang_MonHoc();
-            HienThiDuLieu();
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -129,6 +128,9 @@ namespace QL_DiemTHPT
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
+
             string strKtra = "SELECT MAMH FROM MONHOC WHERE MAMH = '" + txtMaMH.Text + "'";
             SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
             SqlDataReader doc_DL = cmd.ExecuteReader();
@@ -160,16 +162,34 @@ namespace QL_DiemTHPT
                 return;
             }
 
-            string Sql_sua = "UPDATE MONHOC SET TENMH = N'" + txtTenMH.Text + "'";
-            Sql_sua += " WHERE MAMH = '" + txtMaMH.Text + "'";
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
 
-            MessageBox.Show(Sql_sua);
+            string strKtra = "SELECT MAMH FROM MONHOC WHERE MAMH = '" + txtMaMH.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
 
-            kn.ThucThi(Sql_sua);
-            LayBang_MonHoc();
-            HienThiDuLieu();
+            if (doc_DL.Read())
+            {
+                doc_DL.Close();
 
-            MessageBox.Show("Sửa thành công!");
+                string Sql_sua = "UPDATE MONHOC SET TENMH = N'" + txtTenMH.Text + "'";
+                Sql_sua += " WHERE MAMH = '" + txtMaMH.Text + "'";
+
+                MessageBox.Show(Sql_sua);
+                kn.ThucThi(Sql_sua);
+
+                LayBang_MonHoc();
+                HienThiDuLieu();
+
+                MessageBox.Show("Sửa thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại mã môn học!", "Thông báo");
+                txtMaMH.Focus();
+                doc_DL.Close();
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -180,6 +200,30 @@ namespace QL_DiemTHPT
                 return;
             }
 
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
+
+            string strKtra = "SELECT MAMH FROM PHANCONG WHERE MAMH = '" + txtMaMH.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
+
+            if (doc_DL.Read())
+            {
+                MessageBox.Show("Mã môn học này đã tồn tại ở bảng khác (bảng Phân công) nên không thể xóa được!", "Thông báo");
+                txtMaMH.Focus();
+
+                doc_DL.Close();
+                doc_DL.Dispose();
+                return;
+            }
+
+            doc_DL.Close();
+
+            DialogResult kq = MessageBox.Show("Bạn có chắc muốn xóa không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (kq == DialogResult.No)
+                return;
+
             string Sql_xoa = "DELETE FROM MONHOC WHERE MAMH = '" + txtMaMH.Text + "'";
             MessageBox.Show(Sql_xoa);
 
@@ -187,9 +231,7 @@ namespace QL_DiemTHPT
             LayBang_MonHoc();
             HienThiDuLieu();
 
-            MessageBox.Show("Xóa thành công!");
+            MessageBox.Show("Xóa môn học thành công!");
         }
-
-        
     }
 }

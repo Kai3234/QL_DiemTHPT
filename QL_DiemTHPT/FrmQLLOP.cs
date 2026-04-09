@@ -100,14 +100,15 @@ namespace QL_DiemTHPT
         //lay bang Lop len grid
         public void LayBang_LopHoc()
         {
-            DataTable dta = new DataTable();
-            dta = kn.LayBang("SELECT * FROM LOP");
+            DataTable dta = kn.LayBang("SELECT * FROM LOP");
             dataGrid_LOP.DataSource = dta;
 
-            cboTK_TenLop.DataSource = dta;
+            //lấy danh sách không trùng
+            DataTable dtTenLop = kn.LayBang("SELECT DISTINCT TENLOP FROM LOP");
+
+            cboTK_TenLop.DataSource = dtTenLop;
             cboTK_TenLop.DisplayMember = "TENLOP";
             cboTK_TenLop.ValueMember = "TENLOP";
-
         }
 
         public void LayBang_NamHoc()
@@ -159,7 +160,6 @@ namespace QL_DiemTHPT
             LayBang_LopHoc();
             LayBang_NamHoc();
             LayBang_GV();
-            HienThiDuLieu();
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -175,7 +175,18 @@ namespace QL_DiemTHPT
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            //Kiểm tra trùng mã lớp
+            //kiểm tra rỗng
+            if (txtMaLop.Text.Trim() == "" || txtTenLop.Text.Trim() == "" ||
+                cboKhoi.Text == "" || cboMaNH.Text == "" || cboMaGV.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
+
+            //kiểm tra trùng mã lớp
             string strKtra = "SELECT MALOP FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
             SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
             SqlDataReader doc_DL = cmd.ExecuteReader();
@@ -189,7 +200,7 @@ namespace QL_DiemTHPT
             }
             doc_DL.Close();
 
-            //Kiểm tra giáo viên đã chủ nhiệm lớp trong năm này chưa
+            //kiểm tra giáo viên chủ nhiệm
             string checkGV = "SELECT * FROM LOP WHERE MAGVCHUNHIEM = '" + cboMaGV.Text +
                              "' AND MANH = '" + cboMaNH.Text + "'";
             SqlCommand cmdGV = new SqlCommand(checkGV, kn.cnn);
@@ -197,23 +208,22 @@ namespace QL_DiemTHPT
 
             if (rd.Read())
             {
-                MessageBox.Show("Giáo viên này đã chủ nhiệm lớp khác trong năm học này!", "Thông báo");
+                MessageBox.Show("Giáo viên đã chủ nhiệm lớp khác trong năm học này!", "Thông báo");
                 rd.Close();
                 return;
             }
             rd.Close();
 
-            //Thêm dữ liệu
-            string Sql_Luu = "INSERT INTO LOP VALUES (";
-            Sql_Luu += "'" + txtMaLop.Text + "', ";
-            Sql_Luu += "N'" + txtTenLop.Text + "', ";
-            Sql_Luu += "'" + cboKhoi.Text + "', ";
-            Sql_Luu += "'" + cboMaNH.Text + "', ";
-            Sql_Luu += "'" + cboMaGV.Text + "')";
-
-            MessageBox.Show(Sql_Luu);
+            //thêm dữ liệu
+            string Sql_Luu = "INSERT INTO LOP VALUES (" +
+                "'" + txtMaLop.Text + "', " +
+                "N'" + txtTenLop.Text + "', " +
+                "'" + cboKhoi.Text + "', " +
+                "'" + cboMaNH.Text + "', " +
+                "'" + cboMaGV.Text + "')";
 
             kn.ThucThi(Sql_Luu);
+
             LayBang_LopHoc();
             HienThiDuLieu();
 
@@ -228,16 +238,54 @@ namespace QL_DiemTHPT
                 return;
             }
 
-            string Sql_sua = "UPDATE LOP SET ";
-            Sql_sua += "TENLOP = N'" + txtTenLop.Text + "', ";
-            Sql_sua += "KHOI = '" + cboKhoi.Text + "', ";
-            Sql_sua += "MANH = '" + cboMaNH.Text + "', ";
-            Sql_sua += "MAGVCHUNHIEM = '" + cboMaGV.Text + "'";
-            Sql_sua += " WHERE MALOP = '" + txtMaLop.Text + "'";
+            if (txtTenLop.Text.Trim() == "" || cboKhoi.Text == "" ||
+                cboMaNH.Text == "" || cboMaGV.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
 
-            MessageBox.Show(Sql_sua);
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
+
+            //kiểm tra tồn tại lớp
+            string strKtra = "SELECT MALOP FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
+
+            if (!doc_DL.Read())
+            {
+                MessageBox.Show("Không tồn tại mã lớp học!", "Thông báo");
+                txtMaLop.Focus();
+                doc_DL.Close();
+                return;
+            }
+            doc_DL.Close();
+
+            //kiểm tra giáo viên chủ nhiệm
+            string checkGV = "SELECT * FROM LOP WHERE MAGVCHUNHIEM = '" + cboMaGV.Text +
+                             "' AND MANH = '" + cboMaNH.Text + "' AND MALOP <> '" + txtMaLop.Text + "'";
+            SqlCommand cmdGV = new SqlCommand(checkGV, kn.cnn);
+            SqlDataReader rd = cmdGV.ExecuteReader();
+
+            if (rd.Read())
+            {
+                MessageBox.Show("Giáo viên đã chủ nhiệm lớp khác trong năm học này!", "Thông báo");
+                rd.Close();
+                return;
+            }
+            rd.Close();
+
+            //update
+            string Sql_sua = "UPDATE LOP SET " +
+                "TENLOP = N'" + txtTenLop.Text + "', " +
+                "KHOI = '" + cboKhoi.Text + "', " +
+                "MANH = '" + cboMaNH.Text + "', " +
+                "MAGVCHUNHIEM = '" + cboMaGV.Text + "' " +
+                "WHERE MALOP = '" + txtMaLop.Text + "'";
 
             kn.ThucThi(Sql_sua);
+
             LayBang_LopHoc();
             HienThiDuLieu();
 
@@ -252,14 +300,58 @@ namespace QL_DiemTHPT
                 return;
             }
 
-            string Sql_xoa = "DELETE FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
-            MessageBox.Show(Sql_xoa);
+            if (kn.cnn.State == ConnectionState.Closed)
+                kn.cnn.Open();
 
+            //Kiểm tra lớp có tồn tại không
+            string checkTonTai = "SELECT MALOP FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
+            SqlCommand cmdCheck = new SqlCommand(checkTonTai, kn.cnn);
+            SqlDataReader rdCheck = cmdCheck.ExecuteReader();
+
+            if (!rdCheck.Read())
+            {
+                MessageBox.Show("Mã lớp không tồn tại!", "Thông báo");
+                txtMaLop.Focus();
+                rdCheck.Close();
+                return;
+            }
+            rdCheck.Close();
+
+            //Kiểm tra ràng buộc ở bảng khác
+            string strKtra = "SELECT MALOP FROM HOCSINH_LOP WHERE MALOP = '" + txtMaLop.Text + "' " +
+                             "UNION " +
+                             "SELECT MALOP FROM PHANCONG WHERE MALOP = '" + txtMaLop.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_DL = cmd.ExecuteReader();
+
+            if (doc_DL.Read())
+            {
+                MessageBox.Show("Lớp đang được sử dụng nên không thể xóa!", "Thông báo");
+                txtMaLop.Focus();
+                doc_DL.Close();
+                return;
+            }
+            doc_DL.Close();
+
+            //Xác nhận xóa
+            DialogResult kq = MessageBox.Show(
+                "Bạn có chắc muốn xóa không?",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (kq == DialogResult.No)
+                return;
+
+            //Xóa
+            string Sql_xoa = "DELETE FROM LOP WHERE MALOP = '" + txtMaLop.Text + "'";
             kn.ThucThi(Sql_xoa);
+
             LayBang_LopHoc();
             HienThiDuLieu();
 
-            MessageBox.Show("Xóa thành công!");
+            MessageBox.Show("Xóa lớp học thành công!");
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

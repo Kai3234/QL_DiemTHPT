@@ -49,7 +49,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGrid_NamHoc = new System.Windows.Forms.DataGridView();
@@ -63,16 +62,10 @@
             this.txtMaNH = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnTaoMoi = new System.Windows.Forms.Button();
-            this.btnBaoCao = new System.Windows.Forms.Button();
-            this.cboBaoCaoHK = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cboBaoCaoNH = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_NamHoc)).BeginInit();
             this.panel4.SuspendLayout();
@@ -328,32 +321,17 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.cboBaoCaoHK);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.cboBaoCaoNH);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.btnBaoCao);
-            this.panel3.Location = new System.Drawing.Point(449, 891);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1443, 124);
-            this.panel3.TabIndex = 46;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.dataGrid_NamHoc);
-            this.panel5.Location = new System.Drawing.Point(449, 481);
+            this.panel5.Location = new System.Drawing.Point(452, 581);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1443, 379);
-            this.panel5.TabIndex = 45;
+            this.panel5.Size = new System.Drawing.Size(1443, 439);
+            this.panel5.TabIndex = 49;
             // 
             // label3
             // 
@@ -404,7 +382,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGrid_NamHoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGrid_NamHoc.RowHeadersWidth = 62;
-            this.dataGrid_NamHoc.Size = new System.Drawing.Size(1390, 249);
+            this.dataGrid_NamHoc.Size = new System.Drawing.Size(1390, 309);
             this.dataGrid_NamHoc.TabIndex = 0;
             // 
             // panel4
@@ -420,11 +398,11 @@
             this.panel4.Controls.Add(this.txtMaNH);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.btnTaoMoi);
-            this.panel4.Location = new System.Drawing.Point(449, 161);
+            this.panel4.Location = new System.Drawing.Point(452, 166);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1443, 292);
-            this.panel4.TabIndex = 44;
+            this.panel4.Size = new System.Drawing.Size(1443, 386);
+            this.panel4.TabIndex = 48;
             // 
             // btnXoa
             // 
@@ -433,13 +411,12 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnXoa.Location = new System.Drawing.Point(1263, 196);
+            this.btnXoa.Location = new System.Drawing.Point(1261, 235);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(152, 63);
             this.btnXoa.TabIndex = 35;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -448,13 +425,12 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnSua.Location = new System.Drawing.Point(1106, 196);
+            this.btnSua.Location = new System.Drawing.Point(1104, 235);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(152, 63);
             this.btnSua.TabIndex = 34;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -463,19 +439,18 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnLuu.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnLuu.Location = new System.Drawing.Point(949, 196);
+            this.btnLuu.Location = new System.Drawing.Point(947, 235);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(152, 63);
             this.btnLuu.TabIndex = 33;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // lbNamHoc
             // 
             this.lbNamHoc.Font = new System.Drawing.Font("Calibri", 14F);
             this.lbNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.lbNamHoc.Location = new System.Drawing.Point(443, 90);
+            this.lbNamHoc.Location = new System.Drawing.Point(449, 109);
             this.lbNamHoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNamHoc.Name = "lbNamHoc";
             this.lbNamHoc.Size = new System.Drawing.Size(272, 46);
@@ -487,7 +462,7 @@
             this.txtNamHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtNamHoc.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.txtNamHoc.Location = new System.Drawing.Point(450, 139);
+            this.txtNamHoc.Location = new System.Drawing.Point(456, 158);
             this.txtNamHoc.Name = "txtNamHoc";
             this.txtNamHoc.Size = new System.Drawing.Size(294, 42);
             this.txtNamHoc.TabIndex = 29;
@@ -496,7 +471,7 @@
             // 
             this.lbMaNH.Font = new System.Drawing.Font("Calibri", 14F);
             this.lbMaNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.lbMaNH.Location = new System.Drawing.Point(39, 90);
+            this.lbMaNH.Location = new System.Drawing.Point(45, 109);
             this.lbMaNH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMaNH.Name = "lbMaNH";
             this.lbMaNH.Size = new System.Drawing.Size(272, 46);
@@ -508,7 +483,7 @@
             this.txtMaNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtMaNH.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtMaNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.txtMaNH.Location = new System.Drawing.Point(45, 139);
+            this.txtMaNH.Location = new System.Drawing.Point(51, 158);
             this.txtMaNH.Name = "txtMaNH";
             this.txtMaNH.Size = new System.Drawing.Size(352, 42);
             this.txtMaNH.TabIndex = 27;
@@ -533,77 +508,12 @@
             this.btnTaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoMoi.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnTaoMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            this.btnTaoMoi.Location = new System.Drawing.Point(791, 196);
+            this.btnTaoMoi.Location = new System.Drawing.Point(789, 235);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(152, 63);
             this.btnTaoMoi.TabIndex = 26;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = false;
-            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
-            // 
-            // btnBaoCao
-            // 
-            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(153)))));
-            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.btnBaoCao.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnBaoCao.Location = new System.Drawing.Point(18, 34);
-            this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(660, 63);
-            this.btnBaoCao.TabIndex = 38;
-            this.btnBaoCao.Text = "Xuất báo cáo theo";
-            this.btnBaoCao.UseVisualStyleBackColor = false;
-            // 
-            // cboBaoCaoHK
-            // 
-            this.cboBaoCaoHK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboBaoCaoHK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboBaoCaoHK.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cboBaoCaoHK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboBaoCaoHK.FormattingEnabled = true;
-            this.cboBaoCaoHK.Items.AddRange(new object[] {
-            "Học kỳ I",
-            "Học kỳ II",
-            "Cả năm"});
-            this.cboBaoCaoHK.Location = new System.Drawing.Point(1159, 67);
-            this.cboBaoCaoHK.Name = "cboBaoCaoHK";
-            this.cboBaoCaoHK.Size = new System.Drawing.Size(238, 43);
-            this.cboBaoCaoHK.TabIndex = 43;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label10.Location = new System.Drawing.Point(1153, 19);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(272, 46);
-            this.label10.TabIndex = 44;
-            this.label10.Text = "Học kỳ:";
-            // 
-            // cboBaoCaoNH
-            // 
-            this.cboBaoCaoNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboBaoCaoNH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboBaoCaoNH.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cboBaoCaoNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboBaoCaoNH.FormattingEnabled = true;
-            this.cboBaoCaoNH.Location = new System.Drawing.Point(733, 67);
-            this.cboBaoCaoNH.Name = "cboBaoCaoNH";
-            this.cboBaoCaoNH.Size = new System.Drawing.Size(332, 43);
-            this.cboBaoCaoNH.TabIndex = 41;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Calibri", 14F);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label9.Location = new System.Drawing.Point(727, 19);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(272, 46);
-            this.label9.TabIndex = 42;
-            this.label9.Text = "Năm học:";
             // 
             // FrmQLNAMHOC
             // 
@@ -611,7 +521,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -624,7 +533,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_NamHoc)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -653,7 +561,6 @@
         private System.Windows.Forms.Label mnuTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnDangXuat;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGrid_NamHoc;
@@ -667,10 +574,5 @@
         private System.Windows.Forms.TextBox txtMaNH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnTaoMoi;
-        private System.Windows.Forms.Button btnBaoCao;
-        private System.Windows.Forms.ComboBox cboBaoCaoHK;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox cboBaoCaoNH;
-        private System.Windows.Forms.Label label9;
     }
 }

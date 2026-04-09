@@ -103,6 +103,7 @@ namespace QL_DiemTHPT
             DataTable dta = new DataTable();
             dta = kn.LayBang("SELECT * FROM MONHOC");
             dataGrid_MONHOC.DataSource = dta;
+            HienThiDuLieu();
         }
 
         private void HienThiDuLieu()
@@ -202,6 +203,20 @@ namespace QL_DiemTHPT
 
             if (kn.cnn.State == ConnectionState.Closed)
                 kn.cnn.Open();
+
+            //Kiểm tra môn học có tồn tại không
+            string checkTonTai = "SELECT MAMH FROM MONHOC WHERE MAMH = '" + txtMaMH.Text + "'";
+            SqlCommand cmdCheck = new SqlCommand(checkTonTai, kn.cnn);
+            SqlDataReader rdCheck = cmdCheck.ExecuteReader();
+
+            if (!rdCheck.Read())
+            {
+                MessageBox.Show("Mã môn học không tồn tại!", "Thông báo");
+                txtMaMH.Focus();
+                rdCheck.Close();
+                return;
+            }
+            rdCheck.Close();
 
             string strKtra = "SELECT MAMH FROM PHANCONG WHERE MAMH = '" + txtMaMH.Text + "'";
             SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);

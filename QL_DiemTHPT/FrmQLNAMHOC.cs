@@ -103,6 +103,7 @@ namespace QL_DiemTHPT
             DataTable dta = new DataTable();
             dta = kn.LayBang("SELECT * FROM NAMHOC");
             dataGrid_NamHoc.DataSource = dta;
+            HienThiDuLieu();
         }
 
         private void HienThiDuLieu()
@@ -117,6 +118,7 @@ namespace QL_DiemTHPT
         private void FrmQLNAMHOC_Load(object sender, EventArgs e)
         {
             LayBang_NamHoc();
+            HienThiDuLieu();
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -225,5 +227,6 @@ namespace QL_DiemTHPT
 
             MessageBox.Show("Xóa năm học thành công!");
         }
+
     }
 }

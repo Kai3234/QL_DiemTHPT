@@ -109,6 +109,7 @@ namespace QL_DiemTHPT
             cboTK_TenLop.DataSource = dtTenLop;
             cboTK_TenLop.DisplayMember = "TENLOP";
             cboTK_TenLop.ValueMember = "TENLOP";
+            HienThiDuLieu();
         }
 
         public void LayBang_NamHoc()
@@ -395,6 +396,7 @@ namespace QL_DiemTHPT
 
             //Hiển thị
             dataGrid_LOP.DataSource = dta;
+            HienThiDuLieu();
         }
     }
 }

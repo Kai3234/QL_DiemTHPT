@@ -105,6 +105,16 @@ namespace QL_DiemTHPT
             HienThiDuLieu();
         }
 
+        public void LayBang_NAMHOC()
+        {
+            DataTable dt = knn.LayBang(
+            "SELECT MANH, TENNAM, MANH + ' | ' + TENNAM AS HIENTHI FROM NAMHOC");
+
+            cboBaoCaoNH.DataSource = dt;
+            cboBaoCaoNH.DisplayMember = "HIENTHI";
+            cboBaoCaoNH.ValueMember = "MANH";
+        }
+
         public void HienThiDuLieu()
         {
             txtMa.DataBindings.Clear();
@@ -130,14 +140,7 @@ namespace QL_DiemTHPT
 
         private void FrmQLGIAOVIEN_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qL_DIEMTHPTDataSet.GIAOVIEN' table. You can move, or remove it, as needed.
-            this.gIAOVIENTableAdapter.Fill(this.qL_DIEMTHPTDataSet.GIAOVIEN);
-            DataTable dt = knn.LayBang(
-            "SELECT MANH, TENNAM, MANH + ': ' + TENNAM AS HIENTHI FROM NAMHOC");
-
-            cboBaoCaoNH.DataSource = dt;
-            cboBaoCaoNH.DisplayMember = "HIENTHI"; // show combined text
-            cboBaoCaoNH.ValueMember = "MANH";
+            LayBang_NAMHOC();
             LayBang_GIAOVIEN();
 
         }
@@ -147,7 +150,7 @@ namespace QL_DiemTHPT
             txtMa.Text = "";
             txtHoTen.Text = "";
             txtNgaySinh.Text = "";
-            cboGioiTinh.Text = "";
+            cboGioiTinh.SelectedIndex = -1;
             txtDiaChi.Text = "";
             txtMatKhau.Text = "";
             txtMa.Focus();
@@ -283,7 +286,7 @@ namespace QL_DiemTHPT
                     cotTim = "HOTEN";
                     break;
                 case "Giới tính":
-                    cotTim = "HOTEN";
+                    cotTim = "GIOITINH";
                     break;
                 case "Địa chỉ":
                     cotTim = "DIACHI";
@@ -296,11 +299,12 @@ namespace QL_DiemTHPT
 
             string sql;
 
-            sql = $"SELECT MAGV, HOTEN, NGAYSINH, GIOITINH, DIACHI FROM GIAOVIEN WHERE {cotTim} LIKE N'%{giatri}%'";
+            sql = $"SELECT * FROM GIAOVIEN WHERE {cotTim} LIKE N'%{giatri}%'";
             
             
             DataTable dta = knn.LayBang(sql);
             data_GIAOVIEN.DataSource = dta;
+            HienThiDuLieu();
         }
 
         private void btnDatLai_Click(object sender, EventArgs e)
@@ -310,10 +314,18 @@ namespace QL_DiemTHPT
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            FrmBCGIAOVIEN f = new FrmBCGIAOVIEN();
+            if (cboBaoCaoNH.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn năm học để tạo báo cáo!");
+                return;
+            }
 
-            f.MaNamHoc = cboBaoCaoNH.Text; // truyền dữ liệu
+            string maNamHoc = cboBaoCaoNH.SelectedValue.ToString();
+            DataRowView row = (DataRowView)cboBaoCaoNH.SelectedItem;
+            string tenNam = row["TENNAM"].ToString();
+            string hocKy = string.IsNullOrEmpty(cboBaoCaoHK.Text) ? "Cả năm" : cboBaoCaoHK.Text;
 
+            FrmBCGIAOVIEN f = new FrmBCGIAOVIEN(maNamHoc, tenNam, hocKy);
             f.ShowDialog();
         }
     }

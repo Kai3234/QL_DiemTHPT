@@ -12,17 +12,21 @@ namespace QL_DiemTHPT
 {
     public partial class FrmBCGIAOVIEN : Form
     {
-        public string MaNamHoc;
-        public string HocKy;
+        public string maNam;
+        public string tenNam;
+        public string hocKy;
 
-        public FrmBCGIAOVIEN()
+        public FrmBCGIAOVIEN(string maNH, string tenNH, string hk)
         {
             InitializeComponent();
+
+            this.maNam = maNH;
+            this.tenNam = tenNH;
+            this.hocKy = hk;
         }
 
         private void FrmBCGIAOVIEN_Load(object sender, EventArgs e)
         {
-
         }
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)

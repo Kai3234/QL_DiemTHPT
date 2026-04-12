@@ -44,6 +44,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -206,7 +207,7 @@
             // 
             this.label15.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label15.Location = new System.Drawing.Point(336, 346);
+            this.label15.Location = new System.Drawing.Point(336, 436);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(552, 100);
             this.label15.TabIndex = 47;
@@ -215,11 +216,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(320, 129);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1049, 195);
+            this.panel3.Size = new System.Drawing.Size(1049, 289);
             this.panel3.TabIndex = 46;
             // 
             // label4
@@ -243,6 +245,16 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Chào mừng đến với trang học sinh";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label5.Location = new System.Drawing.Point(58, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(797, 93);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "- Để xem thông tin của tài khoản, nhấn Học sinh cạnh biểu tượng người dùng";
             // 
             // FrmMAINHS
             // 
@@ -284,5 +296,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

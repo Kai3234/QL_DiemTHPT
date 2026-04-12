@@ -47,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.giaovienTableAdapter1 = new QL_DiemTHPT.QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -223,7 +224,7 @@
             // 
             this.label15.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label15.Location = new System.Drawing.Point(331, 398);
+            this.label15.Location = new System.Drawing.Point(331, 476);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(552, 100);
             this.label15.TabIndex = 45;
@@ -232,12 +233,13 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(315, 116);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1049, 262);
+            this.panel3.Size = new System.Drawing.Size(1049, 342);
             this.panel3.TabIndex = 44;
             // 
             // label5
@@ -275,6 +277,16 @@
             // giaovienTableAdapter1
             // 
             this.giaovienTableAdapter1.ClearBeforeFill = true;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label6.Location = new System.Drawing.Point(58, 230);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(857, 91);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "- Để xem thông tin của tài khoản, nhấn Giáo viên cạnh biểu tượng người dùng";
             // 
             // FrmMAINGV
             // 
@@ -319,5 +331,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter giaovienTableAdapter1;
+        private System.Windows.Forms.Label label6;
     }
 }

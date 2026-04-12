@@ -185,6 +185,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DIEMTHPTDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QL_DIEMTHPTDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEMTHPTDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QL_DIEMTHPTDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -354,6 +359,17 @@
     </None>
     <None Include="QL_DIEMTHPTDataSet1.xss">
       <DependentUpon>QL_DIEMTHPTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet10.xsc">
+      <DependentUpon>QL_DIEMTHPTDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEMTHPTDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEMTHPTDataSet10.xss">
+      <DependentUpon>QL_DIEMTHPTDataSet10.xsd</DependentUpon>
     </None>
     <None Include="QL_DIEMTHPTDataSet2.xsc">
       <DependentUpon>QL_DIEMTHPTDataSet2.xsd</DependentUpon>

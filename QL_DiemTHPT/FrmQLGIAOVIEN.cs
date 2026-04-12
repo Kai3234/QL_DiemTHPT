@@ -165,6 +165,14 @@ namespace QL_DiemTHPT
             string s4 = cboGioiTinh.Text;
             string s5 = txtDiaChi.Text;
             string s6 = txtMatKhau.Text;
+
+            if (txtMa.Text.Trim() == "" || txtHoTen.Text.Trim() == "" ||
+                txtNgaySinh.Text.Trim() == "" || cboGioiTinh.Text == "" || txtDiaChi.Text.Trim() == "" || txtMatKhau.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
             // Xử lý dl trùng khóa
             string strKra = "SELECT MAGV FROM GIAOVIEN WHERE MAGV = '" + txtMa.Text + "'";
             SqlCommand cmd = new SqlCommand(strKra, knn.cnn);
@@ -185,7 +193,7 @@ namespace QL_DiemTHPT
                 string sql_luu;
                 sql_luu = "INSERT INTO GIAOVIEN " + "VALUES ('" + s1 + "', N'" + s2 + "'";
                 sql_luu = sql_luu + ", '" + ngaySinh.ToString("yyyy-MM-dd") + "'";
-                sql_luu = sql_luu + ", '" + s4 + "', N'" + s5 + "', '" + s6 + "')";
+                sql_luu = sql_luu + ", N'" + s4 + "', N'" + s5 + "', '" + s6 + "')";
 
                 knn.ThucThi(sql_luu);
                 LayBang_GIAOVIEN();
@@ -203,6 +211,13 @@ namespace QL_DiemTHPT
             string s4 = cboGioiTinh.Text;
             string s5 = txtDiaChi.Text;
             string s6 = txtMatKhau.Text;
+
+            if (txtMa.Text.Trim() == "" || txtHoTen.Text.Trim() == "" ||
+                txtNgaySinh.Text.Trim() == "" || cboGioiTinh.Text == "" || txtDiaChi.Text.Trim() == "" || txtMatKhau.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
 
             string strKra = "SELECT MAGV FROM GIAOVIEN WHERE MAGV = '" + txtMa.Text + "'";
             SqlCommand cmd = new SqlCommand(strKra, knn.cnn);
@@ -239,7 +254,12 @@ namespace QL_DiemTHPT
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string strKra = "SELECT MAGVCHUNHIEM FROM LOP WHERE MAGVCHUNHIEM = '" + txtMa.Text + "' UNION SELECT MAGV FROM GIAOVIEN WHERE MAGV = '" + txtMa.Text + "'";
+            if (txtMa.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập mã giáo viên!");
+                return;
+            }
+            string strKra = "SELECT MAGVCHUNHIEM FROM LOP WHERE MAGVCHUNHIEM = '" + txtMa.Text + "' UNION SELECT MAGV FROM PHANCONG WHERE MAGV = '" + txtMa.Text + "'";
             SqlCommand cmd = new SqlCommand(strKra, knn.cnn);
             SqlDataReader doc_DL = cmd.ExecuteReader();
             if (doc_DL.Read() == true)

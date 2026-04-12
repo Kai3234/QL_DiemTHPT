@@ -1,6 +1,5 @@
 using System;
 using System.Data;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace QL_DiemTHPT
@@ -8,6 +7,7 @@ namespace QL_DiemTHPT
     public partial class FrmLOPCHUNHIEM : Form
     {
         KETNOI_CSDL knn = new KETNOI_CSDL();
+        private string _maDiem = ""; 
 
         public FrmLOPCHUNHIEM()
         {
@@ -16,116 +16,61 @@ namespace QL_DiemTHPT
 
         private void FrmLOPCHUNHIEM_Load(object sender, EventArgs e)
         {
-            NapLopChuNhiem();
+            LoadDanhSachLop();
         }
 
-        
-        private void NapLopChuNhiem()
+        private void LoadDanhSachLop()
         {
-            string sql = string.Format(
-                @"SELECT l.MALOP,
-                         l.TENLOP + ' - ' + nh.TENNAM AS HIENTHI
-                  FROM LOP l
-                  INNER JOIN NAMHOC nh ON l.MANH = nh.MANH
-                  WHERE l.MAGVCHUNHIEM = '{0}'
-                  ORDER BY nh.MANH DESC, l.TENLOP",
-                TaiKhoanDangNhap.MaNguoiDung);
-
-            DataTable dt = knn.LayBang(sql);
-            cboLop.DisplayMember = "HIENTHI";
-            cboLop.ValueMember = "MALOP";
-            cboLop.DataSource = dt;
-            cboLop.SelectedIndex = -1;
+            DataTable dt = knn.LayBang("SELECT * FROM VIEW_LOPCHUNHIEM");
+            dgvLopChuNhiem.DataSource = dt;
         }
 
-        
-        private void cboLop_SelectedIndexChanged(object sender, EventArgs e)
+        private void dgvLopChuNhiem_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (cboLop.SelectedValue == null) return;
-            string maLop = cboLop.SelectedValue.ToString();
-            HienThiBang(maLop);
-        }
-
-        
-        private void HienThiBang(string maLop)
-        {
-            string sql = string.Format(
-                @"SELECT
-                    v.MAHS          AS [Mã HS],
-                    v.TENHOCSINH    AS [Họ tên],
-                    v.NGAYSINH      AS [Ngày sinh],
-                    v.GIOITINH      AS [Giới tính],
-                    v.DIEMTBHKI     AS [ĐTBHKI],
-                    v.DIEMTBHKII    AS [ĐTBHKII],
-                    v.DIEMTBNAM     AS [ĐTBCN],
-                    CASE
-                        WHEN v.DIEMTBNAM >= 8.0 THEN N'Tốt'
-                        WHEN v.DIEMTBNAM >= 6.5 THEN N'Khá'
-                        WHEN v.DIEMTBNAM >= 5.0 THEN N'Đạt'
-                        WHEN v.DIEMTBNAM IS NOT NULL THEN N'Chưa đạt'
-                        ELSE N'Chưa có điểm'
-                    END AS [Xếp loại]
-                  FROM VW_DIEMTB_HOCSINH_LOP v
-                  WHERE v.MALOP = '{0}'
-                  ORDER BY v.TENHOCSINH", maLop);
-
-            DataTable dt = knn.LayBang(sql);
-            dgvHocSinh.DataSource = dt;
-            dgvHocSinh.ReadOnly = true;
-            dgvHocSinh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-
-            HienThiThongKe(dt);
-        }
-
-        
-        private void HienThiThongKe(DataTable dt)
-        {
-            int total = 0, tot = 0, kha = 0, dat = 0, chuaDat = 0, chuaDiem = 0;
-            foreach (DataRow row in dt.Rows)
+            if (e.RowIndex >= 0)
             {
-                total++;
-                string xl = row["Xếp loại"]?.ToString();
-                switch (xl)
+                DataGridViewRow row = dgvLopChuNhiem.Rows[e.RowIndex];
+
+                if (row.Cells["MADIEM"].Value != null)
                 {
-                    case "Tốt": tot++; break;
-                    case "Khá": kha++; break;
-                    case "Đạt": dat++; break;
-                    case "Chưa đạt": chuaDat++; break;
-                    default: chuaDiem++; break;
+                    _maDiem = row.Cells["MADIEM"].Value.ToString();
+
+                    txtDIEMTX.Text = row.Cells["DIEMTX"].Value?.ToString();
+                    txtDIEMGK.Text = row.Cells["DIEMGK"].Value?.ToString();
+                    txtDIEMCK.Text = row.Cells["DIEMCK"].Value?.ToString();
                 }
             }
-
-            lblThongKe.Text = string.Format(
-                "Sĩ số: {0}   |   Tốt: {1}   Khá: {2}   Đạt: {3}   Chưa đạt: {4}   Chưa có điểm: {5}",
-                total, tot, kha, dat, chuaDat, chuaDiem);
         }
 
-        
-        private void btnBaoCao_Click(object sender, EventArgs e)
+        private void btnLuuDiem_Click(object sender, EventArgs e)
         {
-            if (cboLop.SelectedValue == null)
-            { MessageBox.Show("Vui lòng chọn lớp trước khi xuất báo cáo!"); return; }
+            if (string.IsNullOrEmpty(_maDiem))
+            {
+                MessageBox.Show("Vui lòng chọn một học sinh!");
+                return;
+            }
 
-            FrmBCLOPCHUNHIEM fbc = new FrmBCLOPCHUNHIEM();
-            fbc.MaLop = cboLop.SelectedValue.ToString();
-            fbc.ShowDialog();
+            string sql = string.Format(
+                "UPDATE DIEM SET DIEMTX = '{0}', DIEMGK = '{1}', DIEMCK = '{2}' WHERE MADIEM = '{3}'",
+                txtDIEMTX.Text.Trim(), txtDIEMGK.Text.Trim(), txtDIEMCK.Text.Trim(), _maDiem
+            );
+
+            if (knn.ThucThi(sql))
+            {
+                MessageBox.Show("Cập nhật điểm thành công!");
+                LoadDanhSachLop(); 
+            }
+            else
+            {
+                MessageBox.Show("Lỗi: Không thể lưu điểm!");
+            }
         }
 
-        
-        private void mnuTrangChu_Click(object sender, EventArgs e)
-        { new FrmMAINGV().Show(); this.Close(); }
-        private void mnuNhapDiem_Click(object sender, EventArgs e)
-        { new FrmNHAPDIEMMON().Show(); this.Close(); }
-        private void mnuChuNhiem_Click(object sender, EventArgs e)
-        { new FrmLOPCHUNHIEM().Show(); this.Close(); }
-        private void mnuTaiKhoan_Click(object sender, EventArgs e)
-        { new FrmTHONGTINGIAOVIEN().Show(); this.Close(); }
-        private void btnDangXuat_Click(object sender, EventArgs e)
-        {
-            TaiKhoanDangNhap.MaNguoiDung = null;
-            TaiKhoanDangNhap.LoaiNguoiDung = null;
-            new FrmLOGIN().Show(); this.Close();
-        }
-        private void btnThoat_Click(object sender, EventArgs e) { Application.Exit(); }
+        private void btnThoat_Click(object sender, EventArgs e) => Application.Exit();
+        private void btnDangXuat_Click(object sender, EventArgs e) => this.Close();
+        private void mnuTrangChu_Click(object sender, EventArgs e) { new FrmMAINGV().Show(); this.Close(); }
+        private void mnuNhapDiem_Click(object sender, EventArgs e) { new FrmNHAPDIEMMON().Show(); this.Close(); }
+        private void mnuChuNhiem_Click(object sender, EventArgs e) { }
+        private void mnuTaiKhoan_Click(object sender, EventArgs e) { new FrmTHONGTINGIAOVIEN().Show(); this.Close(); }
     }
 }

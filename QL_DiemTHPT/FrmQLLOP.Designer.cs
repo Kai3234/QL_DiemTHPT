@@ -113,7 +113,7 @@
             this.btnDangXuat.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
             this.btnDangXuat.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnDangXuat.Location = new System.Drawing.Point(0, 593);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(282, 42);
             this.btnDangXuat.TabIndex = 23;
@@ -268,7 +268,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.btnThoat.Location = new System.Drawing.Point(0, 609);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(282, 95);
             this.btnThoat.TabIndex = 10;
@@ -413,7 +413,7 @@
             this.txtMaLop.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtMaLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.txtMaLop.Location = new System.Drawing.Point(30, 90);
-            this.txtMaLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaLop.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.Size = new System.Drawing.Size(213, 30);
             this.txtMaLop.TabIndex = 42;
@@ -436,7 +436,7 @@
             this.cboMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.cboMaGV.FormattingEnabled = true;
             this.cboMaGV.Location = new System.Drawing.Point(267, 169);
-            this.cboMaGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboMaGV.Margin = new System.Windows.Forms.Padding(2);
             this.cboMaGV.Name = "cboMaGV";
             this.cboMaGV.Size = new System.Drawing.Size(213, 31);
             this.cboMaGV.TabIndex = 40;
@@ -463,7 +463,7 @@
             "11",
             "12"});
             this.cboKhoi.Location = new System.Drawing.Point(519, 90);
-            this.cboKhoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboKhoi.Margin = new System.Windows.Forms.Padding(2);
             this.cboKhoi.Name = "cboKhoi";
             this.cboKhoi.Size = new System.Drawing.Size(217, 31);
             this.cboKhoi.TabIndex = 38;
@@ -485,7 +485,7 @@
             this.txtTenLop.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.txtTenLop.Location = new System.Drawing.Point(267, 90);
-            this.txtTenLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenLop.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenLop.Name = "txtTenLop";
             this.txtTenLop.Size = new System.Drawing.Size(213, 30);
             this.txtTenLop.TabIndex = 31;
@@ -498,7 +498,7 @@
             this.cboMaNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.cboMaNH.FormattingEnabled = true;
             this.cboMaNH.Location = new System.Drawing.Point(30, 169);
-            this.cboMaNH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboMaNH.Margin = new System.Windows.Forms.Padding(2);
             this.cboMaNH.Name = "cboMaNH";
             this.cboMaNH.Size = new System.Drawing.Size(203, 31);
             this.cboMaNH.TabIndex = 36;
@@ -511,7 +511,7 @@
             this.btnXoa.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnXoa.Location = new System.Drawing.Point(842, 162);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(101, 41);
             this.btnXoa.TabIndex = 35;
@@ -527,7 +527,7 @@
             this.btnSua.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.btnSua.Location = new System.Drawing.Point(737, 162);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(101, 41);
             this.btnSua.TabIndex = 34;
@@ -543,7 +543,7 @@
             this.btnLuu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnLuu.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnLuu.Location = new System.Drawing.Point(633, 162);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(101, 41);
             this.btnLuu.TabIndex = 33;
@@ -591,7 +591,7 @@
             this.btnTaoMoi.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnTaoMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.btnTaoMoi.Location = new System.Drawing.Point(527, 162);
-            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(101, 41);
             this.btnTaoMoi.TabIndex = 26;
@@ -619,7 +619,7 @@
             this.opt_TenNam.AutoSize = true;
             this.opt_TenNam.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opt_TenNam.Location = new System.Drawing.Point(435, 56);
-            this.opt_TenNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.opt_TenNam.Margin = new System.Windows.Forms.Padding(2);
             this.opt_TenNam.Name = "opt_TenNam";
             this.opt_TenNam.Size = new System.Drawing.Size(106, 27);
             this.opt_TenNam.TabIndex = 158;
@@ -631,7 +631,7 @@
             this.opt_TenLop.AutoSize = true;
             this.opt_TenLop.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opt_TenLop.Location = new System.Drawing.Point(32, 56);
-            this.opt_TenLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.opt_TenLop.Margin = new System.Windows.Forms.Padding(2);
             this.opt_TenLop.Name = "opt_TenLop";
             this.opt_TenLop.Size = new System.Drawing.Size(89, 27);
             this.opt_TenLop.TabIndex = 157;
@@ -645,7 +645,7 @@
             this.cboTK_TenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.cboTK_TenLop.FormattingEnabled = true;
             this.cboTK_TenLop.Location = new System.Drawing.Point(32, 88);
-            this.cboTK_TenLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTK_TenLop.Margin = new System.Windows.Forms.Padding(2);
             this.cboTK_TenLop.Name = "cboTK_TenLop";
             this.cboTK_TenLop.Size = new System.Drawing.Size(351, 31);
             this.cboTK_TenLop.TabIndex = 31;
@@ -670,7 +670,7 @@
             this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnTimKiem.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnTimKiem.Location = new System.Drawing.Point(796, 74);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(109, 42);
             this.btnTimKiem.TabIndex = 26;
@@ -685,7 +685,7 @@
             this.cboTK_NamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.cboTK_NamHoc.FormattingEnabled = true;
             this.cboTK_NamHoc.Location = new System.Drawing.Point(435, 89);
-            this.cboTK_NamHoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTK_NamHoc.Margin = new System.Windows.Forms.Padding(2);
             this.cboTK_NamHoc.Name = "cboTK_NamHoc";
             this.cboTK_NamHoc.Size = new System.Drawing.Size(203, 31);
             this.cboTK_NamHoc.TabIndex = 27;
@@ -695,7 +695,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1283, 682);
+            this.ClientSize = new System.Drawing.Size(1283, 728);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);

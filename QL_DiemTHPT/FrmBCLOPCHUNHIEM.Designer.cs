@@ -1,6 +1,6 @@
 ﻿namespace QL_DiemTHPT
 {
-    partial class FrmBAOCAOGIAOVIEN
+    partial class FrmBCLOPCHUNHIEM
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.rptBAOCAO_GIAOVIEN1 = new QL_DiemTHPT.RptBAOCAO_GIAOVIEN();
+            this.rptLopChuNhiem1 = new QL_DiemTHPT.rptLopChuNhiem();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,19 +40,18 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1108, 569);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1174, 643);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // FrmBAOCAOGIAOVIEN
+            // FrmBCLOPCHUNHIEM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 569);
+            this.ClientSize = new System.Drawing.Size(1174, 643);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FrmBAOCAOGIAOVIEN";
-            this.Text = "FrmBAOCAOGIAOVIEN";
-            this.Load += new System.EventHandler(this.FrmBAOCAOGIAOVIEN_Load);
+            this.Name = "FrmBCLOPCHUNHIEM";
+            this.Text = "FrmBCLOPCHUNHIEM";
+            this.Load += new System.EventHandler(this.FrmBCLOPCHUNHIEM_Load);
             this.ResumeLayout(false);
 
         }
@@ -60,6 +59,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private RptBAOCAO_GIAOVIEN rptBAOCAO_GIAOVIEN1;
+        private rptLopChuNhiem rptLopChuNhiem1;
     }
 }

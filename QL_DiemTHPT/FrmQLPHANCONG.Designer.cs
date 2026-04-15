@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -352,7 +352,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(278, -3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1519, 93);
+            this.panel2.Size = new System.Drawing.Size(1413, 93);
             this.panel2.TabIndex = 11;
             // 
             // label2
@@ -374,7 +374,7 @@
             this.pictureBox1.BackgroundImage = global::QL_DiemTHPT.Properties.Resources.logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(1439, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1333, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(80, 93);
             this.pictureBox1.TabIndex = 19;
@@ -406,7 +406,7 @@
             this.panel4.Controls.Add(this.txtMa);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.btnTao);
-            this.panel4.Location = new System.Drawing.Point(304, 325);
+            this.panel4.Location = new System.Drawing.Point(304, 269);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1049, 307);
             this.panel4.TabIndex = 31;
@@ -701,9 +701,9 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.data_PHANCONG);
-            this.panel5.Location = new System.Drawing.Point(304, 649);
+            this.panel5.Location = new System.Drawing.Point(304, 593);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1049, 302);
+            this.panel5.Size = new System.Drawing.Size(1049, 254);
             this.panel5.TabIndex = 43;
             // 
             // data_PHANCONG
@@ -712,14 +712,14 @@
             this.data_PHANCONG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_PHANCONG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.data_PHANCONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_PHANCONG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_PHANCONG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
             this.data_PHANCONG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_PHANCONG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mAPCDataGridViewTextBoxColumn,
@@ -730,27 +730,27 @@
             this.tENNAMDataGridViewTextBoxColumn,
             this.hOCKYDataGridViewTextBoxColumn});
             this.data_PHANCONG.DataSource = this.vIEWCHITIETPHANCONGBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_PHANCONG.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_PHANCONG.DefaultCellStyle = dataGridViewCellStyle44;
             this.data_PHANCONG.EnableHeadersVisualStyles = false;
             this.data_PHANCONG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.data_PHANCONG.Location = new System.Drawing.Point(19, 16);
             this.data_PHANCONG.Name = "data_PHANCONG";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_PHANCONG.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.data_PHANCONG.Size = new System.Drawing.Size(1008, 269);
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_PHANCONG.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            this.data_PHANCONG.Size = new System.Drawing.Size(1008, 221);
             this.data_PHANCONG.TabIndex = 0;
             // 
             // mAPCDataGridViewTextBoxColumn
@@ -823,7 +823,7 @@
             this.panel3.Controls.Add(this.label10);
             this.panel3.Location = new System.Drawing.Point(304, 112);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1049, 200);
+            this.panel3.Size = new System.Drawing.Size(1049, 143);
             this.panel3.TabIndex = 42;
             // 
             // data_GIAOVIEN
@@ -832,14 +832,14 @@
             this.data_GIAOVIEN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_GIAOVIEN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.data_GIAOVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_GIAOVIEN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_GIAOVIEN.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.data_GIAOVIEN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_GIAOVIEN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -849,27 +849,27 @@
             this.gIOITINHDataGridViewTextBoxColumn,
             this.dIACHIDataGridViewTextBoxColumn});
             this.data_GIAOVIEN.DataSource = this.gIAOVIENBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_GIAOVIEN.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_GIAOVIEN.DefaultCellStyle = dataGridViewCellStyle47;
             this.data_GIAOVIEN.EnableHeadersVisualStyles = false;
             this.data_GIAOVIEN.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.data_GIAOVIEN.Location = new System.Drawing.Point(22, 49);
             this.data_GIAOVIEN.Name = "data_GIAOVIEN";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_GIAOVIEN.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.data_GIAOVIEN.Size = new System.Drawing.Size(1004, 134);
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_GIAOVIEN.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
+            this.data_GIAOVIEN.Size = new System.Drawing.Size(1004, 77);
             this.data_GIAOVIEN.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn1
@@ -957,7 +957,7 @@
             this.panel6.Controls.Add(this.label20);
             this.panel6.Location = new System.Drawing.Point(1369, 461);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(415, 490);
+            this.panel6.Size = new System.Drawing.Size(314, 386);
             this.panel6.TabIndex = 163;
             // 
             // txtTimMaGV
@@ -965,10 +965,10 @@
             this.txtTimMaGV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtTimMaGV.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtTimMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtTimMaGV.Location = new System.Drawing.Point(39, 421);
+            this.txtTimMaGV.Location = new System.Drawing.Point(164, 176);
             this.txtTimMaGV.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimMaGV.Name = "txtTimMaGV";
-            this.txtTimMaGV.Size = new System.Drawing.Size(215, 30);
+            this.txtTimMaGV.Size = new System.Drawing.Size(130, 30);
             this.txtTimMaGV.TabIndex = 177;
             // 
             // txtTimTenMon
@@ -976,10 +976,10 @@
             this.txtTimTenMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtTimTenMon.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtTimTenMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtTimTenMon.Location = new System.Drawing.Point(39, 337);
+            this.txtTimTenMon.Location = new System.Drawing.Point(164, 92);
             this.txtTimTenMon.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimTenMon.Name = "txtTimTenMon";
-            this.txtTimTenMon.Size = new System.Drawing.Size(215, 30);
+            this.txtTimTenMon.Size = new System.Drawing.Size(130, 30);
             this.txtTimTenMon.TabIndex = 176;
             // 
             // txtTimTenLop
@@ -987,10 +987,10 @@
             this.txtTimTenLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtTimTenLop.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtTimTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtTimTenLop.Location = new System.Drawing.Point(39, 173);
+            this.txtTimTenLop.Location = new System.Drawing.Point(19, 173);
             this.txtTimTenLop.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimTenLop.Name = "txtTimTenLop";
-            this.txtTimTenLop.Size = new System.Drawing.Size(215, 30);
+            this.txtTimTenLop.Size = new System.Drawing.Size(130, 30);
             this.txtTimTenLop.TabIndex = 175;
             // 
             // txtTimTenNam
@@ -998,10 +998,10 @@
             this.txtTimTenNam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.txtTimTenNam.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtTimTenNam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.txtTimTenNam.Location = new System.Drawing.Point(39, 92);
+            this.txtTimTenNam.Location = new System.Drawing.Point(19, 92);
             this.txtTimTenNam.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimTenNam.Name = "txtTimTenNam";
-            this.txtTimTenNam.Size = new System.Drawing.Size(215, 30);
+            this.txtTimTenNam.Size = new System.Drawing.Size(131, 30);
             this.txtTimTenNam.TabIndex = 174;
             // 
             // optMaGV
@@ -1009,7 +1009,7 @@
             this.optMaGV.AutoSize = true;
             this.optMaGV.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optMaGV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.optMaGV.Location = new System.Drawing.Point(39, 390);
+            this.optMaGV.Location = new System.Drawing.Point(164, 145);
             this.optMaGV.Margin = new System.Windows.Forms.Padding(2);
             this.optMaGV.Name = "optMaGV";
             this.optMaGV.Size = new System.Drawing.Size(131, 27);
@@ -1024,7 +1024,7 @@
             this.btnDatLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDatLai.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnDatLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.btnDatLai.Location = new System.Drawing.Point(174, 11);
+            this.btnDatLai.Location = new System.Drawing.Point(39, 315);
             this.btnDatLai.Margin = new System.Windows.Forms.Padding(2);
             this.btnDatLai.Name = "btnDatLai";
             this.btnDatLai.Size = new System.Drawing.Size(109, 42);
@@ -1040,7 +1040,7 @@
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnTimKiem.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnTimKiem.Location = new System.Drawing.Point(287, 11);
+            this.btnTimKiem.Location = new System.Drawing.Point(162, 315);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(109, 42);
@@ -1054,7 +1054,7 @@
             this.optTenLop.AutoSize = true;
             this.optTenLop.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optTenLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.optTenLop.Location = new System.Drawing.Point(39, 142);
+            this.optTenLop.Location = new System.Drawing.Point(19, 142);
             this.optTenLop.Margin = new System.Windows.Forms.Padding(2);
             this.optTenLop.Name = "optTenLop";
             this.optTenLop.Size = new System.Drawing.Size(89, 27);
@@ -1067,7 +1067,7 @@
             this.optHocKy.AutoSize = true;
             this.optHocKy.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optHocKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.optHocKy.Location = new System.Drawing.Point(39, 226);
+            this.optHocKy.Location = new System.Drawing.Point(19, 226);
             this.optHocKy.Margin = new System.Windows.Forms.Padding(2);
             this.optHocKy.Name = "optHocKy";
             this.optHocKy.Size = new System.Drawing.Size(86, 27);
@@ -1085,10 +1085,10 @@
             this.cboTimHocKy.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.cboTimHocKy.Location = new System.Drawing.Point(39, 258);
+            this.cboTimHocKy.Location = new System.Drawing.Point(19, 258);
             this.cboTimHocKy.Margin = new System.Windows.Forms.Padding(2);
             this.cboTimHocKy.Name = "cboTimHocKy";
-            this.cboTimHocKy.Size = new System.Drawing.Size(173, 31);
+            this.cboTimHocKy.Size = new System.Drawing.Size(131, 31);
             this.cboTimHocKy.TabIndex = 166;
             // 
             // optTenMonHoc
@@ -1096,7 +1096,7 @@
             this.optTenMonHoc.AutoSize = true;
             this.optTenMonHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optTenMonHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.optTenMonHoc.Location = new System.Drawing.Point(39, 306);
+            this.optTenMonHoc.Location = new System.Drawing.Point(164, 61);
             this.optTenMonHoc.Margin = new System.Windows.Forms.Padding(2);
             this.optTenMonHoc.Name = "optTenMonHoc";
             this.optTenMonHoc.Size = new System.Drawing.Size(131, 27);
@@ -1109,7 +1109,7 @@
             this.optTenNamHoc.AutoSize = true;
             this.optTenNamHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optTenNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.optTenNamHoc.Location = new System.Drawing.Point(39, 61);
+            this.optTenNamHoc.Location = new System.Drawing.Point(19, 61);
             this.optTenNamHoc.Margin = new System.Windows.Forms.Padding(2);
             this.optTenNamHoc.Name = "optTenNamHoc";
             this.optTenNamHoc.Size = new System.Drawing.Size(130, 27);
@@ -1140,7 +1140,7 @@
             this.panel7.Controls.Add(this.label3);
             this.panel7.Location = new System.Drawing.Point(1369, 112);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(415, 332);
+            this.panel7.Size = new System.Drawing.Size(314, 332);
             this.panel7.TabIndex = 174;
             // 
             // cboBaoCaoNH
@@ -1153,7 +1153,7 @@
             this.cboBaoCaoNH.Location = new System.Drawing.Point(19, 213);
             this.cboBaoCaoNH.Margin = new System.Windows.Forms.Padding(2);
             this.cboBaoCaoNH.Name = "cboBaoCaoNH";
-            this.cboBaoCaoNH.Size = new System.Drawing.Size(377, 31);
+            this.cboBaoCaoNH.Size = new System.Drawing.Size(233, 31);
             this.cboBaoCaoNH.TabIndex = 163;
             // 
             // label12
@@ -1176,7 +1176,7 @@
             this.cboBaoCaoGV.Location = new System.Drawing.Point(19, 132);
             this.cboBaoCaoGV.Margin = new System.Windows.Forms.Padding(2);
             this.cboBaoCaoGV.Name = "cboBaoCaoGV";
-            this.cboBaoCaoGV.Size = new System.Drawing.Size(377, 31);
+            this.cboBaoCaoGV.Size = new System.Drawing.Size(233, 31);
             this.cboBaoCaoGV.TabIndex = 163;
             // 
             // label9
@@ -1196,7 +1196,7 @@
             this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaoCao.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnBaoCao.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnBaoCao.Location = new System.Drawing.Point(242, 268);
+            this.btnBaoCao.Location = new System.Drawing.Point(117, 263);
             this.btnBaoCao.Margin = new System.Windows.Forms.Padding(2);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Size = new System.Drawing.Size(154, 41);
@@ -1212,7 +1212,7 @@
             this.label3.Location = new System.Drawing.Point(13, 9);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(383, 88);
+            this.label3.Size = new System.Drawing.Size(239, 88);
             this.label3.TabIndex = 24;
             this.label3.Text = "Báo cáo phân công dạy của giáo viên:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1226,7 +1226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1796, 1018);
+            this.ClientSize = new System.Drawing.Size(1691, 855);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);

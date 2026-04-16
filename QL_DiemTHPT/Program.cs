@@ -16,7 +16,7 @@ namespace QL_DiemTHPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmQLPHANCONG());
+            Application.Run(new FrmLOGIN());
         }
     }
 }

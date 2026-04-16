@@ -25,13 +25,14 @@ namespace QL_DiemTHPT
             this.hocKy = hocKy;
         }
 
-
-        KETNOI_CSDL knn = new KETNOI_CSDL();
-
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
 
         }
+
+        KETNOI_CSDL knn = new KETNOI_CSDL();
+
+
 
         private void FrmBAOCAOGIAOVIEN_Load(object sender, EventArgs e)
         {

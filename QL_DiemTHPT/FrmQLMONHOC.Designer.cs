@@ -125,7 +125,7 @@
             this.btnDangXuat.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
             this.btnDangXuat.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnDangXuat.Location = new System.Drawing.Point(0, 593);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(282, 42);
             this.btnDangXuat.TabIndex = 23;
@@ -252,7 +252,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
             this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
             this.btnThoat.Location = new System.Drawing.Point(0, 614);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(282, 90);
             this.btnThoat.TabIndex = 10;
@@ -390,7 +390,7 @@
             this.txtMaMH.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtMaMH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.txtMaMH.Location = new System.Drawing.Point(37, 103);
-            this.txtMaMH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaMH.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaMH.Name = "txtMaMH";
             this.txtMaMH.Size = new System.Drawing.Size(236, 30);
             this.txtMaMH.TabIndex = 37;
@@ -401,7 +401,7 @@
             this.txtTenMH.Font = new System.Drawing.Font("Calibri", 14F);
             this.txtTenMH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.txtTenMH.Location = new System.Drawing.Point(350, 103);
-            this.txtTenMH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenMH.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenMH.Name = "txtTenMH";
             this.txtTenMH.Size = new System.Drawing.Size(236, 30);
             this.txtTenMH.TabIndex = 36;
@@ -414,7 +414,7 @@
             this.btnXoa.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnXoa.Location = new System.Drawing.Point(841, 151);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(101, 41);
             this.btnXoa.TabIndex = 35;
@@ -430,7 +430,7 @@
             this.btnSua.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.btnSua.Location = new System.Drawing.Point(737, 151);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(101, 41);
             this.btnSua.TabIndex = 34;
@@ -446,7 +446,7 @@
             this.btnLuu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnLuu.ForeColor = System.Drawing.Color.GhostWhite;
             this.btnLuu.Location = new System.Drawing.Point(632, 151);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(101, 41);
             this.btnLuu.TabIndex = 33;
@@ -494,7 +494,7 @@
             this.btnTaoMoi.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.btnTaoMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.btnTaoMoi.Location = new System.Drawing.Point(527, 151);
-            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(101, 41);
             this.btnTaoMoi.TabIndex = 26;
@@ -513,6 +513,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmQLMONHOC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmQLMONHOC";
             this.Load += new System.EventHandler(this.FrmQLMONHOC_Load);
             this.panel1.ResumeLayout(false);

@@ -702,6 +702,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmQLLOP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmQLLOP";
             this.Load += new System.EventHandler(this.FrmQLLOP_Load);
             this.panel1.ResumeLayout(false);

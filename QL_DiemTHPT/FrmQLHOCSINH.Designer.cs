@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,6 +51,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.optNamHoc = new System.Windows.Forms.CheckBox();
+            this.cboTimNH = new System.Windows.Forms.ComboBox();
             this.btnDatLai = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,6 +61,14 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.data_HOCSINH = new System.Windows.Forms.DataGridView();
+            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mAHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nGAYSINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gIOITINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIACHIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOCSINHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_DIEMTHPTDataSet10 = new QL_DiemTHPT.QL_DIEMTHPTDataSet10();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
@@ -77,17 +87,7 @@
             this.txtMa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnTao = new System.Windows.Forms.Button();
-            this.qL_DIEMTHPTDataSet10 = new QL_DiemTHPT.QL_DIEMTHPTDataSet10();
-            this.hOCSINHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hOCSINHTableAdapter = new QL_DiemTHPT.QL_DIEMTHPTDataSet10TableAdapters.HOCSINHTableAdapter();
-            this.optNamHoc = new System.Windows.Forms.CheckBox();
-            this.cboTimNH = new System.Windows.Forms.ComboBox();
-            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mAHSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nGAYSINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gIOITINHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dIACHIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -95,9 +95,9 @@
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_HOCSINH)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOCSINHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet10)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -352,6 +352,32 @@
             this.panel3.Size = new System.Drawing.Size(1049, 186);
             this.panel3.TabIndex = 29;
             // 
+            // optNamHoc
+            // 
+            this.optNamHoc.AutoSize = true;
+            this.optNamHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.optNamHoc.Location = new System.Drawing.Point(22, 108);
+            this.optNamHoc.Margin = new System.Windows.Forms.Padding(2);
+            this.optNamHoc.Name = "optNamHoc";
+            this.optNamHoc.Size = new System.Drawing.Size(169, 27);
+            this.optNamHoc.TabIndex = 161;
+            this.optNamHoc.Text = "Lọc theo năm học:";
+            this.optNamHoc.UseVisualStyleBackColor = true;
+            // 
+            // cboTimNH
+            // 
+            this.cboTimNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.cboTimNH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTimNH.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.cboTimNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.cboTimNH.FormattingEnabled = true;
+            this.cboTimNH.Location = new System.Drawing.Point(22, 140);
+            this.cboTimNH.Margin = new System.Windows.Forms.Padding(2);
+            this.cboTimNH.Name = "cboTimNH";
+            this.cboTimNH.Size = new System.Drawing.Size(250, 31);
+            this.cboTimNH.TabIndex = 160;
+            // 
             // btnDatLai
             // 
             this.btnDatLai.BackColor = System.Drawing.Color.White;
@@ -451,14 +477,14 @@
             this.data_HOCSINH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_HOCSINH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.data_HOCSINH.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_HOCSINH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_HOCSINH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.data_HOCSINH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_HOCSINH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MATKHAU,
@@ -468,28 +494,75 @@
             this.gIOITINHDataGridViewTextBoxColumn,
             this.dIACHIDataGridViewTextBoxColumn});
             this.data_HOCSINH.DataSource = this.hOCSINHBindingSource;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Calibri", 12F);
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_HOCSINH.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_HOCSINH.DefaultCellStyle = dataGridViewCellStyle2;
             this.data_HOCSINH.EnableHeadersVisualStyles = false;
             this.data_HOCSINH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.data_HOCSINH.Location = new System.Drawing.Point(19, 16);
             this.data_HOCSINH.Name = "data_HOCSINH";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_HOCSINH.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_HOCSINH.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.data_HOCSINH.Size = new System.Drawing.Size(1008, 227);
             this.data_HOCSINH.TabIndex = 0;
+            // 
+            // MATKHAU
+            // 
+            this.MATKHAU.DataPropertyName = "MATKHAU";
+            this.MATKHAU.HeaderText = "MATKHAU";
+            this.MATKHAU.Name = "MATKHAU";
+            this.MATKHAU.Visible = false;
+            // 
+            // mAHSDataGridViewTextBoxColumn
+            // 
+            this.mAHSDataGridViewTextBoxColumn.DataPropertyName = "MAHS";
+            this.mAHSDataGridViewTextBoxColumn.HeaderText = "MAHS";
+            this.mAHSDataGridViewTextBoxColumn.Name = "mAHSDataGridViewTextBoxColumn";
+            // 
+            // hOTENDataGridViewTextBoxColumn
+            // 
+            this.hOTENDataGridViewTextBoxColumn.DataPropertyName = "HOTEN";
+            this.hOTENDataGridViewTextBoxColumn.HeaderText = "HOTEN";
+            this.hOTENDataGridViewTextBoxColumn.Name = "hOTENDataGridViewTextBoxColumn";
+            // 
+            // nGAYSINHDataGridViewTextBoxColumn
+            // 
+            this.nGAYSINHDataGridViewTextBoxColumn.DataPropertyName = "NGAYSINH";
+            this.nGAYSINHDataGridViewTextBoxColumn.HeaderText = "NGAYSINH";
+            this.nGAYSINHDataGridViewTextBoxColumn.Name = "nGAYSINHDataGridViewTextBoxColumn";
+            // 
+            // gIOITINHDataGridViewTextBoxColumn
+            // 
+            this.gIOITINHDataGridViewTextBoxColumn.DataPropertyName = "GIOITINH";
+            this.gIOITINHDataGridViewTextBoxColumn.HeaderText = "GIOITINH";
+            this.gIOITINHDataGridViewTextBoxColumn.Name = "gIOITINHDataGridViewTextBoxColumn";
+            // 
+            // dIACHIDataGridViewTextBoxColumn
+            // 
+            this.dIACHIDataGridViewTextBoxColumn.DataPropertyName = "DIACHI";
+            this.dIACHIDataGridViewTextBoxColumn.HeaderText = "DIACHI";
+            this.dIACHIDataGridViewTextBoxColumn.Name = "dIACHIDataGridViewTextBoxColumn";
+            // 
+            // hOCSINHBindingSource
+            // 
+            this.hOCSINHBindingSource.DataMember = "HOCSINH";
+            this.hOCSINHBindingSource.DataSource = this.qL_DIEMTHPTDataSet10;
+            // 
+            // qL_DIEMTHPTDataSet10
+            // 
+            this.qL_DIEMTHPTDataSet10.DataSetName = "QL_DIEMTHPTDataSet10";
+            this.qL_DIEMTHPTDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel4
             // 
@@ -727,82 +800,9 @@
             this.btnTao.UseVisualStyleBackColor = false;
             this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
-            // qL_DIEMTHPTDataSet10
-            // 
-            this.qL_DIEMTHPTDataSet10.DataSetName = "QL_DIEMTHPTDataSet10";
-            this.qL_DIEMTHPTDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hOCSINHBindingSource
-            // 
-            this.hOCSINHBindingSource.DataMember = "HOCSINH";
-            this.hOCSINHBindingSource.DataSource = this.qL_DIEMTHPTDataSet10;
-            // 
             // hOCSINHTableAdapter
             // 
             this.hOCSINHTableAdapter.ClearBeforeFill = true;
-            // 
-            // optNamHoc
-            // 
-            this.optNamHoc.AutoSize = true;
-            this.optNamHoc.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optNamHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.optNamHoc.Location = new System.Drawing.Point(22, 108);
-            this.optNamHoc.Margin = new System.Windows.Forms.Padding(2);
-            this.optNamHoc.Name = "optNamHoc";
-            this.optNamHoc.Size = new System.Drawing.Size(169, 27);
-            this.optNamHoc.TabIndex = 161;
-            this.optNamHoc.Text = "Lọc theo năm học:";
-            this.optNamHoc.UseVisualStyleBackColor = true;
-            // 
-            // cboTimNH
-            // 
-            this.cboTimNH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.cboTimNH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTimNH.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.cboTimNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.cboTimNH.FormattingEnabled = true;
-            this.cboTimNH.Location = new System.Drawing.Point(22, 140);
-            this.cboTimNH.Margin = new System.Windows.Forms.Padding(2);
-            this.cboTimNH.Name = "cboTimNH";
-            this.cboTimNH.Size = new System.Drawing.Size(250, 31);
-            this.cboTimNH.TabIndex = 160;
-            // 
-            // MATKHAU
-            // 
-            this.MATKHAU.DataPropertyName = "MATKHAU";
-            this.MATKHAU.HeaderText = "MATKHAU";
-            this.MATKHAU.Name = "MATKHAU";
-            this.MATKHAU.Visible = false;
-            // 
-            // mAHSDataGridViewTextBoxColumn
-            // 
-            this.mAHSDataGridViewTextBoxColumn.DataPropertyName = "MAHS";
-            this.mAHSDataGridViewTextBoxColumn.HeaderText = "MAHS";
-            this.mAHSDataGridViewTextBoxColumn.Name = "mAHSDataGridViewTextBoxColumn";
-            // 
-            // hOTENDataGridViewTextBoxColumn
-            // 
-            this.hOTENDataGridViewTextBoxColumn.DataPropertyName = "HOTEN";
-            this.hOTENDataGridViewTextBoxColumn.HeaderText = "HOTEN";
-            this.hOTENDataGridViewTextBoxColumn.Name = "hOTENDataGridViewTextBoxColumn";
-            // 
-            // nGAYSINHDataGridViewTextBoxColumn
-            // 
-            this.nGAYSINHDataGridViewTextBoxColumn.DataPropertyName = "NGAYSINH";
-            this.nGAYSINHDataGridViewTextBoxColumn.HeaderText = "NGAYSINH";
-            this.nGAYSINHDataGridViewTextBoxColumn.Name = "nGAYSINHDataGridViewTextBoxColumn";
-            // 
-            // gIOITINHDataGridViewTextBoxColumn
-            // 
-            this.gIOITINHDataGridViewTextBoxColumn.DataPropertyName = "GIOITINH";
-            this.gIOITINHDataGridViewTextBoxColumn.HeaderText = "GIOITINH";
-            this.gIOITINHDataGridViewTextBoxColumn.Name = "gIOITINHDataGridViewTextBoxColumn";
-            // 
-            // dIACHIDataGridViewTextBoxColumn
-            // 
-            this.dIACHIDataGridViewTextBoxColumn.DataPropertyName = "DIACHI";
-            this.dIACHIDataGridViewTextBoxColumn.HeaderText = "DIACHI";
-            this.dIACHIDataGridViewTextBoxColumn.Name = "dIACHIDataGridViewTextBoxColumn";
             // 
             // FrmQLHOCSINH
             // 
@@ -816,6 +816,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmQLHOCSINH";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmQLHOCSINH";
             this.Load += new System.EventHandler(this.FrmQLHOCSINH_Load);
             this.panel1.ResumeLayout(false);
@@ -826,10 +827,10 @@
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.data_HOCSINH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hOCSINHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet10)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_DIEMTHPTDataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOCSINHBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

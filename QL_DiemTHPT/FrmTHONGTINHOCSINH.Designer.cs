@@ -412,6 +412,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmTHONGTINHOCSINH";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTHONGTINHOCSINH";
             this.Load += new System.EventHandler(this.FrmTHONGTINHOCSINH_Load);
             this.panel1.ResumeLayout(false);

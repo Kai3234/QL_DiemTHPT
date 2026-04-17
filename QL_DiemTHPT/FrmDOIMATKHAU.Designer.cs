@@ -181,6 +181,7 @@
             this.Controls.Add(this.txtMatKhauHienTai);
             this.Controls.Add(this.btnDoiMatKhau);
             this.Name = "FrmDOIMATKHAU";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDOIMATKHAU";
             this.Load += new System.EventHandler(this.FrmDOIMATKHAU_Load);
             this.ResumeLayout(false);

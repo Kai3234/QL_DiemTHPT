@@ -515,6 +515,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmQLNAMHOC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmQLNAMHOC";
             this.Load += new System.EventHandler(this.FrmQLNAMHOC_Load);
             this.panel1.ResumeLayout(false);

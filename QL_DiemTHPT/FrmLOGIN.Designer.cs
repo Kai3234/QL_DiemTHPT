@@ -213,6 +213,7 @@
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtMa);
             this.Name = "FrmLOGIN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập vào hệ thống";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

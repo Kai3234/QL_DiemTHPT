@@ -42,9 +42,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -224,6 +224,16 @@
             this.panel3.Size = new System.Drawing.Size(1049, 289);
             this.panel3.TabIndex = 46;
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label5.Location = new System.Drawing.Point(58, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(797, 93);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "- Để xem thông tin của tài khoản, nhấn Học sinh cạnh biểu tượng người dùng";
+            // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,16 +256,6 @@
             this.label3.Text = "Chào mừng đến với trang học sinh";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label5.Location = new System.Drawing.Point(58, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(797, 93);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "- Để xem thông tin của tài khoản, nhấn Học sinh cạnh biểu tượng người dùng";
-            // 
             // FrmMAINHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +267,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmMAINHS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMAINHS";
             this.Load += new System.EventHandler(this.FrmMAINHS_Load);
             this.panel1.ResumeLayout(false);

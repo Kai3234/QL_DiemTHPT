@@ -43,11 +43,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.giaovienTableAdapter1 = new QL_DiemTHPT.QL_DIEMTHPTDataSet1TableAdapters.GIAOVIENTableAdapter();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -242,6 +242,16 @@
             this.panel3.Size = new System.Drawing.Size(1049, 342);
             this.panel3.TabIndex = 44;
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
+            this.label6.Location = new System.Drawing.Point(58, 230);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(857, 91);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "- Để xem thông tin của tài khoản, nhấn Giáo viên cạnh biểu tượng người dùng";
+            // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -278,16 +288,6 @@
             // 
             this.giaovienTableAdapter1.ClearBeforeFill = true;
             // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(96)))), ((int)(((byte)(113)))));
-            this.label6.Location = new System.Drawing.Point(58, 230);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(857, 91);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "- Để xem thông tin của tài khoản, nhấn Giáo viên cạnh biểu tượng người dùng";
-            // 
             // FrmMAINGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,6 +299,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmMAINGV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMAINGV";
             this.Load += new System.EventHandler(this.FrmMAINGV_Load);
             this.panel1.ResumeLayout(false);

@@ -302,7 +302,7 @@ namespace QL_DiemTHPT
                 string cotTim = LayCotTim();
                 string giatri = txtTimKiem.Text.Trim();
 
-                sql = $"SELECT * FROM HOCSINH WHERE {cotTim} LIKE N'%{giatri}%'";
+                sql = $"SELECT * FROM HOCSINH h WHERE {cotTim} LIKE N'%{giatri}%'";
             }
 
             // ===== CHỌN NĂM HỌC =====

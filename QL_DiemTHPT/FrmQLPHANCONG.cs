@@ -441,28 +441,6 @@ namespace QL_DiemTHPT
                 return;
             }
 
-            // ===== kiểm tra đang dùng trong DIEM =====
-            string sqlCheck =
-                "SELECT MAPC FROM DIEM WHERE MAPC=@MAPC";
-
-            SqlCommand cmdCheck = new SqlCommand(sqlCheck, knn.cnn);
-            cmdCheck.Parameters.AddWithValue("@MAPC", mapc);
-
-            SqlDataReader rd = cmdCheck.ExecuteReader();
-
-            if (rd.Read())
-            {
-                MessageBox.Show(
-                    "Phân công đã có dữ liệu điểm, không thể xóa!",
-                    "Thông báo",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-
-                rd.Close();
-                return;
-            }
-            rd.Close();
-
             // ===== xác nhận xóa =====
             DialogResult kq = MessageBox.Show(
                 "Bạn có chắc muốn xóa phân công này?",
@@ -472,18 +450,32 @@ namespace QL_DiemTHPT
 
             if (kq == DialogResult.No) return;
 
-            // ===== DELETE =====
-            string sqlDelete =
-                "DELETE FROM PHANCONG WHERE MAPC=@MAPC";
+            try
+            {
+                // ===== XÓA DIEM trước =====
+                string sqlDeleteDiem =
+                    "DELETE FROM DIEM WHERE MAPC=@MAPC";
 
-            SqlCommand cmdDelete = new SqlCommand(sqlDelete, knn.cnn);
-            cmdDelete.Parameters.AddWithValue("@MAPC", mapc);
+                SqlCommand cmdDiem = new SqlCommand(sqlDeleteDiem, knn.cnn);
+                cmdDiem.Parameters.AddWithValue("@MAPC", mapc);
+                cmdDiem.ExecuteNonQuery();
 
-            cmdDelete.ExecuteNonQuery();
+                // ===== XÓA PHANCONG =====
+                string sqlDeletePC =
+                    "DELETE FROM PHANCONG WHERE MAPC=@MAPC";
 
-            MessageBox.Show("Xóa thành công!");
+                SqlCommand cmdPC = new SqlCommand(sqlDeletePC, knn.cnn);
+                cmdPC.Parameters.AddWithValue("@MAPC", mapc);
+                cmdPC.ExecuteNonQuery();
 
-            LayBang_PHANCONG();
+                MessageBox.Show("Xóa thành công!");
+
+                LayBang_PHANCONG();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

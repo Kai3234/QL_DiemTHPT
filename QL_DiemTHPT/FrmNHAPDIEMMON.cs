@@ -336,7 +336,12 @@ namespace QL_DiemTHPT
             if (dangCapNhat) return;
             if (dgvDiem.CurrentRow == null) return;
 
-            dgvDiem.CurrentRow.Cells["ĐTX"].Value = txtDIEMTX.Text;
+            double diem;
+
+            if (double.TryParse(txtDIEMTX.Text, out diem))
+                dgvDiem.CurrentRow.Cells["ĐTX"].Value = diem;
+            else
+                dgvDiem.CurrentRow.Cells["ĐTX"].Value = DBNull.Value;
         }
 
         private void txtDIEMGK_TextChanged(object sender, EventArgs e)
@@ -344,7 +349,12 @@ namespace QL_DiemTHPT
             if (dangCapNhat) return;
             if (dgvDiem.CurrentRow == null) return;
 
-            dgvDiem.CurrentRow.Cells["ĐGK"].Value = txtDIEMGK.Text;
+            double diem;
+
+            if (double.TryParse(txtDIEMGK.Text, out diem))
+                dgvDiem.CurrentRow.Cells["ĐGK"].Value = diem;
+            else
+                dgvDiem.CurrentRow.Cells["ĐGK"].Value = DBNull.Value;
         }
 
         private void txtDIEMCK_TextChanged(object sender, EventArgs e)
@@ -352,7 +362,12 @@ namespace QL_DiemTHPT
             if (dangCapNhat) return;
             if (dgvDiem.CurrentRow == null) return;
 
-            dgvDiem.CurrentRow.Cells["ĐCK"].Value = txtDIEMCK.Text;
+            double diem;
+
+            if (double.TryParse(txtDIEMCK.Text, out diem))
+                dgvDiem.CurrentRow.Cells["ĐCK"].Value = diem;
+            else
+                dgvDiem.CurrentRow.Cells["ĐCK"].Value = DBNull.Value;
         }
     }
 }
